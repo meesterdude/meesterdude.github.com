@@ -1,4 +1,4 @@
-$max-width: 1200px !default;
+$max-width: 95% !default;
 
 // Padding used for layout margins
 $pad-min: 18px !default;
@@ -12,11 +12,11 @@ $sidebar-pad-medium: 15px !default;
 $sidebar-pad-wide: 20px !default;
 $sidebar-width-wide: 300px !default;
 
-$indented-lists: false !default;
+$indented-lists: true !default;
 
 $header-font-size: 1em !default;
-$header-padding-top: 1.5em !default;
-$header-padding-bottom: 1.5em !default;
+$header-padding-top: 1.2em !default;
+$header-padding-bottom: 1em !default;
 
 .group { @include pie-clearfix; }
 

@@ -35,7 +35,7 @@ html .gist .gist-file {
     border-bottom: 0 !important;
     background: none !important;
     .gist-highlight{
-      background: $base03 !important;
+      background: $sidebar-bg !important;
       pre {
         @extend .pre-code;
       }

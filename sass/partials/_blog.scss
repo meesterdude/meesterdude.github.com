@@ -1,20 +1,21 @@
-#content .blog-index {
+#content .site-index {
   padding: { top: 0; bottom: 0; }
-  article { padding-top: 2em; }
+  article { padding-top: 1em; padding-bottom:.5em; }
 }
-
+#content article:nth-child(odd) {background: #ffffff;}
+#content article:nth-child(even) {background: #f9f9fd;}
 article {
-  padding-top: 1em;
+  padding-top: .3em;
   a { @extend .force-wrap; }
   header {
     position: relative;
-    padding-top: 2em;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+    padding-top: 1.2em;
+    padding-bottom: .4em;
+    margin-bottom: .4em;
     background: $img-border bottom left repeat-x;
     @media only screen and (min-width: 768px) {
-      margin-bottom: 1.5em;
-      padding-bottom: 1em;
+      margin-bottom: .3em;
+      padding-bottom: .3em;
       background: $img-border bottom left repeat-x;
     }
     .blog-index & { background: none; padding-bottom: 0; }
@@ -40,7 +41,7 @@ article {
   a[rel=bookmark] { text-decoration: none; }
 
   h2 {
-    padding-top: 0.8em;
+    padding-top: 0.5em;
     background: $img-border top left repeat-x;
   }
   h2:first-child, header + h2 { background: none; }
@@ -52,7 +53,7 @@ article {
       font-size: $h1;
       a { text-decoration: underline; }
     }
-    .blog-index & .entry-title { font-size: $h2; }
+    .site-index & .entry-title { font-size: $h2; }
   }
 
   .linklog-marker {
@@ -63,10 +64,10 @@ article {
   }
 
   > footer {
-    padding-bottom: 2.5em;
-    margin-top: 2em;
+    padding-bottom: .5em;
+    margin-top: .5em;
     @extend .sans;
-    .blog-index & { margin-top: 1em; }
+    .site-index & { margin-top: 0em; }
     .meta {
       margin-bottom: .8em;
       font-size: .85em;
@@ -79,22 +80,23 @@ article {
   }
 
   a[rel=full-article] {
-    background: darken($main-bg, 5);
+    background: lighten($main-bg, 10);
+    border: 1px solid #e2c8c8;
     display: inline-block;
     padding: .4em .8em;
     margin-right: .5em;
     text-decoration: none;
     color: mix($text-color, $text-color-light);
     @extend .serif;
-    @include transition(background-color .5s);
+    @include transition(background-color .4s);
     &:hover {
-      background: $link-color-hover;
+      background: lighten(#EAD6B9, 14);
       text-shadow: none;
-      color: $main-bg;
+      // color: $main-bg;
     }
   }
 
-  .blog-index & + article {
+  .site-index & + article {
     background: $img-border top left repeat-x;
   }
 

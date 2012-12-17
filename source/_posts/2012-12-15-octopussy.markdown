@@ -2,9 +2,9 @@
 layout: post
 title: "Octopussy"
 date: 2012-12-15 07:50
-comments: true
+comments: false
 external-url: 
-categories: dev-thoughts
+categories: geek feed
 published: true
 external-url: http://octopress.org
 ---

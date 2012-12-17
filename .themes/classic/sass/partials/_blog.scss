@@ -47,14 +47,7 @@ article {
 
   .entry-content & h2:first-child, header + h2 { padding-top: 0; }
 
-  &[data-linklog] {
-    .entry-title {
-      font-size: $h1;
-      a { text-decoration: underline; }
-    }
-    .blog-index & .entry-title { font-size: $h2; }
-  }
-
+  
   .linklog-marker {
     color: $text-color-light;
     font-size: .8em;
