@@ -1,0 +1,13 @@
+---
+layout: post
+title: "be kind"
+date: 2015-05-12 17:51
+comments: false
+categories: feed
+published: true
+external-url: http://boz.com/articles/be-kind.html
+---
+
+Great advice, and something we could all do more. 
+
+<!--more-->

@@ -116,9 +116,10 @@ blockquote {
   $bq-margin: 1.2em;
   font-style: italic;
   position: relative;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.5em;
   padding-left: 1em;
+  padding-top:.35em;
   border-left: 4px solid rgba($text-color-light, .5);
   cite {
     font-style: italic;
@@ -139,16 +140,17 @@ blockquote {
 
   /* Content */
   content: attr(data-pullquote);
-
+  &:before { content: '"'; padding:{right: .3em; left: .3em;} color: $text-color-light; }
   /* Pull out to the right, modular scale based margins. */
   float: right;
-  width: 45%;
+  width: 30%;
   margin: .5em 0 1em 1.5em;
 
   /* Baseline correction */
   position: relative;
   top: 7px;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  color: #a00;
   line-height: 1.45em;
 }
 

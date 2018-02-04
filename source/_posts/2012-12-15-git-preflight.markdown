@@ -8,17 +8,17 @@ categories: feed geek
 published: 
 external-url: 
 ---
-I wrote this script because I kept commiting errors to github and wanted to avoid the really stupid mistakes; for me thats was commented code, binding.pry entries, console.log entries, and failing specs. I use it every day, and felt like sharing.
+I wrote this script because I kept committing errors to github and wanted to avoid the really stupid mistakes; for me thats was commented code, binding.pry entries, console.log entries, and failing specs. I use it every day, and felt like sharing.
 <!--more-->
 I'm lazy so I aliased this command to 'a' and skipped needing an opening quotation mark. in my ~/.bash_profile I have `alias c="gitpreflight '"`. So for me, a commit is a matter of typing `c [MVC] updates new_resource'`. It is also obviously in my command path, with this entry also in the file `export PATH="$HOME/bin:$PATH"` and the actual script residing in `~/bin/`
 
-This script will do some basic checks to make sure you aren't commiting anything questionable, and will highlight anything in the diff if you do. It's easy to extend if you have other things you want to stop yourself from commiting, such as perhaps a 'FIXME' comment you left for yourself. Lastly, if you haven't run the spes and think theres any chance you might have broken them, it's a good idea to run them.
+This script will do some basic checks to make sure you aren't committing anything questionable, and will highlight anything in the diff if you do. It's easy to extend if you have other things you want to stop yourself from commiting, such as perhaps a 'FIXME' comment you left for yourself. Lastly, if you haven't run the spes and think theres any chance you might have broken them, it's a good idea to run them.
 
-Lastly, if there's anything else I want to add or do, I don't have to change my workflow. All I have to do is tie it into the script, a bit like callbacks! A few ideas for such things would be:
+Lastly, if there's anything else I want to add or do, I don't have to change my work flow. All I have to do is tie it into the script, a bit like callbacks! A few ideas for such things would be:
 
   * reminder to stretch, meditate, etc.
   * ask for time worked and populate time entry
-  * tracking test runtime and logging to datastore for trending
+  * tracking test runtime and logging to data store for trending
 
 
 **Feel free to use, improve, and share.**

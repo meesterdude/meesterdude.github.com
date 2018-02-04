@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Did you hear about the two guys who stole a calender?"
+title: "Did you hear about the two guys who stole a calendar?"
 date: 2012-12-15 09:09
 comments: false
 external-url: 
