@@ -3,7 +3,7 @@
   <title><![CDATA[RuRu]]></title>
   <link href="http://meesterdude.github.com/atom.xml" rel="self"/>
   <link href="http://meesterdude.github.com/"/>
-  <updated>2018-02-05T01:18:22-05:00</updated>
+  <updated>2018-02-05T01:40:13-05:00</updated>
   <id>http://meesterdude.github.com/</id>
   <author>
     <name><![CDATA[Russell Jennings]]></name>
@@ -23,7 +23,7 @@
 <updated>2017-05-04T17:21:00-04:00</updated>
 <id>http://meesterdude.github.com/entries/introducing-willyou-didyou</id>
 
-      <content type="html"><![CDATA[<p>Launching soon, two accountabilabuddies to help you achieve your goals. Add your Email address to the list!</p>
+      <content type="html"><![CDATA[<p>My latest project, two accountabilabuddies to help you achieve your goals. Add your Email address to the list!</p>
 
 <!--more-->
 
@@ -81,42 +81,6 @@
 <p>People who are interested join the army reserves.
 People who are committed join the army.</p>
 <p><a rel="bookmark" href="http://meesterdude.github.com/entries/3-words-that-changed-me/">&infin; Permalink</a></p>
-
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[Selective Soldiering]]></title>
-<link href="http://meesterdude.github.com/entries/selective-soldiering/"/>
-<updated>2016-10-29T17:20:00-04:00</updated>
-<id>http://meesterdude.github.com/entries/selective-soldiering</id>
-
-      <content type="html"><![CDATA[<!--more-->
-
-<p><a rel="bookmark" href="http://meesterdude.github.com/entries/selective-soldiering/">&infin; Permalink</a></p>
-
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[make boring things fun]]></title>
-<link href="http://meesterdude.github.com/entries/make-boring-things-fun/"/>
-<updated>2016-02-11T17:49:00-05:00</updated>
-<id>http://meesterdude.github.com/entries/make-boring-things-fun</id>
-
-      <content type="html"><![CDATA[<!--more-->
-
-<p><a rel="bookmark" href="http://meesterdude.github.com/entries/make-boring-things-fun/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>
@@ -195,24 +159,6 @@ People who are committed join the army.</p>
 </span><span class='line'>  end</span></code></pre></td></tr></table></div></figure>
 
 <p><a rel="bookmark" href="http://meesterdude.github.com/entries/upgrading-rails-to-use-strong-params-automatically/">&infin; Permalink</a></p>
-
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[So I wired my house up with easy buttons]]></title>
-<link href="http://meesterdude.github.com/entries/so-i-wired-my-house-up-with-easy-buttons/"/>
-<updated>2015-06-06T06:46:00-04:00</updated>
-<id>http://meesterdude.github.com/entries/so-i-wired-my-house-up-with-easy-buttons</id>
-
-      <content type="html"><![CDATA[<!--more-->
-
-<p><a rel="bookmark" href="http://meesterdude.github.com/entries/so-i-wired-my-house-up-with-easy-buttons/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>
@@ -994,6 +940,79 @@ partial, and then rendering that out in both <code>application.html.erb</code> a
 
 <p>But this will make you stagnant. Your mind will become a bubble and nothing can change it&#8217;s perspective or behavior. You are no longer able to adapt to the environment, and expect the world work a different way from how it does otherwise. If you ever wondered how some old people become &#8220;old&#8221;, this is how.</p>
 <p><a rel="bookmark" href="http://meesterdude.github.com/entries/always-listen/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[What programming is like in real life]]></title>
+<link href="http://meesterdude.github.com/entries/what-programming-is-like-in-real-life/"/>
+<updated>2014-03-02T06:54:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/what-programming-is-like-in-real-life</id>
+
+      <content type="html"><![CDATA[<p>Hilarious clip from malcom in the middle that explains what programming is really like.</p>
+
+<p>Some days are better than others&#8230;</p>
+
+<!--more-->
+
+
+<p><img src="http://i.minus.com/i7zx1W08sXciX.gif"></p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/what-programming-is-like-in-real-life/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[for the love of god what the fuck did that guy do?]]></title>
+<link href="http://meesterdude.github.com/entries/for-the-love-of-god-what-the-fuck-did-that-guy-do/"/>
+<updated>2014-03-02T06:10:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/for-the-love-of-god-what-the-fuck-did-that-guy-do</id>
+
+      <content type="html"><![CDATA[<p>Hilarious standup by <a href="http://www.billburr.com/">Bill Burr</a> on Steve Jobs.</p>
+
+<p><strong>Note</strong> contains language (It&#8217;s Bill Burr)</p>
+
+<!--more-->
+
+
+<p>Skip to 4:15 for the Steve Jobs rant, but the entire video is good.</p>
+
+<p>Liquid error: undefined method `[]&#8217; for nil:NilClass</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/for-the-love-of-god-what-the-fuck-did-that-guy-do/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[build everything that everyone wants]]></title>
+<link href="http://meesterdude.github.com/entries/build-everything-that-everyone-wants/"/>
+<updated>2014-03-02T05:04:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/build-everything-that-everyone-wants</id>
+
+      <content type="html"><![CDATA[<blockquote><p>When you have any type of long tail of features that have little usage, you’ve gone off course, or your strategy is “build everything that everyone wants”. The latter might sound crazy, but products like Microsoft Word have very done well with that plan. But you’re probably not building Microsoft Word. If you want a well defined product, you must be comfortable killing features.</p><footer><strong>insideintercom</strong> <cite><a href='http://insideintercom.io/what-does-feature-creep-look-like/'>insideintercom.io/&hellip;</a></cite></footer></blockquote>
+
+
+<p>Great tip. Most of the time, you can and should drop features. But sometimes, it&#8217;s appropriate to take the Microsoft Word path (though I&#8217;d argue even then, you can probably slim down the features)</p>
+
+<!--more-->
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/build-everything-that-everyone-wants/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>
