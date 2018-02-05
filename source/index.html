@@ -6,7 +6,8 @@ layout: default
   {% for post in paginator.posts %}
     {% assign content = post.content %}
     {% include post/variables.html %}
-    <article {% if linklog %}data-linklog{% endif %}>
+
+    <article {% if linklog %}data-linklog{% endif %} {% if paginator.page == 1 and forloop.index == 1 %}class="latest"{% endif %}>
       {% include article.html %}
     </article>
   {% endfor %}

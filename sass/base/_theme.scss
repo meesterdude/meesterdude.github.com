@@ -27,10 +27,10 @@ $text-color-light: #aaa !default;
 $type-border: #ddd !default;
 
 /* Navigation */
-$nav-bg: #414141 !default;
+$nav-bg: #333 !default;
 $nav-bg-front: image-url('noise.png') !default;
 $nav-bg-back: linear-gradient(lighten($nav-bg, 8), $nav-bg, darken($nav-bg, 11)) !default;
-$nav-color: lighten($nav-bg, 38) !default;
+$nav-color: lighten($nav-bg, 10) !default;
 $nav-color-hover: lighten($nav-color, 25) !default;
 $nav-placeholder: desaturate(darken($nav-bg, 10), 15) !default;
 $nav-border: lighten($nav-bg, 10) !default;
@@ -40,7 +40,7 @@ $nav-border-left: darken($nav-bg, 11) !default;
 $nav-border-right: lighten($nav-bg, 7) !default;
 
 /* Sidebar colors */
-$sidebar-bg: #EAD6B9 !default;
+$sidebar-bg: #fff !default;
 $sidebar-link-color: $link-color !default;
 $sidebar-link-color-hover: $link-color-hover !default;
 $sidebar-link-color-active: $link-color-active !default;
@@ -51,8 +51,8 @@ $sidebar-link-color-subdued: lighten($sidebar-color, 20) !default;
 $sidebar-link-color-subdued-hover: $sidebar-link-color-hover !default;
 $twitter-status-link: lighten($sidebar-link-color-subdued, 15) !default;
 
-$footer-color: #EAD6B9 !default;
-$footer-bg: darken($nav-bg, 2) !default;
+$footer-color: #888 !default;
+$footer-bg: rgba(255,255,255,0.75) !default;
 $footer-bg-front: image-url('noise.png') !default;
 $footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 4)) !default;
 $footer-color: darken($footer-bg, 38) !default;
@@ -76,15 +76,16 @@ a {
   @include transition(color 1s);
 }
 
-html {
-  background: $page-bg image-url('line-tile.png') top left;
+html,body {
+    background: linear-gradient(to bottom, lighten(#eed, 10%), lighten(#eed, 3%));
+
 }
 body {
   > div {
-    background: $sidebar-bg $noise-bg;
+    background-color: rgba(255,255,255,0.2);
     border-bottom: 1px solid $page-border-bottom;
     > div {
-      background: $main-bg $noise-bg;
+      background-color: rgba(255,255,255,0.2);
       border-right: 1px solid $sidebar-border;
     }
   }

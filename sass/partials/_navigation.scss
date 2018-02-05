@@ -1,10 +1,8 @@
 body > nav {
   position: relative;
-  background-color: $nav-bg;
-  @include background($nav-bg-front, $nav-bg-back);
-  border: {
-    top: 2px solid $nav-border-top;
-    bottom: 1px solid $nav-border-bottom; }
+  //background-color: black;
+  //@include background($nav-bg-front, $nav-bg-back);
+
   padding-top: .35em;
   padding-bottom: .35em;
   form {
@@ -18,9 +16,9 @@ body > nav {
       width: 95%;
       @include border-radius(.5em);
       @include background-clip(padding-box);
-      @include box-shadow(lighten($nav-bg, 2) 0 1px);
-      background-color: lighten($nav-bg, 15);
-      border: 1px solid $nav-border;
+
+      background-color: #fff;
+      border: 1px solid #aaa;
       color: #888;
       &:focus {
         color: #444;
@@ -50,12 +48,13 @@ body > nav {
       li:last-child a { padding-right: 0; }
     }
     ul li {
+      background-color: rgba(0,0,0,0);
       margin: 0;
     }
     a {
       @include link-colors($nav-color, $nav-color-hover, $visited: $nav-color);
       font-family: $sans;
-      text-shadow: lighten($nav-bg, 12) 0 1px;
+
       float: left;
       text-decoration: none;
       font-size: 1.1em;
@@ -99,7 +98,7 @@ body > nav {
 }
 .no-placeholder {
   body > nav .search {
-    background: lighten($nav-bg, 15) image-url('search.png') .3em .25em no-repeat;
+    background: white;
     text-indent: 1.3em;
   }
 }

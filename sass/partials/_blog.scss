@@ -1,22 +1,25 @@
 #content .site-index {
   padding: { top: 0; bottom: 0; }
-  article { padding-top: .25em; padding-bottom:.25em; }
+  article { padding-top: 1.2em; padding-bottom:1em; }
 }
-#content article:nth-child(odd) {background: #ffffff;}
-#content article:nth-child(even) {background: #f9f9fd;}
+#content .site-index article{
+  background: linear-gradient(to bottom right, #fff , #f9f7f3);
+}
+
 article {
-  padding-top: .25em;
+  padding: 1em;
+
   a { @extend .force-wrap; }
   header {
     position: relative;
     padding-top: 1.2em;
     padding-bottom: .25em;
     margin-bottom: .25em;
-    background: $img-border bottom left repeat-x;
+
     @media only screen and (min-width: 768px) {
       margin-bottom: .25em;
       padding-bottom: .25em;
-      background: $img-border bottom left repeat-x;
+
     }
     .blog-index & { background: none; padding-bottom: 0; }
     p {
@@ -50,10 +53,10 @@ article {
 
   &[data-linklog] {
     .entry-title {
-      font-size: $h1;
+
       a { text-decoration: underline; }
     }
-    .site-index & .entry-title { font-size: $h2; }
+    .site-index & .entry-title {  }
   }
 
   .linklog-marker {
@@ -157,4 +160,49 @@ article {
       &:before, &:after { content: '\2014'; padding: 0 .3em; }
     }
   }
+}
+
+#content .spacer{
+  font-size: 125%;
+  line-height: 125%;
+  border: 1px solid #ccc;
+}
+
+  .site-index{
+    display: flex;
+    flex-wrap: wrap;
+    & article{
+      flex-basis: 250px;
+      flex-grow: 1;
+      .entry-title{
+        font-size: 1.3em;
+      }
+      p{display: none;}
+      &.latest{
+        p{display: block;}
+        .entry-title{font-size: 2em !important;}
+        flex-basis: 1800px;
+        height:250px;
+        background: linear-gradient(to right, lighten(#cec, 10%), lighten(#cec, 4%)) !important;
+        background-color: lighten(#dfd, 4%) !important;
+        footer a{
+          background-color: darken(#dfd, 5%);
+        }
+        &:before{
+          content: 'Latest';
+          font-size: 12px;
+          position: relative;
+          text-shadow: none;
+          top: -5px;
+          color: darken(lime, 20%);
+          font-weight: 800;
+
+        }
+      }
+    }
+
+  }
+.pagination{
+  flex-basis: 1800px;text-align: center;background-color: rgba(0,0,0,0);
+  a{color: #444 !important;}
 }
