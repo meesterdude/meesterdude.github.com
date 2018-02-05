@@ -1,0 +1,310 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Gem Me Not - RuRu</title>
+  <meta name="author" content="Russell Jennings">
+
+  
+  <meta name="description" content="In this I cover how to utilize a custom Gemfile in a rails app. Useful for when you use additional gems that developers you work with do not. Setup &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://meesterdude.github.com/entries/gem-me-not/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="RuRu" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RuRu</a></h1>
+  
+    <small>The Offical Weblog of Russell Jennings</small>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:meesterdude.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Latest</a></li>
+  <li><a href="/archives">Browse</a></li>
+  <li><a href="#">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class='spacer'>
+
+
+
+
+
+
+
+
+
+
+<article class="hentry" role="article" >
+  
+  <header>
+    <h1 class="entry-title">
+
+Gem Me Not
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-15T06:56:00-05:00" pubdate data-updated="true">Dec 15<span>th</span>, 2012</time>
+        
+         &bull; <a rel="bookmark" href="/entries/gem-me-not/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p>In this I cover how to utilize a custom Gemfile in a rails app. Useful for when you use additional gems that developers you work with do not.</p>
+
+<!-- more -->
+
+
+<h2>Setup</h2>
+
+<ol>
+<li>create a Gemfile.local file in the root of your rails app</li>
+<li>add the following line to the top of your Gemfile.local <code>eval File.read('Gemfile')</code></li>
+<li>add Gemfile.local and Gemfile.local.lock to your .gitignore file and commit the change.</li>
+<li>copy your existing Gemfile.lock over <code>cp Gemfile.lock Gemfile.local.lock</code></li>
+</ol>
+
+
+<h2>Usage</h2>
+
+<p>Bundler will by default use the Gemfile file when executing <code>bundler</code>; we want to specify which to use. At the command prompt:</p>
+
+<p> <code>bundle --gemfile Gemfile.local</code></p>
+
+<p>Now that we have our gemfile.local.lock up to date, we&#8217;ll need to change an environment
+variable to switch which Gemfile to use in order for rails to use it. At the command prompt:</p>
+
+<p><code>BUNDLE_GEMFILE=Gemfile.local</code></p>
+
+<p>Then restart your rails app to load the change. And of course to switch back is just as easy:</p>
+
+<p><code>BUNDLE_GEMFILE=Gemfile</code></p>
+
+<h2>Tips</h2>
+
+<ol>
+<li>You can also persist the change by updating the bundle config settings (typically stored in ~/.bundle) or at the prompt:
+<code>bundle config gemfile Gemfile.local</code></li>
+<li>Environment variables take precedence over bundler config; They are also local to the terminal session, so if you set it to use local it will revert back to using the configured one in another session. This also means you can have two terminal windows open; one with the server using one set of gems, and one with it using another.</li>
+<li>Alias the setting of the instance variables so you can say something like <code>localgems</code> or <code>appgems</code></li>
+<li>Alias bundle to always run bundle for the local as well, so both are always up to date. in your ~/.bash_profile:
+<code>alias bundle="bundle install &amp;&amp; bundle install --gemfile Gemfile.local"</code></li>
+</ol>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Russell Jennings</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-15T06:56:00-05:00" pubdate data-updated="true">Dec 15<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/geek/'>geek</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://meesterdude.github.com/entries/gem-me-not/" data-via="meesterfox" data-counturl="http://meesterdude.github.com/entries/gem-me-not/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+        <a class="basic-alignment right" href="/entries/octopussy/" title="Next Post: Octopussy">Octopussy &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/entries/introducing-willyou-didyou/">Introducing WillYou DidYou</a>
+      </li>
+    
+      <li class="post">
+        <a href="/entries/3-words-that-changed-me/">3 words that changed me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/entries/selective-soldiering/">Selective Soldiering</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Let's talk</h1>
+  <p>Want to work together? Reach me on <a href="http://linkedin.com/in/russjennings7/">linkedin</a></p>
+</section>
+
+<section>
+  <h1>GitHub</h1>
+
+  
+  <a href="https://github.com/meesterdude">@meesterdude</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+        
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
+<h1>Twitter</h1>
+<a href='http://twitter.com/meesterfox'>@meesterfox</a>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("meesterfox", 3, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/meesterfox" class="twitter-follow-button" data-show-count="false">Follow @meesterfox</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2018 - Russell Jennings
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

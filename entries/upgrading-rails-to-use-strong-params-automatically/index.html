@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Upgrading rails to use strong_params automatically - RuRu</title>
+  <meta name="author" content="Russell Jennings">
+
+  
+  <meta name="description" content="If you need to upgrade a rails app to rely on strong_params, getting all the attributes sorted out can be tedious and painful. But here I&#8217;ll &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://meesterdude.github.com/entries/upgrading-rails-to-use-strong-params-automatically/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="RuRu" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RuRu</a></h1>
+  
+    <small>The Offical Weblog of Russell Jennings</small>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:meesterdude.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Latest</a></li>
+  <li><a href="/archives">Browse</a></li>
+  <li><a href="#">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class='spacer'>
+
+
+
+
+
+
+
+
+
+
+<article class="hentry" role="article" >
+  
+  <header>
+    <h1 class="entry-title">
+
+Upgrading Rails to Use Strong_params Automatically
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-11-30T08:15:00-05:00" pubdate data-updated="true">Nov 30<span>th</span>, 2015</time>
+        
+         &bull; <a rel="bookmark" href="/entries/upgrading-rails-to-use-strong-params-automatically/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p>If you need to upgrade a rails app to rely on strong_params, getting all the attributes sorted out can be tedious and painful. But here I&#8217;ll share with you a method that you can use to have most of the work done automatically. All you have to do is exercise your site, or have your test suite do it.</p>
+
+<!--more-->
+
+
+<h2>Installation</h2>
+
+<p>Put the code (below) in <code>ApplicationController</code> and set a before_filter like <code>before_filter :install_strong_params, only: [:create, :update]</code>.</p>
+
+<p>This code, when temporarily used within your project, will rewrite your controllers to use strong_params. It is not intelligent, and you may find you need to tweak the code or its output for it to work for your codebase; but it should carry you most of the way at least.</p>
+
+<p>If you need to debug, uncomment the line that adds a params comment to the bottom of the controller.</p>
+
+<p>Once your app has been upgraded, you should remove the code.</p>
+
+<h2>Assumptions</h2>
+
+<ul>
+<li>a blank line preceeding the last line the controller, which should be an &#8216;end&#8217; (typical for most apps)</li>
+<li>existing create/update code is written using the symbol (params[:user] vs params[&#8216;user&#8217;])</li>
+<li>the first hash value found among the params is the one to use for strong_params (typical for most rails apps)</li>
+<li>the params being submitted represent everything that should be allowed (not always the case with specs)</li>
+</ul>
+
+
+<h2>The Code</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> def install_strong_params
+</span><span class='line'>    path = self.class.instance_methods(false).map { |m| self.class.instance_method(m).source_location.first}.uniq.first
+</span><span class='line'>    lines = File.open(path).read.lines
+</span><span class='line'>    name, hash = params.detect{|k,v| v.is_a?(Hash) }
+</span><span class='line'>    return true if hash.nil?
+</span><span class='line'>    return true if lines.detect{|l| l.include?("#{name}_params")} # abort if already replaced
+</span><span class='line'>    has_private = lines.detect{|l| l.include?('  private')}
+</span><span class='line'>    # insert method defition at second to last line
+</span><span class='line'>    lines[-2] = %Q^#{"  private \n\n" if !has_private}  def #{name}_params
+</span><span class='line'>    params.require(:#{name}).permit(#{hash.keys.collect(&:to_sym).to_s[1..-2]})
+</span><span class='line'>  end\n\n^
+</span><span class='line'>    # lines[-1] = "end\n\n# #{params}" # uncomment to write params as comment at bottom of controller
+</span><span class='line'>    lines.each_with_index do |l,i|
+</span><span class='line'>      lines[i] = l.gsub("params[:#{name}]", "#{name}_params") if l.include?("params[:#{name}]")
+</span><span class='line'>    end
+</span><span class='line'>    File.open(path, 'w+') { |file| file.write(lines.join) }
+</span><span class='line'>  end</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Russell Jennings</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-11-30T08:15:00-05:00" pubdate data-updated="true">Nov 30<span>th</span>, 2015</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/feed/'>feed</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://meesterdude.github.com/entries/upgrading-rails-to-use-strong-params-automatically/" data-via="meesterfox" data-counturl="http://meesterdude.github.com/entries/upgrading-rails-to-use-strong-params-automatically/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/entries/so-i-wired-my-house-up-with-easy-buttons/" title="Previous Post: So I wired my house up with easy buttons">&laquo; So I wired my house up with easy buttons</a>
+      
+      
+        <a class="basic-alignment right" href="/entries/make-boring-things-fun/" title="Next Post: make boring things fun">make boring things fun &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/entries/introducing-willyou-didyou/">Introducing WillYou DidYou</a>
+      </li>
+    
+      <li class="post">
+        <a href="/entries/3-words-that-changed-me/">3 words that changed me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/entries/selective-soldiering/">Selective Soldiering</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Let's talk</h1>
+  <p>Want to work together? Reach me on <a href="http://linkedin.com/in/russjennings7/">linkedin</a></p>
+</section>
+
+<section>
+  <h1>GitHub</h1>
+
+  
+  <a href="https://github.com/meesterdude">@meesterdude</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+        
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
+<h1>Twitter</h1>
+<a href='http://twitter.com/meesterfox'>@meesterfox</a>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("meesterfox", 3, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/meesterfox" class="twitter-follow-button" data-show-count="false">Follow @meesterfox</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2018 - Russell Jennings
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

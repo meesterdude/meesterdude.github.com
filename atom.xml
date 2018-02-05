@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[RuRu]]></title>
+  <link href="http://meesterdude.github.com/atom.xml" rel="self"/>
+  <link href="http://meesterdude.github.com/"/>
+  <updated>2018-02-05T00:50:09-05:00</updated>
+  <id>http://meesterdude.github.com/</id>
+  <author>
+    <name><![CDATA[Russell Jennings]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Introducing WillYou DidYou &rarr;]]></title>
+<link href="/entries/introducing-willyou-didyou/"/>
+<updated>2017-05-04T17:21:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/introducing-willyou-didyou</id>
+
+      <content type="html"><![CDATA[<p>Launching soon, two accountabilabuddies to help you achieve your goals. Add your Email address to the list!</p>
+
+<!--more-->
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/introducing-willyou-didyou/">&infin; Permalink</a></p>
+<p><a rel="post-link" href="http://willyoudidyou.com">-> Link <-</a></p>
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[3 words that changed me]]></title>
+<link href="http://meesterdude.github.com/entries/3-words-that-changed-me/"/>
+<updated>2017-03-21T00:22:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/3-words-that-changed-me</id>
+
+      <content type="html"><![CDATA[<p>Words I&#8217;ve known, but did not understand or truly appreciate.</p>
+
+<!--more-->
+
+
+<p>It&#8217;s not every day that a single, common word can change who you are. At least I imagine it isn&#8217;t - I admit there might be people out there who see a word like &#8220;insulator&#8221; and become sheep herders - but I don&#8217;t think this is such a case.</p>
+
+<h2>Listen</h2>
+
+<p>What does it mean, to listen? the absence of my mouth not moving? that&#8217;s a simple enough definition, and the one I had for a while. But when you dive deeper, it&#8217;s more than that.</p>
+
+<p>To listen is to be quiet - verbally, and in mind. You can&#8217;t listen when you&#8217;re being strategic in your head about how to prove the other person wrong.</p>
+
+<p>To listen is to be intently curious and unbiased in what you see - no matter how much you agree or disagree. The desire to understand outweighs the desire to judge. When you have a question, it&#8217;s to know more, not to allude or infer.</p>
+
+<p>And the best listeners are not tea cups you fill up with information - but mirrors that reflect what they observe - offering room for dispute on the facts, allowing them to better understand the other party.</p>
+
+<h2>Cherish</h2>
+
+<p>Growing up, I never understood a particular word that gets thrown around quite a lot in daily life. Certainly a function of my upbringing and experiences - I always felt the word &#8220;love&#8221; was hollow, an empty threat of compassion. Many of the least favorite people in my life had loved me - and expressed so in very creative ways.</p>
+
+<p>But i think love makes a lot more sense, when paired with cherish. If love is the theory, cherish is the action. Of course you love your wife, your kids, your close friends; you would do anything for them, and maybe you already do. But love without cherishment is a campfire with no warmth.</p>
+
+<p>Ironically, A great way to cherish is also to listen.</p>
+
+<h2>Commitment</h2>
+
+<p>I have a lot of goals, interests, ideas, todos, projects. I think a lot of us do. I&#8217;ve naturally accumulated them over the years in varying forms. Many I made progress on, and many more I did not.</p>
+
+<p>But commitments. What do I have of those? I have a lease, which is a form of commitment, and a few other contracts and agreements.</p>
+
+<p>But personally? What are mine? What have they ever been? It&#8217;s not a word thats been in my vernacular, as a descriptor for a given interest, project, or idea. I&#8217;ve had many <a href="http://paidtoexist.com/go-all-out/">interests</a>, but no commitments.</p>
+
+<p>What does it mean to be committed? It means accepting a fundamental change to who you are - changing your DNA as a person, flamboyantly. You have a mission and everything about you is geared towards it. The answer to every distraction becomes &#8220;I have a commitment&#8221;.</p>
+
+<p>People who are interested join the army reserves.
+People who are committed join the army.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/3-words-that-changed-me/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Selective Soldiering]]></title>
+<link href="http://meesterdude.github.com/entries/selective-soldiering/"/>
+<updated>2016-10-29T17:20:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/selective-soldiering</id>
+
+      <content type="html"><![CDATA[<!--more-->
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/selective-soldiering/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[make boring things fun]]></title>
+<link href="http://meesterdude.github.com/entries/make-boring-things-fun/"/>
+<updated>2016-02-11T17:49:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/make-boring-things-fun</id>
+
+      <content type="html"><![CDATA[<!--more-->
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/make-boring-things-fun/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Upgrading rails to use strong_params automatically]]></title>
+<link href="http://meesterdude.github.com/entries/upgrading-rails-to-use-strong-params-automatically/"/>
+<updated>2015-11-30T08:15:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/upgrading-rails-to-use-strong-params-automatically</id>
+
+      <content type="html"><![CDATA[<p>If you need to upgrade a rails app to rely on strong_params, getting all the attributes sorted out can be tedious and painful. But here I&#8217;ll share with you a method that you can use to have most of the work done automatically. All you have to do is exercise your site, or have your test suite do it.</p>
+
+<!--more-->
+
+
+<h2>Installation</h2>
+
+<p>Put the code (below) in <code>ApplicationController</code> and set a before_filter like <code>before_filter :install_strong_params, only: [:create, :update]</code>.</p>
+
+<p>This code, when temporarily used within your project, will rewrite your controllers to use strong_params. It is not intelligent, and you may find you need to tweak the code or its output for it to work for your codebase; but it should carry you most of the way at least.</p>
+
+<p>If you need to debug, uncomment the line that adds a params comment to the bottom of the controller.</p>
+
+<p>Once your app has been upgraded, you should remove the code.</p>
+
+<h2>Assumptions</h2>
+
+<ul>
+<li>a blank line preceeding the last line the controller, which should be an &#8216;end&#8217; (typical for most apps)</li>
+<li>existing create/update code is written using the symbol (params[:user] vs params[&#8216;user&#8217;])</li>
+<li>the first hash value found among the params is the one to use for strong_params (typical for most rails apps)</li>
+<li>the params being submitted represent everything that should be allowed (not always the case with specs)</li>
+</ul>
+
+
+<h2>The Code</h2>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'> def install_strong_params
+</span><span class='line'>    path = self.class.instance_methods(false).map { |m| self.class.instance_method(m).source_location.first}.uniq.first
+</span><span class='line'>    lines = File.open(path).read.lines
+</span><span class='line'>    name, hash = params.detect{|k,v| v.is_a?(Hash) }
+</span><span class='line'>    return true if hash.nil?
+</span><span class='line'>    return true if lines.detect{|l| l.include?("#{name}_params")} # abort if already replaced
+</span><span class='line'>    has_private = lines.detect{|l| l.include?('  private')}
+</span><span class='line'>    # insert method defition at second to last line
+</span><span class='line'>    lines[-2] = %Q^#{"  private \n\n" if !has_private}  def #{name}_params
+</span><span class='line'>    params.require(:#{name}).permit(#{hash.keys.collect(&:to_sym).to_s[1..-2]})
+</span><span class='line'>  end\n\n^
+</span><span class='line'>    # lines[-1] = "end\n\n# #{params}" # uncomment to write params as comment at bottom of controller
+</span><span class='line'>    lines.each_with_index do |l,i|
+</span><span class='line'>      lines[i] = l.gsub("params[:#{name}]", "#{name}_params") if l.include?("params[:#{name}]")
+</span><span class='line'>    end
+</span><span class='line'>    File.open(path, 'w+') { |file| file.write(lines.join) }
+</span><span class='line'>  end</span></code></pre></td></tr></table></div></figure>
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/upgrading-rails-to-use-strong-params-automatically/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[So I wired my house up with easy buttons]]></title>
+<link href="http://meesterdude.github.com/entries/so-i-wired-my-house-up-with-easy-buttons/"/>
+<updated>2015-06-06T06:46:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/so-i-wired-my-house-up-with-easy-buttons</id>
+
+      <content type="html"><![CDATA[<!--more-->
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/so-i-wired-my-house-up-with-easy-buttons/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[be kind &rarr;]]></title>
+<link href="/entries/be-kind/"/>
+<updated>2015-05-12T17:51:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/be-kind</id>
+
+      <content type="html"><![CDATA[<p>Great advice, and something we could all do more.</p>
+
+<!--more-->
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/be-kind/">&infin; Permalink</a></p>
+<p><a rel="post-link" href="http://boz.com/articles/be-kind.html">-> Link <-</a></p>
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[How to raise a happy well-adjusted app: principles of software parenting]]></title>
+<link href="http://meesterdude.github.com/entries/how-to-raise-a-happy-well-adjusted-app-principles-for-software-parenting/"/>
+<updated>2015-05-10T03:06:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/how-to-raise-a-happy-well-adjusted-app-principles-for-software-parenting</id>
+
+      <content type="html"><![CDATA[<p>Software is quickly born, but is slowly grown. Knowing how to raise software properly ensures continued return of investment, and prevents costly rewrites that can bankrupt you.</p>
+
+<!--more-->
+
+
+<h2>Philosophy</h2>
+
+<h3>Software happiness is&#8230;</h3>
+
+<p>Software happiness is the ability for an app to reach its full potential and maintain that state for years, ideally forever. It is its ability to remain agile in the short-term, as well as the long. And it is its ability to do this through the change of various hands of professionals over time.</p>
+
+<h2>Why software happiness matters</h2>
+
+<p>Businesses often build or sell software that becomes critical to their survival. But far too they become neglected and unmaintainable, sometimes to the point of requiring rewrite or in some extreme cases closing of the business.</p>
+
+<h2>Principals</h2>
+
+<h3>Love</h3>
+
+<p>This is by far, the most important thing happy software needs, and lack of it is the leading cause of app health issues. Software that is not groomed and looked after regularly becomes black box or obese (usually both). Software needs someone to sit down with it and refine its inner workings regularly, if it is to remain nimble and agile throughout its years.</p>
+
+<p>Software does not need unbounded amounts of love; But it does need a lot, and chances are good that your software could use more of it. These investments are harder to see the fruits of, and are not sexy. But without them, an app gone bad can take out an entire company.</p>
+
+<h3>Mentoring</h3>
+
+<p>As an app grows, it will usually acquire different needs and interests. Without guidance, these can cause serious damage to an app over time, and potentially make it too complicated to use. It is important, when designing a particular role or feature, to remain humble and curious. Far too often, people try to play the &#8220;my way&#8221; card. And while this card does work and has worked, it&#8217;s not the right card for most people.</p>
+
+<p>By far, it is better to listen to what others say, and make informed decisions from that. Although this isn&#8217;t exclusively true either. Really, the issue isn&#8217;t playing the &#8220;my way&#8221; card, its knowing when to. Sometimes, you will know better. Other times, you won&#8217;t. It&#8217;s important to know the difference, and change tactics to suite.</p>
+
+<h3>Attention</h3>
+
+<p>Not adding features to software can be as deadly as adding too many. While it&#8217;s certainly possible that your app does not need anything else and has reached a state of &#8220;doneness&#8221;, chances are good that there are optimizations and tweaks that could be made that would improve the utility of an app. When tastefully done, the resulting improvements can place you at the top.</p>
+
+<p>However, not all changes are welcome. By far, the least popular change to an app is with its design. While sometimes this does improve the app and make it better, far too often changes are made that only serve to confuse or anger users. Which leads us to the next topic&#8230;</p>
+
+<h3>Listening</h3>
+
+<p>It&#8217;s important to listen to what people say; the people who use your software, the ones who build it, and the market overall. They will often have valid suggestions or complaints that would be in the apps best interest to discuss. While how you react to their comments is the result of several factors, that you give them forum is the most important part.</p>
+
+<p>actively not listening, has killed or at least effectively killed countless software projects.</p>
+
+<h3>Vision</h3>
+
+<p>Your well-adjusted software needs a purpose. Without it, it will meander off in different directions and likely not land anywhere useful. If you don&#8217;t know what your software does, needs to do or could do, it can&#8217;t get anywhere. Sometimes, wandering aimlessly leads to wonderful things; But usually it leads to death. If your software does wander about, it should do so with intent and measurement of performance and tuning. But once you&#8217;ve established what it needs to do today, you should think about tomorrow.</p>
+
+<h3>Safety</h3>
+
+<p>Security is a hard problem, and a hard sell. You could leave your front door unlocked tonight, and it probably wont matter. If you left it unlocked tomorrow night too, it still probably wouldn&#8217;t matter. But one night, you&#8217;ll leave it unlocked and it will matter. Or, you&#8217;ll leave it locked, and it won&#8217;t matter because someone broke in through your window.</p>
+
+<p>The moral of the story is: If you do everything you can, you can stop the simple and easy security breaches; But at the same time, there many windows in a house, and you can&#8217;t protect them all. If you&#8217;re not taking a fort knox style approach to security, you should at least know whats at stake and how to react if something happens; though with software, there is the added need of detecting when something happens in the first place, as there is rarely broken glass found.</p>
+
+<h3>Exercise</h3>
+
+<p>Keeping your software in shape means exercising all of its parts regularly; both together and in isolation. This ensures your software performs as expected and is free of bugs. And while you can manually sit and exercise your app, it&#8217;s usually prefered to write software that tests  software; especially under heavy &amp; active development. Writing these is the responsibility of the developers, and it is the responsibility of software parents to make sure it is taking place.</p>
+
+<p>But sometimes exercises are redundant or pointless, and bugs are allowed to creep in. Or other times the test software is so poorly written, that it becomes unreliable or unwieldy. Or, maybe there are no tests written at all. Thankfully, All of these can be addressed using the love and listening principles, previously outlined.</p>
+
+<h3>Discipline</h3>
+
+<p>It is tempting of creatives to push their boundaries. Artists want bigger paintings, writers bigger stories, actors bigger movies. Developers and Designers are no different in this. Developers want to use new languages, databases or techniques, designers want to create impressive and definitive designs with new frameworks or syntax. And while these can and do lead to some impressive things, they far too often become a disability and a hinderance to the app. Tried and true solutions and approaches are boring, and there is always the temptation for something new. But boring is what makes happy software, so one must strike a balance between the two.</p>
+
+<p>Generally, it&#8217;s useful to think of such things as genie wishes: your software only gets 3 total. If you&#8217;re going to use a new framework or language, there should be a strong reason for it; one that current tried and true best practices are unable to solve. There are many fads in software, and its important to sort them out from pivotal changes that move through industries.</p>
+
+<h3>Mobility</h3>
+
+<p>Happy Software has the best chances of reaching maturity and stability when developed by professionals. A professional is more than someone who can do the work; it is someone who can do the work well, and is striving to do better. While the amount of money paid is not a direct correlation to professionalism, it&#8217;s certainly a useful metric. You don&#8217;t get happy software by being cheap; you get it by investing time and money into its growth.</p>
+
+<p>The professionals who build your software should be improving its maintainability and lowering the bar for other professionals to take over who are less experienced. The people who build buildings are not the same people who sweep the floors after its built, and the same holds true with software. As your software grows and matures, its needs will become more detailed and nuanced. Difficult problems will be solved, laying way for easier problems to be solved. Its important these transitions be able to take place.</p>
+
+<h2>Things you can do</h2>
+
+<h3>Talk with your professionals</h3>
+
+<p>Communicate your desires and establish with them how things will look in the next few months to the next several years or longer; both given current course and in an ideal world. Also Identify their involvement and how best to position for any transitions.</p>
+
+<h3>Do Nothing</h3>
+
+<p>Sometimes inaction is the best action. If things are manageable and the risks are known and understood, sometimes doing nothing is the right call. Software happiness is not a short term solution, but a long term one. However, Software rarely exists in a bubble, and the slightest change to any one of hundreds or thousands of other dependencies can cause a chain reaction of failure that result in loss of revenue, customers, or data.</p>
+
+<h3>Hire an advocate</h3>
+
+<p>Creating a better future for your software is no easy task, especially if you are not involved in its development. professionals make mistakes, or underperform, and its hard to tell the state of things if you&#8217;re not in the industry. So whats the solution? Hire an advocate. Having an unbiased party involved ensures that all priorities are being met appropriately, and that the app is heading in the right direction for its short and long term goals.</p>
+
+<h3>Hire Me</h3>
+
+<p>I&#8217;ll work with you and your professionals to improve the well being of your app and make sure it gets the attention it needs to prosper in the short term and long.</p>
+
+<p>Hourly rate is $225 per hour
+Weekly rate is $7k per week</p>
+
+<p>email r.hire@ruru.name for more information.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/how-to-raise-a-happy-well-adjusted-app-principles-for-software-parenting/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Understanding the monty hall problem]]></title>
+<link href="http://meesterdude.github.com/entries/understanding-the-monty-hall-problem/"/>
+<updated>2015-02-19T23:36:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/understanding-the-monty-hall-problem</id>
+
+      <content type="html"><![CDATA[<p>I explore the classic monty hall problem and use a little bit of ruby to help understand it.</p>
+
+<!--more-->
+
+
+<blockquote><p>Suppose you&#8217;re on a game show, and you&#8217;re given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what&#8217;s behind the doors, opens another door, say No. 3, which has a goat. He then says to you, &#8220;Do you want to pick door No. 2?&#8221; Is it to your advantage to switch your choice?</p><footer><strong>wikipedia</strong> <cite><a href='http://en.wikipedia.org/wiki/Monty_Hall_problem'>en.wikipedia.org/wiki/&hellip;</a></cite></footer></blockquote>
+
+
+<p>The answer is yes, but why? Why does switching have a higher rate of success?</p>
+
+<p>Given a choice of 3 doors, its fair to say that your odds of being right are 1/3. When the host reveals a door he knows to be a dud, this does not change your original choice success rate - you still have a 1 out of 3 chance. But there is now a 2/3 chance that the other door is the one with the prize. In essence, you&#8217;re betting that your original guess was wrong (it only has a 1/3 chance of being right) and that this other door, with all others doors eliminated and yours not very likely, to be the better choice.</p>
+
+<p>This is much more apparent with something like 100 doors, because your original chance was 1 in 100 of picking correctly, but the chance of it being the remaining door out of 99 is much more likely.</p>
+
+<p>Thankfully, this isnt that hard of a problem to create in code. Feel free to paste this into a ruby console and experiment!</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def monty_hall(door_count,pick, switch=false, runs=100)
+</span><span class='line'>  results = []
+</span><span class='line'>  runs.times{results &lt;&lt; perform(door_count,pick,switch)}
+</span><span class='line'>  summary = results.group_by{|v| v}
+</span><span class='line'>  {won: summary['won'].count, lost: summary['lost'].count}
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>def perform(door_count, pick, switch=false)
+</span><span class='line'>  door_count += -1 # make room for the prize
+</span><span class='line'>  pick = pick.to_i - 1
+</span><span class='line'>  doors = door_count.times.collect{'1'} &lt;&lt; '2'
+</span><span class='line'>  doors.shuffle!
+</span><span class='line'>  prize = doors.index('2')
+</span><span class='line'>  same = prize == pick # did they manage to pick the prize?
+</span><span class='line'>  dud = doors.index('1') # a known dud to use if same
+</span><span class='line'>  doors.each_with_index do |door,i|
+</span><span class='line'>    if same
+</span><span class='line'>      next if [pick,dud].include?(i) 
+</span><span class='line'>    else
+</span><span class='line'>      next if [prize,pick].include?(i)
+</span><span class='line'>    end
+</span><span class='line'>    doors[i] = nil # if it wasn't one of the two skipped, clear its value
+</span><span class='line'>  end
+</span><span class='line'>  # we now have an array that looks something like [nil,2,1]
+</span><span class='line'>  if switch
+</span><span class='line'>    doors.each_with_index{|d,i| new_pick = i if (d.to_i &gt; 0 && i != pick)}
+</span><span class='line'>    new_pick == prize ? "won" : 'lost'
+</span><span class='line'>  else
+</span><span class='line'>    same ? "won" : "lost"
+</span><span class='line'>  end
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>#
+</span><span class='line'># Examples
+</span><span class='line'>#
+</span><span class='line'>#&gt; monty_hall(3,3,true)
+</span><span class='line'>#=&gt; {:won=&gt;62, :lost=&gt;38}
+</span><span class='line'>#
+</span><span class='line'>#&gt; monty_hall(3,3,false)
+</span><span class='line'>#=&gt; {:won=&gt;33, :lost=&gt;67}
+</span><span class='line'>#
+</span><span class='line'>#&gt; monty_hall(100,5,true)
+</span><span class='line'>#=&gt; {:won=&gt;99, :lost=&gt;1}
+</span><span class='line'>#
+</span><span class='line'>#&gt; monty_hall(100,5,false)
+</span><span class='line'>#=&gt; {:won=&gt;4, :lost=&gt;96}
+</span></code></pre></td></tr></table></div></figure>
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/understanding-the-monty-hall-problem/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[The story behind creating Cloudspeq]]></title>
+<link href="http://meesterdude.github.com/entries/the-story-behind-creating-cloudspeq/"/>
+<updated>2015-02-12T14:28:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/the-story-behind-creating-cloudspeq</id>
+
+      <content type="html"><![CDATA[<p>How I got my 5 minute test suite down to 20 seconds, and made my first gem from my efforts.</p>
+
+<p>Get it here:<a href="https://rubygems.org/gems/cloudspeq">rubygems.org</a> and <a href="https://github.com/meesterdude/cloudspeq">github.com</a></p>
+
+<!--more-->
+
+
+<p>I wanted to cover the important takeaways and how I got there, and this is largely geared towards that more than every detail of the proccess.</p>
+
+<p>I recently switched my development enviroment over to a linux virtual machine - something I intended on blogging about a few months down the line after the honeymoon phase has passed. Everything has been pretty decent so far, except for a slow down in my test runtime. The test suits for the Ruby on Rails apps I work on aren&#8217;t normally fast on a good day, and were a little more sluggish in my VM. So I wondered if there was a way to speed up my test time locally somehow. I tried a few solutions but none of them really made much of a difference.</p>
+
+<p>I thought about what people have classicly done to speed up test suits. Some people have gone so far as to decouple their code from rails and test in isolation - but thats controversial and nontrivial. I tried paralleism and got a marginal benefit, but not nearly what I was expecting. Eventually, I just wanted to copy my virtual machine and switch between a few of them to execute my tests. An idea I quickly disspelled, but it led me to my first Ah-Ha&#8230;</p>
+
+<h2>Ah-Ha #1: Its just a computational problem</h2>
+
+<p>The tests we write need to be executed to ensure our code works. Some Ruby on Rails projects can run their entire test suite in a few seconds, but many rails projects that I work on do complicated browser testing which just takes time to run through; sometimes a really long time.</p>
+
+<p>CGI animators are not unfamiliar with the problem of waiting for computers. They can work on scenes that would take a normal computer hours or days to try render a single frame for. Their solution is to break up the work across many machines and have them all work on a little piece. It&#8217;s basically the same thing only here, instead of rendering CGI animations, we need to render test results.</p>
+
+<p>In practice, this works well. But not everyone can afford a server farm to have ready for them to run tests for! I know I can&#8217;t. There will need to be a way to start things up on-demand&#8230;</p>
+
+<h2>Ah-Ha #2: Digital Ocean and its handy API</h2>
+
+<p>With Digital Ocean, I can take a snapshot of a machine and turn that into an image I can then later use to create new machines from. The new machine has a new ip-address and hostname, but otherwise everything else is the same.</p>
+
+<p>And with their API, all I need to do is create a few machines with a predefined image, and I have an on-demand server farm. The costs are pretty good - $0.175 for 25/machines/hr; worth it if it can shave minutes off my testing time and I&#8217;ll be doing a lot of testing.</p>
+
+<p>Its worth pointing out that machines take a few minutes to spool up - especially if you create a bunch at once.</p>
+
+<p>So, I create a few machines to execute tests for and break up all the files in the test folder to run across the machines. I notice a good order of impovement in testing time - enough to confirm my suspicions that it it&#8217;ll work.</p>
+
+<p>Some machines got stuck with all the slow tests, so I shuffled the file ordering before assigning them to machines - so each got a few different kinds of files to work on, which should even out the overall test run time.</p>
+
+<p>But the tests still weren&#8217;t <em>quite</em> as fast as I&#8217;d like them to be. Some files would have a lot of slow tests in them, and whatever machine got stuck with that file inevitbly slowed down the test run time.</p>
+
+<p>This lead to&#8230;</p>
+
+<h2>Ah-Ha #3: Que on the specs themselves, not the files that hold them</h2>
+
+<p>By issuing specific line numbers instead of whole files, slow test files could be torn open and their slow inards spread across several eager machines, resulting in a good deal of improvement in the time it takes to test.</p>
+
+<p>But the tests <em>still</em> felt slow. Even though I broke open these slow spec files, their sluggish guts now polluted the test time of the rest of the machines and prevented them from finishing faster. I needed a way to break them up but isolate them from the rest of the machines. Actually, I wanted to be able to break anything up - specs, files and whole directories. This all lead to&#8230;</p>
+
+<h2>Ah-Ha #4: Clusters</h2>
+
+<p>With clusters, I could give every slow acceptance test its own server, or assign all the helper tests to one server particularly. With some tuning of what got divided up and how, I was able to achieve a testing time that felt reasonable - It was as fast as my slowest spec took to run.</p>
+
+<p>After this, it was pretty easy. I would run the rspec command with a json output formatter, and then parse the results from each machine and display them as the overall test results. I went to bed pretty happy with what I had accomplished with clusters.</p>
+
+<p>But there was a problem&#8230; I forgot to destroy the test machines I created. It ended up costing me about $2; but it was a lesson that lead to&#8230;</p>
+
+<h2>Ah-Ha #5: Self destruction</h2>
+
+<p>While one could query the Digital Ocean API for machines with <code>created_at</code> that is too old and destroy the results - it means you&#8217;d need to have a machine out there doing that for you. You could use your development machine, but if you shut it down and go home for the day those machines will keep running.</p>
+
+<p>Instead, it would be good if the machine could just clean up after itself, since it&#8217;s already out there running. But this needs to be flexible - if I have a solid day of testing, I don&#8217;t want to have machines destroyed that I&#8217;m working on. Equally I don&#8217;t want to set it to be too high and spend money on machines I&#8217;m not using.</p>
+
+<p>So, the metric I settled on was uptime. if I set a lifetime of 4 hours and I&#8217;m 3 hours in, I can do a quick reboot and have another 4 hours. I could also probably do some bash trickery, or more simply change the config value in the file. Any of those is better than having to wait for another batch of machines to be created!</p>
+
+<p>With this in place, machines that have been alive for too long can self-destruct, and I can go to bed and sleep soundly.</p>
+
+<p>With that in place, I had the foundation figured out. The rest of it was squeezing it into a gem and settling on a command line parsing gem to use. I went with <code>escort</code>; so far its holding up.</p>
+
+<h2>The Future</h2>
+
+<p>Aside from more providers and overall polish, I think this gem could do more for Ruby on Rails testing overall. We often write code but have no idea about how it will perform in production. Technically the <code>exec</code> command in the gem already makes it possible to run a command across all the machines - which could be a command to hammer your staging server with requests for a few seconds; but I think something more intergrated could be achieved too.</p>
+
+<p>Also, I feel like the machines could be driven harder, but I haven&#8217;t had much success in doing so. Ideally i&#8217;d cut the number of machines I need to test in half - but its a minor pain point.</p>
+
+<p>I don&#8217;t know how useful this gem will be in the run of things - i know i&#8217;ll use it when I have to test a lot, and maybe there are folks out there who have to suffer through a slow test suite and this will really help them - I released it as a gem with hopes that I am able to contribute something useful back to the community.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/the-story-behind-creating-cloudspeq/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[understanding rspec test doubles]]></title>
+<link href="http://meesterdude.github.com/entries/understanding-rspec-doubles/"/>
+<updated>2014-12-30T07:45:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/understanding-rspec-doubles</id>
+
+      <content type="html"><![CDATA[<p>For a while, I have not understood what rspec test doubles do, or why you&#8217;d use them. I recently came to understand their usage and function, and thought I&#8217;d share.</p>
+
+<!--more-->
+
+
+<p>If you take a look at <a href="https://relishapp.com/rspec/rspec-mocks/docs">the documentation</a> you&#8217;ll find test doubles described as:</p>
+
+<blockquote><p>A test double is an object that stands in for another object in your system during a code
+example.</p></blockquote>
+
+<p>I don&#8217;t know about you, but thats not very descriptive. So, lets take a look at an example using some pseudo rails code</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">User</span>
+</span><span class='line'>  <span class="n">belongs_to</span> <span class="ss">:account</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kp">attr_accessor</span> <span class="ss">:is_verified</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">can_login?</span>
+</span><span class='line'>    <span class="nb">self</span><span class="o">.</span><span class="n">is_verified</span> <span class="o">&amp;&amp;</span> <span class="nb">self</span><span class="o">.</span><span class="n">account</span><span class="o">.</span><span class="n">enabled?</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Account</span>
+</span><span class='line'>  <span class="n">has_many</span> <span class="ss">:users</span>
+</span><span class='line'>  <span class="n">has_one</span> <span class="ss">:subscription</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">enabled?</span>
+</span><span class='line'>    <span class="nb">self</span><span class="o">.</span><span class="n">subscription</span><span class="o">.</span><span class="n">active</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">Subscription</span>
+</span><span class='line'>  <span class="n">has_one</span> <span class="ss">:account</span>
+</span><span class='line'>  <span class="kp">attr_accessor</span> <span class="ss">:active</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In the above example, we have defined a <code>User</code>, a <code>Subscription</code>, and an <code>Account</code> class. We want to test <code>User</code>, so at first glance you might instantiate your objects like this in test</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">subscription</span> <span class="o">=</span> <span class="no">Subscription</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">active</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
+</span><span class='line'><span class="n">account</span> <span class="o">=</span> <span class="no">Account</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">subscription</span><span class="p">:</span> <span class="n">subscription</span><span class="p">)</span>
+</span><span class='line'><span class="n">user</span> <span class="o">=</span> <span class="no">User</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">account</span><span class="p">:</span> <span class="n">account</span><span class="p">,</span> <span class="n">is_verified</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will work, but its a bit much. We are just testing <code>User</code> and we&#8217;d like to test it in isolation. Looking at our example, we see that for a <code>User</code> to know if it <code>can_login?</code>, it must ask its <code>Account</code> which goes on to ask the <code>Subscription</code>. We could stub the <code>Account#enabled?</code> method and remove the need for subscription like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">account</span> <span class="o">=</span> <span class="no">Account</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'><span class="n">account</span><span class="o">.</span><span class="n">stub</span><span class="p">(</span><span class="ss">:enabled?</span><span class="p">)</span> <span class="p">{</span> <span class="kp">true</span> <span class="p">}</span>
+</span><span class='line'><span class="n">user</span> <span class="o">=</span> <span class="no">User</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">account</span><span class="p">:</span> <span class="n">account</span><span class="p">,</span> <span class="n">is_verified</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This is better, as we no longer need to create a subscription; but we&#8217;re still instantiating an Account class and everything that gets associated with it. Do we really need a real Account object, or can we use something more lightweight? this is where test doubles come in. They&#8217;re a bit like stunt doubles, standing in for the real actors when the real actors aren&#8217;t actually needed.</p>
+
+<p>A further refactoring would look like this:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">fake_account</span> <span class="o">=</span> <span class="n">double</span><span class="p">(</span><span class="s2">&quot;Account&quot;</span><span class="p">,</span> <span class="ss">:enabled?</span> <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">)</span>
+</span><span class='line'><span class="n">user</span> <span class="o">=</span> <span class="no">User</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">account</span><span class="p">:</span> <span class="n">fake_account</span><span class="p">,</span> <span class="n">is_verified</span><span class="p">:</span> <span class="kp">true</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now we only have one real object to worry about! calls to <code>user.can_login?</code> will be delegated to the <code>fake_account</code>, which is set to return true for <code>is_verified</code>.</p>
+
+<p>Its important to note a few things:</p>
+
+<ol>
+<li><p>If you&#8217;re concerned with the method your stubbing actually existing, use <a href="https://relishapp.com/rspec/rspec-mocks/v/3-1/docs/verifying-doubles">verifying doubles</a>(new to rspec 3) to ensure that the method you stub actually exists on the real version of the object. You&#8217;ll get an exception if you try to stub something that doesn&#8217;t exist.</p></li>
+<li><p>There are a few types of doubles, covered in the above documentation. This allows you to double not only instances but classes as well, along with a few other testing tricks you might need to resort to such as working with singletons.</p></li>
+<li><p>Do not stub or double what you&#8217;re testing! Use it when you want to isolate something like a method and test its various conditions, without having to actually manipulate the far reaching objects and logic it relies on to arrive at the same conclusion. Assuming the things you stub or double also have unit tests associated with them, this should not be a problem.</p></li>
+<li><p>You still should have some test coverage that exercises the actual operation of all the parts together. But often you can do this in an integration spec and verify that a lot of things are working properly with a few lines of code. Unit tests are a thousand little strokes of the testing paint brush, integration tests are 100 broad strokes.</p></li>
+</ol>
+
+
+<p>Anyway, hopefully this helps.</p>
+
+<p>Special thanks to Kevin Skoglund (@kskoglund) for helping me make heads of doubles. He&#8217;s got a new lynda.com tutorial coming out on rspec 3 which you&#8217;ll be able to find <a href="http://www.lynda.com/Kevin-Skoglund/104-1.html">here</a> once released.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/understanding-rspec-doubles/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[11 lessons from a codebase]]></title>
+<link href="http://meesterdude.github.com/entries/11-lessons-from-a-codebase/"/>
+<updated>2014-12-29T04:46:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/11-lessons-from-a-codebase</id>
+
+      <content type="html"><![CDATA[<p>I&#8217;ve been fixing up the codebase of a rails app for a few months now. It was written by some smart folks, so I wanted to share some of the philosophies and design patterns they utilized.</p>
+
+<!--more-->
+
+
+<ol>
+<li><p>You should <strong>always</strong> write tests. The only time its ok to not write tests is when its for public facing, non-trivial code. Or if you don&#8217;t feel like it.</p></li>
+<li><p>A good method is 2000 lines of code</p></li>
+<li><p>A better method is 200 lines of code, all in one line.</p></li>
+<li><p>Sprinkle the word &#8220;TODO&#8221; as a comment throughout the codebase, but leave it to others to figure out what its for.</p></li>
+<li><p>Instead of deleting code you don&#8217;t need, comment it out. But make sure you put &#8220;TODO&#8221; in a comment above it.</p></li>
+<li><p>In fact, be proactive about scary commented out code. Leave <code>User.destroy_all</code> as a comment in the user signin process.</p></li>
+<li><p>Give things names that are deeply related to the codebase, but have nothing to do with whats actually going on.</p></li>
+<li><p>A good codebase is like a puzzle; it should be difficult to assemble and be missing pieces</p></li>
+<li><p>There is no such thing as too many relations. a <code>user</code> should <code>has_many :last_names</code></p></li>
+<li><p>&#8220;Set it and forget it&#8221; is more than just the slogan for a late night cooking infomercial, its a design philosophy.</p></li>
+<li><p>Good conditionals should read like</p></li>
+</ol>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if true
+</span><span class='line'>  true
+</span><span class='line'>elseif true #TODO
+</span><span class='line'>  true
+</span><span class='line'>else
+</span><span class='line'>  true</span></code></pre></td></tr></table></div></figure>
+
+
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/11-lessons-from-a-codebase/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[I quit reddit for music]]></title>
+<link href="http://meesterdude.github.com/entries/i-quit-reddit-for-music/"/>
+<updated>2014-11-18T04:37:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/i-quit-reddit-for-music</id>
+
+      <content type="html"><![CDATA[<p>I don&#8217;t know why I didn&#8217;t do this sooner.</p>
+
+<!--more-->
+
+
+<p>I should disclaim first and foremost: There are many ways to waste your time on a computer, and reddit is just one of them. For me, it was by far the biggest (second only to large database imports in dev).</p>
+
+<p>I&#8217;ve been a redditor almost since it started, and it&#8217;s been interesting to see the site grow and change. But I&#8217;ve come to question its place in my life. From a community perspective, I&#8217;ve never quite drank the reddit cool-aid. Any attempts to share legitimate content are often met with downvotes, disinterest, or my favorite: being told you can&#8217;t post here / wrong sub. And even the most reasoned comment can elicit a vile reply. I think that&#8217;s a clear failure of the platform as a whole.</p>
+
+<p>From a consumption perspective: there are some very informative / creative / interesting subreddits, and I can&#8217;t say it&#8217;s always been bad there. But I find in my browsing there might be one article that I find useful, or post worthwhile(expands my reality in some meaningful way). Actually, I think the subreddit I gained the most from was r/TwoXChromosomes/, to get a glimpse at what the world looks like for women. But otherwise, I&#8217;m just foraging for novelty, and I can&#8217;t say the time I spent on it was actually meaningful or providing me much return.</p>
+
+<p>And lastly, my faith in reddit: As a technical platform, they&#8217;ve had to scale and I appreciate that challenge. But having been a moderator and a regular user, they have a long ways to go, and have had a long ways to go for some time. But equally they as an organization have had some disheartening news as of late (and blatant CYA behavior, in the name of free speech to add insult to injury) and I can&#8217;t help but see it as part of a systemic failure, and not merely a simple mistake. And trying to engage in meaningful discourse with a manager at reddit over twitter was met with the same tone of response that I&#8217;d expect from an actual reddit comment.</p>
+
+<p>And I think that&#8217;s really when it dawned on me: The company is a reflection of the community, and the community is a reflection of the company.</p>
+
+<p>Meanwhile, I&#8217;m in the process (a little over 1.5 years) of learning the piano &amp; music theory and being guided along by a piano teacher (who I found on reddit). So with all the above factored, it seemed like a no-brainer. I&#8217;d rather go to bed having spent an hour on the piano, then an hour on reddit. Also, I have measurable gains from piano practice, but the benefits from reddit are often seem cloudy or absent.</p>
+
+<p>So, I added reddit to my <code>/etc/hosts</code> and it now resolves to my side project. It&#8217;s been amusing seeing how many times I knee-jerk to that URL, only to go &#8220;oh yeah&#8230;&#8221;</p>
+
+<p>To stay connected, I still browse hacker news and slashdot, but that takes only a fraction of what reddit would normally represent. And If I really want to check-in on a particular subreddit, I can do so on my phone; but that&#8217;s a more painful experience for me and not something I do regularly.</p>
+
+<p>I encourage everyone to do the same: kill the time wasters that offer little or no return. Maybe for you its something like WoW or facebook. If you feel more connected with the reddit community but still find it takes up too much time, there are browser plugins, like <a href="https://addons.mozilla.org/en-US/firefox/addon/leechblock/">leechblock</a>(firefox) which can help control the amount of time you spend on a given site.</p>
+
+<p>Also, pick up an instrument. <code>$genders_of_interest</code> dig musicians.</p>
+
+<p>And fuck reddit.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/i-quit-reddit-for-music/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[pjax_rails and layout rendering]]></title>
+<link href="http://meesterdude.github.com/entries/pjax-rails-and-layout-rendering/"/>
+<updated>2014-08-25T01:41:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/pjax-rails-and-layout-rendering</id>
+
+      <content type="html"><![CDATA[<p>An issue I ran into when using the <code>pjax_rails</code> gem, and useful advice if you need additional content delivered besides the <code>yield</code> result.</p>
+
+<!--more-->
+
+
+<p>I ran into this issue and my googlings returned little information, so I PR&#8217;d additions to the <code>pjax_rails</code> gem readme, and thought I&#8217;d
+make a post while I&#8217;m at it for anyone who runs into this issue in the future.</p>
+
+<p>When you add <code>pjax_rails</code> to your project, it ensures every pjax request does not render your layouts, and only the relevant view.
+But you may run into the need to include additional content, such as a contextual menu, outside of the particular views.</p>
+
+<p>You can specify a particular layout to render for pjax requests, by overriding the <code>pjax_layout</code> method in your controllers.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ApplicationController</span> <span class="o">&lt;</span> <span class="no">ActionController</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">pjax_layout</span>
+</span><span class='line'>    <span class="s1">&#39;pjax&#39;</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And also creating the relevant file <code>app/views/layouts/pjax.html.erb</code>.</p>
+
+<p>You&#8217;ll likely want <code>application.html.erb</code> and <code>pjax.html.erb</code>
+to render the same content, so I recommend moving that content (the <code>data-pjax-container</code> element and its children) into a
+partial, and then rendering that out in both <code>application.html.erb</code> and <code>pjax.html.erb</code>.</p>
+
+<p>As a tip, I add a <code>h2</code> title to <code>pjax.html.erb</code> when I want to debug what&#8217;s pjax and what&#8217;s not.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/pjax-rails-and-layout-rendering/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Tip: order git branches by last commit age]]></title>
+<link href="http://meesterdude.github.com/entries/tip-order-git-branches-by-last-commit-age/"/>
+<updated>2014-05-22T08:24:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/tip-order-git-branches-by-last-commit-age</id>
+
+      <content type="html"><![CDATA[<p><img class="center" src="http://meesterdude.github.com/images/sorted_git_branches.png" title="git branches by age" ></p>
+
+<p>A great tool for git users</p>
+
+<!--more-->
+
+
+<p>To try this out on your own, put this in your terminal:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>for k in `git branch|sed s/^..//`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k"`\\t"$k";done|sort</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or create an alias for it in your <code>~/.bash_profile</code></p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>alias git-branch-list='for k in `git branch|sed s/^..//`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k"`\\t"$k";done|sort'</span></code></pre></td></tr></table></div></figure>
+
+
+<p>See the post for this trick <a href="http://www.commandlinefu.com/commands/view/2345/show-git-branches-by-date-useful-for-showing-active-branches">here</a>. You can find other cool tricks on <a href="http://www.commandlinefu.com/">commandlinefu</a>.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/tip-order-git-branches-by-last-commit-age/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[The difference between savant and opinionated]]></title>
+<link href="http://meesterdude.github.com/entries/the-difference-between-savant-and-opinionated/"/>
+<updated>2014-04-11T06:51:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/the-difference-between-savant-and-opinionated</id>
+
+      <content type="html"><![CDATA[<p> <blockquote><p>Steve didn’t like the status bar and didn’t see the need for it. “Who looks at URLs when you hover your mouse over a link?” He thought it was just too geeky.</p><footer><strong>Don Melton</strong> <cite><a href='http://donmelton.com/2014/04/10/memories-of-steve/'>donmelton.com/2014/04/10/&hellip;</a></cite></footer></blockquote></p>
+
+<p>Important to remember that how you approach something is not the same way others approach it. Good software has an adjustable grip, whereas poor software assumes all users are the same.</p>
+
+<!--more-->
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/the-difference-between-savant-and-opinionated/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[If you're not doing something different you can't make a difference &rarr;]]></title>
+<link href="/entries/if-youre-not-doing-something-different/"/>
+<updated>2014-03-28T22:07:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/if-youre-not-doing-something-different</id>
+
+      <content type="html"><![CDATA[<p>Perhaps obvious advice, but still struck me.</p>
+
+<!--more-->
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/if-youre-not-doing-something-different/">&infin; Permalink</a></p>
+<p><a rel="post-link" href="http://www.today.com/id/17962620/ns/today-today_news/t/nba-star-sells-sneakers">-> Link <-</a></p>
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[gem install nokogiri on mavericks]]></title>
+<link href="http://meesterdude.github.com/entries/gem-install-nokogiri-on-mavericks/"/>
+<updated>2014-03-21T16:56:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/gem-install-nokogiri-on-mavericks</id>
+
+      <content type="html"><![CDATA[<p>Documenting my experience installing nokogiri 1.6.1 with ruby 2.1.1 on OS X mavericks</p>
+
+<!--more-->
+
+
+<p>Trying to spin up a new rails 4 app, <code>bundle install</code> failed on the nokogiri install, and asked that I try to install it manually first. When I&#8217;d run <code>gem install nokogiri -v '1.6.1'</code> it would hang on install indefinitely.</p>
+
+<p>I tried several different things like installing a different version of grep as noted in <a href="http://stackoverflow.com/questions/20890808/install-nokogiri-1-6-1-under-ruby-2-0-0p353-rvm-based-installation-fails-osx">this stack overflow</a> but that did not resolve.</p>
+
+<p>It did however, compile fine when I switched to ruby 1.9.3.</p>
+
+<p>running <code>gem install nokogiri -v '1.6.1' --verbose</code> I saw it was failing here</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Successfully installed nokogiri-1.6.1
+</span><span class='line'>Parsing documentation for nokogiri-1.6.1
+</span><span class='line'>Parsing sources...
+</span><span class='line'>unable to convert "\xE4" from ASCII-8BIT to UTF-8 for ext/nokogiri/tmp/x86_64-apple-darwin13.1.0/ports/libxml2/2.8.0/libxml2-2.8.0/doc/examples/testWriter.c, skipping
+</span><span class='line'>unable to convert "\xF8" from ASCII-8BIT to UTF-8 for ext/nokogiri/tmp/x86_64-apple-darwin13.1.0/ports/libxml2/2.8.0/libxml2-2.8.0/entities.c, skipping</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So, it turns out it was installing fine, but was hanging on building the documentation, which I never use anyway. So, rerunning the command with <code>gem install nokogiri -v '1.6.1' --verbose --no-ri --no-rdoc</code> worked like a charm. Not what I would call a &#8220;fix&#8221;, but at least I can sidestep the problem.</p>
+
+<p>Since I never use documentation anyway, i added the following to my <code>~/.gemrc</code> file which should also speed up my gem compile time:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem: --no-rdoc --no-ri</span></code></pre></td></tr></table></div></figure>
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/gem-install-nokogiri-on-mavericks/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[NYT: The Boys In The Bunkhouse &rarr;]]></title>
+<link href="/entries/nyt-the-boys-in-the-bunkhouse/"/>
+<updated>2014-03-10T01:22:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/nyt-the-boys-in-the-bunkhouse</id>
+
+      <content type="html"><![CDATA[<blockquote><p>Henry’s Turkey Service, which was paid directly by the plant for the men’s labor, was capitalizing on a section of the Fair Labor Standards Act of 1938 that allows certified employers to pay a subminimum wage to workers with a disability , based on their productivity when compared with that of nondisabled workers.</p><p>The company also deducted hundreds of dollars from the men’s earnings and Social Security benefits for room and board — and “in-kind” services, like bowling, dining out and annual visits to an amusement park. The rest was deposited in individual bank accounts in Goldthwaite that the company dipped into to pay for incidentals and medical costs, since the men had no health insurance or Medicaid in Iowa.</p><footer><strong>Dan Barry</strong> <cite><a href='http://www.nytimes.com/interactive/2014/03/09/us/the-boys-in-the-bunkhouse.html?_r=4'>www.nytimes.com/interactive/03/&hellip;</a></cite></footer></blockquote>
+
+
+<p>Will never forget that this not only happened in America and not a third world country; but in our society, in our time.</p>
+
+<!--more-->
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/nyt-the-boys-in-the-bunkhouse/">&infin; Permalink</a></p>
+<p><a rel="post-link" href="http://www.nytimes.com/interactive/2014/03/09/us/the-boys-in-the-bunkhouse.html?_r=4">-> Link <-</a></p>
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Always listen]]></title>
+<link href="http://meesterdude.github.com/entries/always-listen/"/>
+<updated>2014-03-08T09:46:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/always-listen</id>
+
+      <content type="html"><![CDATA[<!--more-->
+
+
+<p>I read a psychology paper this morning full of spelling and grammatical errors. You could easily disregard everything this author wrote, as many noted they had done in the comments. But if you look past that, there is still knowledge being conveyed. Some of it ended up being new to me, while other parts reinforced that little part of my model of reality that I have formed.</p>
+
+<p>When we stop listening, we cut off an opportunity to learn and be better; perhaps the most important source: other people. You might be turned away by poor communication skills, spelling mistakes, or more likely you think &#8220;know better&#8221; and disregard everything they say outright, as a defensive measure. Or maybe you just plain don&#8217;t like the person and what they&#8217;re about.</p>
+
+<p>But this will make you stagnant. Your mind will become a bubble and nothing can change it&#8217;s perspective or behavior. You are no longer able to adapt to the environment, and expect the world work a different way from how it does otherwise. If you ever wondered how some old people become &#8220;old&#8221;, this is how.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/always-listen/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
+  
+</feed>

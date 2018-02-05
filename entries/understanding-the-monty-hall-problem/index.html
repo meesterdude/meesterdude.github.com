@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Understanding the monty hall problem - RuRu</title>
+  <meta name="author" content="Russell Jennings">
+
+  
+  <meta name="description" content="I explore the classic monty hall problem and use a little bit of ruby to help understand it. Suppose you&#8217;re on a game show, and you&#8217;re &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://meesterdude.github.com/entries/understanding-the-monty-hall-problem/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="RuRu" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RuRu</a></h1>
+  
+    <small>The Offical Weblog of Russell Jennings</small>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:meesterdude.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Latest</a></li>
+  <li><a href="/archives">Browse</a></li>
+  <li><a href="#">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class='spacer'>
+
+
+
+
+
+
+
+
+
+
+<article class="hentry" role="article" >
+  
+  <header>
+    <h1 class="entry-title">
+
+Understanding the Monty Hall Problem
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-19T23:36:00-05:00" pubdate data-updated="true">Feb 19<span>th</span>, 2015</time>
+        
+         &bull; <a rel="bookmark" href="/entries/understanding-the-monty-hall-problem/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p>I explore the classic monty hall problem and use a little bit of ruby to help understand it.</p>
+
+<!--more-->
+
+
+<blockquote><p>Suppose you&#8217;re on a game show, and you&#8217;re given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what&#8217;s behind the doors, opens another door, say No. 3, which has a goat. He then says to you, &#8220;Do you want to pick door No. 2?&#8221; Is it to your advantage to switch your choice?</p><footer><strong>wikipedia</strong> <cite><a href='http://en.wikipedia.org/wiki/Monty_Hall_problem'>en.wikipedia.org/wiki/&hellip;</a></cite></footer></blockquote>
+
+
+<p>The answer is yes, but why? Why does switching have a higher rate of success?</p>
+
+<p>Given a choice of 3 doors, its fair to say that your odds of being right are 1/3. When the host reveals a door he knows to be a dud, this does not change your original choice success rate - you still have a 1 out of 3 chance. But there is now a 2/3 chance that the other door is the one with the prize. In essence, you&#8217;re betting that your original guess was wrong (it only has a 1/3 chance of being right) and that this other door, with all others doors eliminated and yours not very likely, to be the better choice.</p>
+
+<p>This is much more apparent with something like 100 doors, because your original chance was 1 in 100 of picking correctly, but the chance of it being the remaining door out of 99 is much more likely.</p>
+
+<p>Thankfully, this isnt that hard of a problem to create in code. Feel free to paste this into a ruby console and experiment!</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>def monty_hall(door_count,pick, switch=false, runs=100)
+</span><span class='line'>  results = []
+</span><span class='line'>  runs.times{results &lt;&lt; perform(door_count,pick,switch)}
+</span><span class='line'>  summary = results.group_by{|v| v}
+</span><span class='line'>  {won: summary['won'].count, lost: summary['lost'].count}
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>def perform(door_count, pick, switch=false)
+</span><span class='line'>  door_count += -1 # make room for the prize
+</span><span class='line'>  pick = pick.to_i - 1
+</span><span class='line'>  doors = door_count.times.collect{'1'} &lt;&lt; '2'
+</span><span class='line'>  doors.shuffle!
+</span><span class='line'>  prize = doors.index('2')
+</span><span class='line'>  same = prize == pick # did they manage to pick the prize?
+</span><span class='line'>  dud = doors.index('1') # a known dud to use if same
+</span><span class='line'>  doors.each_with_index do |door,i|
+</span><span class='line'>    if same
+</span><span class='line'>      next if [pick,dud].include?(i) 
+</span><span class='line'>    else
+</span><span class='line'>      next if [prize,pick].include?(i)
+</span><span class='line'>    end
+</span><span class='line'>    doors[i] = nil # if it wasn't one of the two skipped, clear its value
+</span><span class='line'>  end
+</span><span class='line'>  # we now have an array that looks something like [nil,2,1]
+</span><span class='line'>  if switch
+</span><span class='line'>    doors.each_with_index{|d,i| new_pick = i if (d.to_i &gt; 0 && i != pick)}
+</span><span class='line'>    new_pick == prize ? "won" : 'lost'
+</span><span class='line'>  else
+</span><span class='line'>    same ? "won" : "lost"
+</span><span class='line'>  end
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>#
+</span><span class='line'># Examples
+</span><span class='line'>#
+</span><span class='line'>#&gt; monty_hall(3,3,true)
+</span><span class='line'>#=&gt; {:won=&gt;62, :lost=&gt;38}
+</span><span class='line'>#
+</span><span class='line'>#&gt; monty_hall(3,3,false)
+</span><span class='line'>#=&gt; {:won=&gt;33, :lost=&gt;67}
+</span><span class='line'>#
+</span><span class='line'>#&gt; monty_hall(100,5,true)
+</span><span class='line'>#=&gt; {:won=&gt;99, :lost=&gt;1}
+</span><span class='line'>#
+</span><span class='line'>#&gt; monty_hall(100,5,false)
+</span><span class='line'>#=&gt; {:won=&gt;4, :lost=&gt;96}
+</span></code></pre></td></tr></table></div></figure>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Russell Jennings</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-19T23:36:00-05:00" pubdate data-updated="true">Feb 19<span>th</span>, 2015</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/feed/'>feed</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://meesterdude.github.com/entries/understanding-the-monty-hall-problem/" data-via="meesterfox" data-counturl="http://meesterdude.github.com/entries/understanding-the-monty-hall-problem/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/entries/the-story-behind-creating-cloudspeq/" title="Previous Post: The story behind creating Cloudspeq">&laquo; The story behind creating Cloudspeq</a>
+      
+      
+        <a class="basic-alignment right" href="/entries/how-to-raise-a-happy-well-adjusted-app-principles-for-software-parenting/" title="Next Post: How to raise a happy well-adjusted app: principles of software parenting">How to raise a happy well-adjusted app: principles of software parenting &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/entries/introducing-willyou-didyou/">Introducing WillYou DidYou</a>
+      </li>
+    
+      <li class="post">
+        <a href="/entries/3-words-that-changed-me/">3 words that changed me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/entries/selective-soldiering/">Selective Soldiering</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Let's talk</h1>
+  <p>Want to work together? Reach me on <a href="http://linkedin.com/in/russjennings7/">linkedin</a></p>
+</section>
+
+<section>
+  <h1>GitHub</h1>
+
+  
+  <a href="https://github.com/meesterdude">@meesterdude</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+        
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
+<h1>Twitter</h1>
+<a href='http://twitter.com/meesterfox'>@meesterfox</a>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("meesterfox", 3, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/meesterfox" class="twitter-follow-button" data-show-count="false">Follow @meesterfox</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2018 - Russell Jennings
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: rails | RuRu]]></title>
+  <link href="http://meesterdude.github.com/categories/rails/atom.xml" rel="self"/>
+  <link href="http://meesterdude.github.com/"/>
+  <updated>2018-02-05T00:50:09-05:00</updated>
+  <id>http://meesterdude.github.com/</id>
+  <author>
+    <name><![CDATA[Russell Jennings]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[The story behind creating Cloudspeq]]></title>
+<link href="http://meesterdude.github.com/entries/the-story-behind-creating-cloudspeq/"/>
+<updated>2015-02-12T14:28:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/the-story-behind-creating-cloudspeq</id>
+
+      <content type="html"><![CDATA[<p>How I got my 5 minute test suite down to 20 seconds, and made my first gem from my efforts.</p>
+
+<p>Get it here:<a href="https://rubygems.org/gems/cloudspeq">rubygems.org</a> and <a href="https://github.com/meesterdude/cloudspeq">github.com</a></p>
+
+<!--more-->
+
+
+<p>I wanted to cover the important takeaways and how I got there, and this is largely geared towards that more than every detail of the proccess.</p>
+
+<p>I recently switched my development enviroment over to a linux virtual machine - something I intended on blogging about a few months down the line after the honeymoon phase has passed. Everything has been pretty decent so far, except for a slow down in my test runtime. The test suits for the Ruby on Rails apps I work on aren't normally fast on a good day, and were a little more sluggish in my VM. So I wondered if there was a way to speed up my test time locally somehow. I tried a few solutions but none of them really made much of a difference.</p>
+
+<p>I thought about what people have classicly done to speed up test suits. Some people have gone so far as to decouple their code from rails and test in isolation - but thats controversial and nontrivial. I tried paralleism and got a marginal benefit, but not nearly what I was expecting. Eventually, I just wanted to copy my virtual machine and switch between a few of them to execute my tests. An idea I quickly disspelled, but it led me to my first Ah-Ha...</p>
+
+<h2>Ah-Ha #1: Its just a computational problem</h2>
+
+<p>The tests we write need to be executed to ensure our code works. Some Ruby on Rails projects can run their entire test suite in a few seconds, but many rails projects that I work on do complicated browser testing which just takes time to run through; sometimes a really long time.</p>
+
+<p>CGI animators are not unfamiliar with the problem of waiting for computers. They can work on scenes that would take a normal computer hours or days to try render a single frame for. Their solution is to break up the work across many machines and have them all work on a little piece. It's basically the same thing only here, instead of rendering CGI animations, we need to render test results.</p>
+
+<p>In practice, this works well. But not everyone can afford a server farm to have ready for them to run tests for! I know I can't. There will need to be a way to start things up on-demand...</p>
+
+<h2>Ah-Ha #2: Digital Ocean and its handy API</h2>
+
+<p>With Digital Ocean, I can take a snapshot of a machine and turn that into an image I can then later use to create new machines from. The new machine has a new ip-address and hostname, but otherwise everything else is the same.</p>
+
+<p>And with their API, all I need to do is create a few machines with a predefined image, and I have an on-demand server farm. The costs are pretty good - $0.175 for 25/machines/hr; worth it if it can shave minutes off my testing time and I'll be doing a lot of testing.</p>
+
+<p>Its worth pointing out that machines take a few minutes to spool up - especially if you create a bunch at once.</p>
+
+<p>So, I create a few machines to execute tests for and break up all the files in the test folder to run across the machines. I notice a good order of impovement in testing time - enough to confirm my suspicions that it it'll work.</p>
+
+<p>Some machines got stuck with all the slow tests, so I shuffled the file ordering before assigning them to machines - so each got a few different kinds of files to work on, which should even out the overall test run time.</p>
+
+<p>But the tests still weren't <em>quite</em> as fast as I'd like them to be. Some files would have a lot of slow tests in them, and whatever machine got stuck with that file inevitbly slowed down the test run time.</p>
+
+<p>This lead to...</p>
+
+<h2>Ah-Ha #3: Que on the specs themselves, not the files that hold them</h2>
+
+<p>By issuing specific line numbers instead of whole files, slow test files could be torn open and their slow inards spread across several eager machines, resulting in a good deal of improvement in the time it takes to test.</p>
+
+<p>But the tests <em>still</em> felt slow. Even though I broke open these slow spec files, their sluggish guts now polluted the test time of the rest of the machines and prevented them from finishing faster. I needed a way to break them up but isolate them from the rest of the machines. Actually, I wanted to be able to break anything up - specs, files and whole directories. This all lead to...</p>
+
+<h2>Ah-Ha #4: Clusters</h2>
+
+<p>With clusters, I could give every slow acceptance test its own server, or assign all the helper tests to one server particularly. With some tuning of what got divided up and how, I was able to achieve a testing time that felt reasonable - It was as fast as my slowest spec took to run.</p>
+
+<p>After this, it was pretty easy. I would run the rspec command with a json output formatter, and then parse the results from each machine and display them as the overall test results. I went to bed pretty happy with what I had accomplished with clusters.</p>
+
+<p>But there was a problem... I forgot to destroy the test machines I created. It ended up costing me about $2; but it was a lesson that lead to...</p>
+
+<h2>Ah-Ha #5: Self destruction</h2>
+
+<p>While one could query the Digital Ocean API for machines with <code>created_at</code> that is too old and destroy the results - it means you'd need to have a machine out there doing that for you. You could use your development machine, but if you shut it down and go home for the day those machines will keep running.</p>
+
+<p>Instead, it would be good if the machine could just clean up after itself, since it's already out there running. But this needs to be flexible - if I have a solid day of testing, I don't want to have machines destroyed that I'm working on. Equally I don't want to set it to be too high and spend money on machines I'm not using.</p>
+
+<p>So, the metric I settled on was uptime. if I set a lifetime of 4 hours and I'm 3 hours in, I can do a quick reboot and have another 4 hours. I could also probably do some bash trickery, or more simply change the config value in the file. Any of those is better than having to wait for another batch of machines to be created!</p>
+
+<p>With this in place, machines that have been alive for too long can self-destruct, and I can go to bed and sleep soundly.</p>
+
+<p>With that in place, I had the foundation figured out. The rest of it was squeezing it into a gem and settling on a command line parsing gem to use. I went with <code>escort</code>; so far its holding up.</p>
+
+<h2>The Future</h2>
+
+<p>Aside from more providers and overall polish, I think this gem could do more for Ruby on Rails testing overall. We often write code but have no idea about how it will perform in production. Technically the <code>exec</code> command in the gem already makes it possible to run a command across all the machines - which could be a command to hammer your staging server with requests for a few seconds; but I think something more intergrated could be achieved too.</p>
+
+<p>Also, I feel like the machines could be driven harder, but I haven't had much success in doing so. Ideally i'd cut the number of machines I need to test in half - but its a minor pain point.</p>
+
+<p>I don't know how useful this gem will be in the run of things - i know i'll use it when I have to test a lot, and maybe there are folks out there who have to suffer through a slow test suite and this will really help them - I released it as a gem with hopes that I am able to contribute something useful back to the community. <p><a rel="bookmark" href="http://meesterdude.github.com/entries/the-story-behind-creating-cloudspeq/">&infin; Permalink</a></p></p>
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[when a+b+c != c+b+a]]></title>
+<link href="http://meesterdude.github.com/entries/when-a-plus-b-plus-c-equals-c-plus-b-plus-a/"/>
+<updated>2013-02-26T17:53:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/when-a-plus-b-plus-c-equals-c-plus-b-plus-a</id>
+
+      <content type="html"><![CDATA[<p>AKA Time math is not normal math. A subtle bug I caught recently in a project.</p>
+
+<!--more-->
+
+
+<h2>Background</h2>
+
+<p>Normally, when you combine a few numbers together, the order in which they combine is irrelevant.</p>
+
+<p><code>1 + 2 + 3 - 1 =&gt; 5</code></p>
+
+<p><code>3 - 1 + 2 + 1 =&gt; 5</code></p>
+
+<h2>Kicker</h2>
+
+<p>We had an acceptance spec in a rails project that kept failing. Here's the line that was giving us trouble (and for reference, Subscription::GRACE_PERIOD is 1.day):</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="vi">@subscription</span><span class="o">.</span><span class="n">expires_at</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="ss">:date_only</span><span class="p">)</span><span class="o">.</span><span class="n">should</span> <span class="o">==</span> <span class="p">(</span><span class="no">Time</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mi">1</span><span class="o">.</span><span class="n">month</span> <span class="o">+</span> <span class="mi">5</span><span class="o">.</span><span class="n">days</span> <span class="o">-</span> <span class="no">Subscription</span><span class="o">::</span><span class="no">GRACE_PERIOD</span><span class="p">)</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="ss">:date_only</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Everything as far as we could see was correct. Earlier in the spec we were logging in the user 5 days from now, and they should have access for a month since then, minus a day. We became sure it was an issue with UTC, so We tried this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="vi">@subscription</span><span class="o">.</span><span class="n">expires_at</span><span class="o">.</span><span class="n">utc</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="ss">:date_only</span><span class="p">)</span><span class="o">.</span><span class="n">should</span> <span class="o">==</span> <span class="p">(</span><span class="no">Time</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mi">1</span><span class="o">.</span><span class="n">month</span> <span class="o">+</span> <span class="mi">5</span><span class="o">.</span><span class="n">days</span> <span class="o">-</span> <span class="no">Subscription</span><span class="o">::</span><span class="no">GRACE_PERIOD</span><span class="p">)</span><span class="o">.</span><span class="n">utc</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="ss">:date_only</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>But that didn't work either.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;expected: &quot;3/</span><span class="mi">30</span><span class="o">/</span><span class="mi">13</span><span class="s2">&quot;</span>
+</span><span class='line'><span class="s2">got: &quot;</span><span class="mi">4</span><span class="o">/</span><span class="mi">2</span><span class="o">/</span><span class="mi">13</span><span class="s2">&quot; (using ==)</span>
+</span><span class='line'><span class="s2">&lt;/code&gt;&lt;/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="s2">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Catch</h2>
+
+<p>After a few hours of tearing apart the codebase we were testing, it started to become apparent what was going on.</p>
+
+<p>This is what we were using to determine the date.
+<div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="p">(</span><span class="no">Time</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mi">1</span><span class="o">.</span><span class="n">month</span> <span class="o">+</span> <span class="mi">5</span><span class="o">.</span><span class="n">days</span> <span class="o">-</span> <span class="no">Subscription</span><span class="o">::</span><span class="no">GRACE_PERIOD</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Let's take that apart and see whats going on.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Time</span><span class="o">.</span><span class="n">now</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="mi">2013</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mi">26</span> <span class="mo">03</span><span class="p">:</span><span class="mi">24</span><span class="p">:</span><span class="mi">45</span> <span class="o">-</span><span class="mo">0500</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;Time.now + 1.month</span>
+</span><span class='line'><span class="sr">=&gt;2013-03-26 03:24:08 -0400&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="no">Time</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mi">1</span><span class="o">.</span><span class="n">month</span> <span class="o">+</span> <span class="mi">5</span><span class="o">.</span><span class="n">days</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="mi">2013</span><span class="o">-</span><span class="mo">03</span><span class="o">-</span><span class="mi">31</span> <span class="mo">03</span><span class="p">:</span><span class="mi">25</span><span class="p">:</span><span class="mi">34</span> <span class="o">-</span><span class="mo">0400</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;Time.now + 1.month + 5.days - Subscription::GRACE_PERIOD</span>
+</span><span class='line'><span class="sr">=&gt; 2013-03-30 03:25:54 -0400</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><em>The observant reader will note the change in UTC offset when we added a month to Time.now; this is because of DST.</em></p>
+
+<p>However, it turns out that this is not how the code under test does it, once broken down. It was instead doing this something more like this:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Time</span><span class="o">.</span><span class="n">now</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="mi">2013</span><span class="o">-</span><span class="mo">02</span><span class="o">-</span><span class="mi">26</span> <span class="mo">03</span><span class="p">:</span><span class="mi">24</span><span class="p">:</span><span class="mi">45</span> <span class="o">-</span><span class="mo">0500</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;Time.now + 5.days</span>
+</span><span class='line'><span class="sr">=&gt; 2013-03-03 03:24:24 -0500&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="no">Time</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mi">5</span><span class="o">.</span><span class="n">days</span> <span class="o">-</span> <span class="no">Subscription</span><span class="o">::</span><span class="no">GRACE_PERIOD</span>
+</span><span class='line'><span class="o">=&gt;</span> <span class="mi">2013</span><span class="o">-</span><span class="mo">03</span><span class="o">-</span><span class="mo">02</span> <span class="mo">03</span><span class="p">:</span><span class="mi">26</span><span class="p">:</span><span class="mi">21</span> <span class="o">-</span><span class="mo">0500</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;Time.now + 5.days - Subscription::GRACE_PERIOD + 1.month</span>
+</span><span class='line'><span class="sr">=&gt; 2013-04-02 03:26:50 -0400</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>which means the code we need to get this spec to pass looks like</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'> <span class="vi">@subscription</span><span class="o">.</span><span class="n">expires_at</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="ss">:date_only</span><span class="p">)</span><span class="o">.</span><span class="n">should</span> <span class="o">==</span> <span class="p">(</span><span class="no">Time</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mi">5</span><span class="o">.</span><span class="n">days</span> <span class="o">-</span> <span class="no">Subscription</span><span class="o">::</span><span class="no">GRACE_PERIOD</span> <span class="o">+</span> <span class="mi">1</span><span class="o">.</span><span class="n">month</span><span class="p">)</span><span class="o">.</span><span class="n">to_s</span><span class="p">(</span><span class="ss">:date_only</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>Confused?</h2>
+
+<p>A simpler version highlights the issue</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Time</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mi">5</span><span class="o">.</span><span class="n">days</span> <span class="o">+</span> <span class="mi">1</span><span class="o">.</span><span class="n">month</span><span class="o">&lt;</span><span class="n">br</span><span class="o">/&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Thats the 26th, + 5 days puts us into 03/03, + 1 month gives us 04/03. Lets look at the correct version.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="no">Time</span><span class="o">.</span><span class="n">now</span> <span class="o">+</span> <span class="mi">1</span><span class="o">.</span><span class="n">month</span> <span class="o">+</span> <span class="mi">5</span><span class="o">.</span><span class="n">days</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div>
+The 26th again, + 1 month is 3/26, + 5 days is 03/31</p>
+
+<p>When doing math that deals with time, specifically different units of time, it can lead to unexpected results if you are not careful with the ordering. <p><a rel="bookmark" href="http://meesterdude.github.com/entries/when-a-plus-b-plus-c-equals-c-plus-b-plus-a/">&infin; Permalink</a></p></p>
+]]></content>
+    </entry>
+  
+</feed>
+

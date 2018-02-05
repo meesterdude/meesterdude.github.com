@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ST2 | RuRu]]></title>
+  <link href="http://meesterdude.github.com/categories/st2/atom.xml" rel="self"/>
+  <link href="http://meesterdude.github.com/"/>
+  <updated>2018-02-05T00:50:09-05:00</updated>
+  <id>http://meesterdude.github.com/</id>
+  <author>
+    <name><![CDATA[Russell Jennings]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Simpler Rails with Sublime Projects]]></title>
+<link href="http://meesterdude.github.com/entries/simpler-rails-project-with-sublime-projects/"/>
+<updated>2012-12-19T14:13:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/simpler-rails-project-with-sublime-projects</id>
+
+      <content type="html"><![CDATA[<p>Hide the files you don't normally work on with the Sublime Text 2 Project feature. Includes example for Ruby on Rails.</p>
+
+<!--more-->
+
+
+<h2>Background</h2>
+
+<p>I work on Ruby on Rails sites in ST2 in my day to day work. For bigger projects, its easy to get lost in the files and folders. There are generally 3 levels of view that we want to achieve:</p>
+
+<ol>
+<li>files you work on often</li>
+<li>files you work on rarely</li>
+<li>files that you never touch</li>
+</ol>
+
+
+<p>So with Projects in ST2, we can change what level of view we have, by selectively filtering out files and folders. Most of the time, you'll want to be at #1, sometimes you'll need to drop down to #2, and once in a blue moon drop down to #3.</p>
+
+<h2>Business</h2>
+
+<p>The below file is an example of #1 for a Ruby on Rails project. I'll leave #2 up to you to sort out, use this as a template. #3 for me would be the default project view, such as opening the directory directly; but you may want to craft something for that perspective as well.</p>
+
+<p>Of note: this moves the 'migrate' folder out of 'db' and makes it a top level item, outside of the project folder. I feel it makes it easier to work on that way, but that's purely my preference.</p>
+
+<p>Put this file in the root of your project with a name like "simple.sublime-project" then open it from the 'Project' menu.</p>
+
+<ul>
+<li>Learn more about Projects in ST2 <a href="http://www.sublimetext.com/docs/2/projects.html">Documentationn</a></li>
+<li>Become a ST2 power user <a href="https://tutsplus.com/course/improve-workflow-in-sublime-text-2/">Video Tutorials</a></li>
+</ul>
+
+
+<p>``` javascript Simpler Rails https://gist.github.com/4339635 View Github Gist
+{</p>
+
+<pre><code>"folders":
+[
+
+{
+    "path": "/",
+        "folder_exclude_patterns": [
+            "app/mailers",
+            "app/helpers",
+            "app/assets/images",
+            "coverage",
+            "doc",
+            "config/locales",
+            "config/initializers",
+            "config/environments",
+            "config/deploy",
+            "db",
+            "features",
+            "lib",
+            "log",
+            "public",
+            "script",
+            "test",
+            "tmp",
+            "vendor",
+            "spec/mailers",
+            "spec/helpers"
+        ],
+        "file_exclude_patterns": [
+            "README.rdoc",
+            "Rakefile",
+            "Gemfile.lock",
+            "config.ru",
+            "Capfile",
+            ".rspec",
+            "db/seeds.rb",
+            "db/schema.rb",
+            "config/application.rb",
+            "config/boot.rb",
+            "config/cucumber.yml",
+            "config/database.yml",
+            "config/environment.rb"
+        ]
+    },
+    {"path": "db/migrate"}
+
+]
+</code></pre>
+
+<p>}
+```<p><a rel="bookmark" href="http://meesterdude.github.com/entries/simpler-rails-project-with-sublime-projects/">&infin; Permalink</a></p></p>
+]]></content>
+    </entry>
+  
+</feed>
+

@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Give your codebases a parent directory - RuRu</title>
+  <meta name="author" content="Russell Jennings">
+
+  
+  <meta name="description" content="A quick tip for developers who keep all their code repositories directly under one directory (like I used to) I&#8217;ve always been somewhat &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://meesterdude.github.com/entries/give-your-codebases-a-parent-directory/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="RuRu" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RuRu</a></h1>
+  
+    <small>The Offical Weblog of Russell Jennings</small>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:meesterdude.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Latest</a></li>
+  <li><a href="/archives">Browse</a></li>
+  <li><a href="#">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class='spacer'>
+
+
+
+
+
+
+
+
+
+
+<article class="hentry" role="article" >
+  
+  <header>
+    <h1 class="entry-title">
+
+Give Your Codebases a Parent Directory
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-06T21:07:00-05:00" pubdate data-updated="true">Dec 6<span>th</span>, 2013</time>
+        
+         &bull; <a rel="bookmark" href="/entries/give-your-codebases-a-parent-directory/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p> A quick tip for developers who keep all their code repositories directly under one directory (like I used to)</p>
+
+<!--more-->
+
+
+<p>I&#8217;ve always been somewhat fascinated by the organizational tricks and mastery of others, so I figured it worthy to share one that occurred to me.</p>
+
+<p>Let&#8217;s say your structure looks like this</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dev
+</span><span class='line'> - proj_a
+</span><span class='line'>  - index.html
+</span><span class='line'> - proj_b
+</span><span class='line'>  - index.html
+</span><span class='line'> - proj_c
+</span><span class='line'>   - index.html</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This is fine and what I was doing for a while. And it works well enough. But over time I&#8217;ve acquired a fair deal of images, database dumps and notes, and they&#8217;re mostly scattered about in ~/Downloads. So, instead do something like this</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>dev
+</span><span class='line'>  - proj_a
+</span><span class='line'>    - database_dump.sql
+</span><span class='line'>    - todo.txt
+</span><span class='line'>    - code
+</span><span class='line'>      - index.html
+</span><span class='line'>  - proj_a
+</span><span class='line'>    - code
+</span><span class='line'>      - index.html
+</span><span class='line'> - proj_c
+</span><span class='line'>   - index.html</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You&#8217;ll note the last project is unchanged; not every project will need this structuring. This change is nothing revolutionary, but its useful enough to mention and has alluded me for a while. Now everything related to that project has a place to live.</p>
+
+<p><strong>TL;DR</strong> I should have done this a while ago, and this is not how you use tl;dr</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Russell Jennings</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-12-06T21:07:00-05:00" pubdate data-updated="true">Dec 6<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/feed/'>feed</a>, <a class='category' href='/categories/geek/'>geek</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://meesterdude.github.com/entries/give-your-codebases-a-parent-directory/" data-via="meesterfox" data-counturl="http://meesterdude.github.com/entries/give-your-codebases-a-parent-directory/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/entries/outsourcing-2-0/" title="Previous Post: Outsourcing 2.0">&laquo; Outsourcing 2.0</a>
+      
+      
+        <a class="basic-alignment right" href="/entries/railsconf-2013-highlight-pry-the-good-parts/" title="Next Post: railsconf 2013 highlight: pry - the good parts">railsconf 2013 highlight: pry - the good parts &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/entries/introducing-willyou-didyou/">Introducing WillYou DidYou</a>
+      </li>
+    
+      <li class="post">
+        <a href="/entries/3-words-that-changed-me/">3 words that changed me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/entries/selective-soldiering/">Selective Soldiering</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Let's talk</h1>
+  <p>Want to work together? Reach me on <a href="http://linkedin.com/in/russjennings7/">linkedin</a></p>
+</section>
+
+<section>
+  <h1>GitHub</h1>
+
+  
+  <a href="https://github.com/meesterdude">@meesterdude</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+        
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
+<h1>Twitter</h1>
+<a href='http://twitter.com/meesterfox'>@meesterfox</a>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("meesterfox", 3, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/meesterfox" class="twitter-follow-button" data-show-count="false">Follow @meesterfox</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2018 - Russell Jennings
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: geek | RuRu]]></title>
+  <link href="http://meesterdude.github.com/categories/geek/atom.xml" rel="self"/>
+  <link href="http://meesterdude.github.com/"/>
+  <updated>2018-02-05T00:50:09-05:00</updated>
+  <id>http://meesterdude.github.com/</id>
+  <author>
+    <name><![CDATA[Russell Jennings]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[How to raise a happy well-adjusted app: principles of software parenting]]></title>
+<link href="http://meesterdude.github.com/entries/how-to-raise-a-happy-well-adjusted-app-principles-for-software-parenting/"/>
+<updated>2015-05-10T03:06:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/how-to-raise-a-happy-well-adjusted-app-principles-for-software-parenting</id>
+
+      <content type="html"><![CDATA[<p>Software is quickly born, but is slowly grown. Knowing how to raise software properly ensures continued return of investment, and prevents costly rewrites that can bankrupt you.</p>
+
+<!--more-->
+
+
+<h2>Philosophy</h2>
+
+<h3>Software happiness is...</h3>
+
+<p>Software happiness is the ability for an app to reach its full potential and maintain that state for years, ideally forever. It is its ability to remain agile in the short-term, as well as the long. And it is its ability to do this through the change of various hands of professionals over time.</p>
+
+<h2>Why software happiness matters</h2>
+
+<p>Businesses often build or sell software that becomes critical to their survival. But far too they become neglected and unmaintainable, sometimes to the point of requiring rewrite or in some extreme cases closing of the business.</p>
+
+<h2>Principals</h2>
+
+<h3>Love</h3>
+
+<p>This is by far, the most important thing happy software needs, and lack of it is the leading cause of app health issues. Software that is not groomed and looked after regularly becomes black box or obese (usually both). Software needs someone to sit down with it and refine its inner workings regularly, if it is to remain nimble and agile throughout its years.</p>
+
+<p>Software does not need unbounded amounts of love; But it does need a lot, and chances are good that your software could use more of it. These investments are harder to see the fruits of, and are not sexy. But without them, an app gone bad can take out an entire company.</p>
+
+<h3>Mentoring</h3>
+
+<p>As an app grows, it will usually acquire different needs and interests. Without guidance, these can cause serious damage to an app over time, and potentially make it too complicated to use. It is important, when designing a particular role or feature, to remain humble and curious. Far too often, people try to play the "my way" card. And while this card does work and has worked, it's not the right card for most people.</p>
+
+<p>By far, it is better to listen to what others say, and make informed decisions from that. Although this isn't exclusively true either. Really, the issue isn't playing the "my way" card, its knowing when to. Sometimes, you will know better. Other times, you won't. It's important to know the difference, and change tactics to suite.</p>
+
+<h3>Attention</h3>
+
+<p>Not adding features to software can be as deadly as adding too many. While it's certainly possible that your app does not need anything else and has reached a state of "doneness", chances are good that there are optimizations and tweaks that could be made that would improve the utility of an app. When tastefully done, the resulting improvements can place you at the top.</p>
+
+<p>However, not all changes are welcome. By far, the least popular change to an app is with its design. While sometimes this does improve the app and make it better, far too often changes are made that only serve to confuse or anger users. Which leads us to the next topic...</p>
+
+<h3>Listening</h3>
+
+<p>It's important to listen to what people say; the people who use your software, the ones who build it, and the market overall. They will often have valid suggestions or complaints that would be in the apps best interest to discuss. While how you react to their comments is the result of several factors, that you give them forum is the most important part.</p>
+
+<p>actively not listening, has killed or at least effectively killed countless software projects.</p>
+
+<h3>Vision</h3>
+
+<p>Your well-adjusted software needs a purpose. Without it, it will meander off in different directions and likely not land anywhere useful. If you don't know what your software does, needs to do or could do, it can't get anywhere. Sometimes, wandering aimlessly leads to wonderful things; But usually it leads to death. If your software does wander about, it should do so with intent and measurement of performance and tuning. But once you've established what it needs to do today, you should think about tomorrow.</p>
+
+<h3>Safety</h3>
+
+<p>Security is a hard problem, and a hard sell. You could leave your front door unlocked tonight, and it probably wont matter. If you left it unlocked tomorrow night too, it still probably wouldn't matter. But one night, you'll leave it unlocked and it will matter. Or, you'll leave it locked, and it won't matter because someone broke in through your window.</p>
+
+<p>The moral of the story is: If you do everything you can, you can stop the simple and easy security breaches; But at the same time, there many windows in a house, and you can't protect them all. If you're not taking a fort knox style approach to security, you should at least know whats at stake and how to react if something happens; though with software, there is the added need of detecting when something happens in the first place, as there is rarely broken glass found.</p>
+
+<h3>Exercise</h3>
+
+<p>Keeping your software in shape means exercising all of its parts regularly; both together and in isolation. This ensures your software performs as expected and is free of bugs. And while you can manually sit and exercise your app, it's usually prefered to write software that tests  software; especially under heavy &amp; active development. Writing these is the responsibility of the developers, and it is the responsibility of software parents to make sure it is taking place.</p>
+
+<p>But sometimes exercises are redundant or pointless, and bugs are allowed to creep in. Or other times the test software is so poorly written, that it becomes unreliable or unwieldy. Or, maybe there are no tests written at all. Thankfully, All of these can be addressed using the love and listening principles, previously outlined.</p>
+
+<h3>Discipline</h3>
+
+<p>It is tempting of creatives to push their boundaries. Artists want bigger paintings, writers bigger stories, actors bigger movies. Developers and Designers are no different in this. Developers want to use new languages, databases or techniques, designers want to create impressive and definitive designs with new frameworks or syntax. And while these can and do lead to some impressive things, they far too often become a disability and a hinderance to the app. Tried and true solutions and approaches are boring, and there is always the temptation for something new. But boring is what makes happy software, so one must strike a balance between the two.</p>
+
+<p>Generally, it's useful to think of such things as genie wishes: your software only gets 3 total. If you're going to use a new framework or language, there should be a strong reason for it; one that current tried and true best practices are unable to solve. There are many fads in software, and its important to sort them out from pivotal changes that move through industries.</p>
+
+<h3>Mobility</h3>
+
+<p>Happy Software has the best chances of reaching maturity and stability when developed by professionals. A professional is more than someone who can do the work; it is someone who can do the work well, and is striving to do better. While the amount of money paid is not a direct correlation to professionalism, it's certainly a useful metric. You don't get happy software by being cheap; you get it by investing time and money into its growth.</p>
+
+<p>The professionals who build your software should be improving its maintainability and lowering the bar for other professionals to take over who are less experienced. The people who build buildings are not the same people who sweep the floors after its built, and the same holds true with software. As your software grows and matures, its needs will become more detailed and nuanced. Difficult problems will be solved, laying way for easier problems to be solved. Its important these transitions be able to take place.</p>
+
+<h2>Things you can do</h2>
+
+<h3>Talk with your professionals</h3>
+
+<p>Communicate your desires and establish with them how things will look in the next few months to the next several years or longer; both given current course and in an ideal world. Also Identify their involvement and how best to position for any transitions.</p>
+
+<h3>Do Nothing</h3>
+
+<p>Sometimes inaction is the best action. If things are manageable and the risks are known and understood, sometimes doing nothing is the right call. Software happiness is not a short term solution, but a long term one. However, Software rarely exists in a bubble, and the slightest change to any one of hundreds or thousands of other dependencies can cause a chain reaction of failure that result in loss of revenue, customers, or data.</p>
+
+<h3>Hire an advocate</h3>
+
+<p>Creating a better future for your software is no easy task, especially if you are not involved in its development. professionals make mistakes, or underperform, and its hard to tell the state of things if you're not in the industry. So whats the solution? Hire an advocate. Having an unbiased party involved ensures that all priorities are being met appropriately, and that the app is heading in the right direction for its short and long term goals.</p>
+
+<h3>Hire Me</h3>
+
+<p>I'll work with you and your professionals to improve the well being of your app and make sure it gets the attention it needs to prosper in the short term and long.</p>
+
+<p>Hourly rate is $225 per hour
+Weekly rate is $7k per week</p>
+
+<p>email r.hire@ruru.name for more information.<p><a rel="bookmark" href="http://meesterdude.github.com/entries/how-to-raise-a-happy-well-adjusted-app-principles-for-software-parenting/">&infin; Permalink</a></p></p>
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[The story behind creating Cloudspeq]]></title>
+<link href="http://meesterdude.github.com/entries/the-story-behind-creating-cloudspeq/"/>
+<updated>2015-02-12T14:28:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/the-story-behind-creating-cloudspeq</id>
+
+      <content type="html"><![CDATA[<p>How I got my 5 minute test suite down to 20 seconds, and made my first gem from my efforts.</p>
+
+<p>Get it here:<a href="https://rubygems.org/gems/cloudspeq">rubygems.org</a> and <a href="https://github.com/meesterdude/cloudspeq">github.com</a></p>
+
+<!--more-->
+
+
+<p>I wanted to cover the important takeaways and how I got there, and this is largely geared towards that more than every detail of the proccess.</p>
+
+<p>I recently switched my development enviroment over to a linux virtual machine - something I intended on blogging about a few months down the line after the honeymoon phase has passed. Everything has been pretty decent so far, except for a slow down in my test runtime. The test suits for the Ruby on Rails apps I work on aren't normally fast on a good day, and were a little more sluggish in my VM. So I wondered if there was a way to speed up my test time locally somehow. I tried a few solutions but none of them really made much of a difference.</p>
+
+<p>I thought about what people have classicly done to speed up test suits. Some people have gone so far as to decouple their code from rails and test in isolation - but thats controversial and nontrivial. I tried paralleism and got a marginal benefit, but not nearly what I was expecting. Eventually, I just wanted to copy my virtual machine and switch between a few of them to execute my tests. An idea I quickly disspelled, but it led me to my first Ah-Ha...</p>
+
+<h2>Ah-Ha #1: Its just a computational problem</h2>
+
+<p>The tests we write need to be executed to ensure our code works. Some Ruby on Rails projects can run their entire test suite in a few seconds, but many rails projects that I work on do complicated browser testing which just takes time to run through; sometimes a really long time.</p>
+
+<p>CGI animators are not unfamiliar with the problem of waiting for computers. They can work on scenes that would take a normal computer hours or days to try render a single frame for. Their solution is to break up the work across many machines and have them all work on a little piece. It's basically the same thing only here, instead of rendering CGI animations, we need to render test results.</p>
+
+<p>In practice, this works well. But not everyone can afford a server farm to have ready for them to run tests for! I know I can't. There will need to be a way to start things up on-demand...</p>
+
+<h2>Ah-Ha #2: Digital Ocean and its handy API</h2>
+
+<p>With Digital Ocean, I can take a snapshot of a machine and turn that into an image I can then later use to create new machines from. The new machine has a new ip-address and hostname, but otherwise everything else is the same.</p>
+
+<p>And with their API, all I need to do is create a few machines with a predefined image, and I have an on-demand server farm. The costs are pretty good - $0.175 for 25/machines/hr; worth it if it can shave minutes off my testing time and I'll be doing a lot of testing.</p>
+
+<p>Its worth pointing out that machines take a few minutes to spool up - especially if you create a bunch at once.</p>
+
+<p>So, I create a few machines to execute tests for and break up all the files in the test folder to run across the machines. I notice a good order of impovement in testing time - enough to confirm my suspicions that it it'll work.</p>
+
+<p>Some machines got stuck with all the slow tests, so I shuffled the file ordering before assigning them to machines - so each got a few different kinds of files to work on, which should even out the overall test run time.</p>
+
+<p>But the tests still weren't <em>quite</em> as fast as I'd like them to be. Some files would have a lot of slow tests in them, and whatever machine got stuck with that file inevitbly slowed down the test run time.</p>
+
+<p>This lead to...</p>
+
+<h2>Ah-Ha #3: Que on the specs themselves, not the files that hold them</h2>
+
+<p>By issuing specific line numbers instead of whole files, slow test files could be torn open and their slow inards spread across several eager machines, resulting in a good deal of improvement in the time it takes to test.</p>
+
+<p>But the tests <em>still</em> felt slow. Even though I broke open these slow spec files, their sluggish guts now polluted the test time of the rest of the machines and prevented them from finishing faster. I needed a way to break them up but isolate them from the rest of the machines. Actually, I wanted to be able to break anything up - specs, files and whole directories. This all lead to...</p>
+
+<h2>Ah-Ha #4: Clusters</h2>
+
+<p>With clusters, I could give every slow acceptance test its own server, or assign all the helper tests to one server particularly. With some tuning of what got divided up and how, I was able to achieve a testing time that felt reasonable - It was as fast as my slowest spec took to run.</p>
+
+<p>After this, it was pretty easy. I would run the rspec command with a json output formatter, and then parse the results from each machine and display them as the overall test results. I went to bed pretty happy with what I had accomplished with clusters.</p>
+
+<p>But there was a problem... I forgot to destroy the test machines I created. It ended up costing me about $2; but it was a lesson that lead to...</p>
+
+<h2>Ah-Ha #5: Self destruction</h2>
+
+<p>While one could query the Digital Ocean API for machines with <code>created_at</code> that is too old and destroy the results - it means you'd need to have a machine out there doing that for you. You could use your development machine, but if you shut it down and go home for the day those machines will keep running.</p>
+
+<p>Instead, it would be good if the machine could just clean up after itself, since it's already out there running. But this needs to be flexible - if I have a solid day of testing, I don't want to have machines destroyed that I'm working on. Equally I don't want to set it to be too high and spend money on machines I'm not using.</p>
+
+<p>So, the metric I settled on was uptime. if I set a lifetime of 4 hours and I'm 3 hours in, I can do a quick reboot and have another 4 hours. I could also probably do some bash trickery, or more simply change the config value in the file. Any of those is better than having to wait for another batch of machines to be created!</p>
+
+<p>With this in place, machines that have been alive for too long can self-destruct, and I can go to bed and sleep soundly.</p>
+
+<p>With that in place, I had the foundation figured out. The rest of it was squeezing it into a gem and settling on a command line parsing gem to use. I went with <code>escort</code>; so far its holding up.</p>
+
+<h2>The Future</h2>
+
+<p>Aside from more providers and overall polish, I think this gem could do more for Ruby on Rails testing overall. We often write code but have no idea about how it will perform in production. Technically the <code>exec</code> command in the gem already makes it possible to run a command across all the machines - which could be a command to hammer your staging server with requests for a few seconds; but I think something more intergrated could be achieved too.</p>
+
+<p>Also, I feel like the machines could be driven harder, but I haven't had much success in doing so. Ideally i'd cut the number of machines I need to test in half - but its a minor pain point.</p>
+
+<p>I don't know how useful this gem will be in the run of things - i know i'll use it when I have to test a lot, and maybe there are folks out there who have to suffer through a slow test suite and this will really help them - I released it as a gem with hopes that I am able to contribute something useful back to the community. <p><a rel="bookmark" href="http://meesterdude.github.com/entries/the-story-behind-creating-cloudspeq/">&infin; Permalink</a></p></p>
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[understanding rspec test doubles]]></title>
+<link href="http://meesterdude.github.com/entries/understanding-rspec-doubles/"/>
+<updated>2014-12-30T07:45:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/understanding-rspec-doubles</id>
+
+      <content type="html"><![CDATA[<p>For a while, I have not understood what rspec test doubles do, or why you'd use them. I recently came to understand their usage and function, and thought I'd share.</p>
+
+<!--more-->
+
+
+<p>If you take a look at <a href="https://relishapp.com/rspec/rspec-mocks/docs">the documentation</a> you'll find test doubles described as:</p>
+
+<blockquote><p>A test double is an object that stands in for another object in your system during a code
+example.</p></blockquote>
+
+<p>I don't know about you, but thats not very descriptive. So, lets take a look at an example using some pseudo rails code</p>
+
+<p>```ruby
+class User
+  belongs_to :account</p>
+
+<p>  attr_accessor :is_verified</p>
+
+<p>  def can_login?</p>
+
+<pre><code>self.is_verified &amp;&amp; self.account.enabled?
+</code></pre>
+
+<p>  end</p>
+
+<p>end</p>
+
+<p>class Account
+  has_many :users
+  has_one :subscription</p>
+
+<p>  def enabled?</p>
+
+<pre><code>self.subscription.active
+</code></pre>
+
+<p>  end
+end</p>
+
+<p>class Subscription
+  has_one :account
+  attr_accessor :active
+end</p>
+
+<p>```</p>
+
+<p>In the above example, we have defined a <code>User</code>, a <code>Subscription</code>, and an <code>Account</code> class. We want to test <code>User</code>, so at first glance you might instantiate your objects like this in test</p>
+
+<p><code>
+subscription = Subscription.new(active: true)
+account = Account.new(subscription: subscription)
+user = User.new(account: account, is_verified: true)
+</code></p>
+
+<p>This will work, but its a bit much. We are just testing <code>User</code> and we'd like to test it in isolation. Looking at our example, we see that for a <code>User</code> to know if it <code>can_login?</code>, it must ask its <code>Account</code> which goes on to ask the <code>Subscription</code>. We could stub the <code>Account#enabled?</code> method and remove the need for subscription like so:</p>
+
+<p><code>
+account = Account.new
+account.stub(:enabled?) { true }
+user = User.new(account: account, is_verified: true)
+</code></p>
+
+<p>This is better, as we no longer need to create a subscription; but we're still instantiating an Account class and everything that gets associated with it. Do we really need a real Account object, or can we use something more lightweight? this is where test doubles come in. They're a bit like stunt doubles, standing in for the real actors when the real actors aren't actually needed.</p>
+
+<p>A further refactoring would look like this:</p>
+
+<p><code>
+fake_account = double("Account", :enabled? =&gt; true)
+user = User.new(account: fake_account, is_verified: true)
+</code></p>
+
+<p>Now we only have one real object to worry about! calls to <code>user.can_login?</code> will be delegated to the <code>fake_account</code>, which is set to return true for <code>is_verified</code>.</p>
+
+<p>Its important to note a few things:</p>
+
+<ol>
+<li><p>If you're concerned with the method your stubbing actually existing, use <a href="https://relishapp.com/rspec/rspec-mocks/v/3-1/docs/verifying-doubles">verifying doubles</a>(new to rspec 3) to ensure that the method you stub actually exists on the real version of the object. You'll get an exception if you try to stub something that doesn't exist.</p></li>
+<li><p>There are a few types of doubles, covered in the above documentation. This allows you to double not only instances but classes as well, along with a few other testing tricks you might need to resort to such as working with singletons.</p></li>
+<li><p>Do not stub or double what you're testing! Use it when you want to isolate something like a method and test its various conditions, without having to actually manipulate the far reaching objects and logic it relies on to arrive at the same conclusion. Assuming the things you stub or double also have unit tests associated with them, this should not be a problem.</p></li>
+<li><p>You still should have some test coverage that exercises the actual operation of all the parts together. But often you can do this in an integration spec and verify that a lot of things are working properly with a few lines of code. Unit tests are a thousand little strokes of the testing paint brush, integration tests are 100 broad strokes.</p></li>
+</ol>
+
+
+<p>Anyway, hopefully this helps.</p>
+
+<p>Special thanks to Kevin Skoglund (@kskoglund) for helping me make heads of doubles. He's got a new lynda.com tutorial coming out on rspec 3 which you'll be able to find <a href="http://www.lynda.com/Kevin-Skoglund/104-1.html">here</a> once released.</p>
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/understanding-rspec-doubles/">&infin; Permalink</a></p>
+
+
+
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[I quit reddit for music]]></title>
+<link href="http://meesterdude.github.com/entries/i-quit-reddit-for-music/"/>
+<updated>2014-11-18T04:37:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/i-quit-reddit-for-music</id>
+
+      <content type="html"><![CDATA[<p>I don't know why I didn't do this sooner.</p>
+
+<!--more-->
+
+
+<p>I should disclaim first and foremost: There are many ways to waste your time on a computer, and reddit is just one of them. For me, it was by far the biggest (second only to large database imports in dev).</p>
+
+<p>I've been a redditor almost since it started, and it's been interesting to see the site grow and change. But I've come to question its place in my life. From a community perspective, I've never quite drank the reddit cool-aid. Any attempts to share legitimate content are often met with downvotes, disinterest, or my favorite: being told you can't post here / wrong sub. And even the most reasoned comment can elicit a vile reply. I think that's a clear failure of the platform as a whole.</p>
+
+<p>From a consumption perspective: there are some very informative / creative / interesting subreddits, and I can't say it's always been bad there. But I find in my browsing there might be one article that I find useful, or post worthwhile(expands my reality in some meaningful way). Actually, I think the subreddit I gained the most from was r/TwoXChromosomes/, to get a glimpse at what the world looks like for women. But otherwise, I'm just foraging for novelty, and I can't say the time I spent on it was actually meaningful or providing me much return.</p>
+
+<p>And lastly, my faith in reddit: As a technical platform, they've had to scale and I appreciate that challenge. But having been a moderator and a regular user, they have a long ways to go, and have had a long ways to go for some time. But equally they as an organization have had some disheartening news as of late (and blatant CYA behavior, in the name of free speech to add insult to injury) and I can't help but see it as part of a systemic failure, and not merely a simple mistake. And trying to engage in meaningful discourse with a manager at reddit over twitter was met with the same tone of response that I'd expect from an actual reddit comment.</p>
+
+<p>And I think that's really when it dawned on me: The company is a reflection of the community, and the community is a reflection of the company.</p>
+
+<p>Meanwhile, I'm in the process (a little over 1.5 years) of learning the piano &amp; music theory and being guided along by a piano teacher (who I found on reddit). So with all the above factored, it seemed like a no-brainer. I'd rather go to bed having spent an hour on the piano, then an hour on reddit. Also, I have measurable gains from piano practice, but the benefits from reddit are often seem cloudy or absent.</p>
+
+<p>So, I added reddit to my <code>/etc/hosts</code> and it now resolves to my side project. It's been amusing seeing how many times I knee-jerk to that URL, only to go "oh yeah..."</p>
+
+<p>To stay connected, I still browse hacker news and slashdot, but that takes only a fraction of what reddit would normally represent. And If I really want to check-in on a particular subreddit, I can do so on my phone; but that's a more painful experience for me and not something I do regularly.</p>
+
+<p>I encourage everyone to do the same: kill the time wasters that offer little or no return. Maybe for you its something like WoW or facebook. If you feel more connected with the reddit community but still find it takes up too much time, there are browser plugins, like <a href="https://addons.mozilla.org/en-US/firefox/addon/leechblock/">leechblock</a>(firefox) which can help control the amount of time you spend on a given site.</p>
+
+<p>Also, pick up an instrument. <code>$genders_of_interest</code> dig musicians.</p>
+
+<p>And fuck reddit.<p><a rel="bookmark" href="http://meesterdude.github.com/entries/i-quit-reddit-for-music/">&infin; Permalink</a></p></p>
+]]></content>
+    </entry>
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Tip: order git branches by last commit age]]></title>
+<link href="http://meesterdude.github.com/entries/tip-order-git-branches-by-last-commit-age/"/>
+<updated>2014-05-22T08:24:00-04:00</updated>
+<id>http://meesterdude.github.com/entries/tip-order-git-branches-by-last-commit-age</id>
+
+      <content type="html"><![CDATA[<p><img class="center" src="/images/sorted_git_branches.png" title="git branches by age" ></p>
+
+<p>A great tool for git users</p>
+
+<!--more-->
+
+
+<p>To try this out on your own, put this in your terminal:</p>
+
+<p><code>
+for k in `git branch|sed s/^..//`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k"`\\t"$k";done|sort
+</code></p>
+
+<p>or create an alias for it in your <code>~/.bash_profile</code></p>
+
+<p><code>
+alias git-branch-list='for k in `git branch|sed s/^..//`;do echo -e `git log -1 --pretty=format:"%Cgreen%ci %Cblue%cr%Creset" "$k"`\\t"$k";done|sort'
+</code></p>
+
+<p>See the post for this trick <a href="http://www.commandlinefu.com/commands/view/2345/show-git-branches-by-date-useful-for-showing-active-branches">here</a>. You can find other cool tricks on <a href="http://www.commandlinefu.com/">commandlinefu</a>.<p><a rel="bookmark" href="http://meesterdude.github.com/entries/tip-order-git-branches-by-last-commit-age/">&infin; Permalink</a></p></p>
+]]></content>
+    </entry>
+  
+</feed>
+

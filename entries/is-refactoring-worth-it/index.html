@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Is refactoring worth it? - RuRu</title>
+  <meta name="author" content="Russell Jennings">
+
+  
+  <meta name="description" content="Here, we discuss if refactoring is worth the time, money, and effort; and where it&#8217;s not. What is refactoring? When you want to change how &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://meesterdude.github.com/entries/is-refactoring-worth-it/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="RuRu" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">RuRu</a></h1>
+  
+    <small>The Offical Weblog of Russell Jennings</small>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:meesterdude.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Latest</a></li>
+  <li><a href="/archives">Browse</a></li>
+  <li><a href="#">About Me</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class='spacer'>
+
+
+
+
+
+
+
+
+
+
+<article class="hentry" role="article" >
+  
+  <header>
+    <h1 class="entry-title">
+
+Is Refactoring Worth It?
+
+</h1>
+
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-11T14:09:00-04:00" pubdate data-updated="true">Aug 11<span>th</span>, 2013</time>
+        
+         &bull; <a rel="bookmark" href="/entries/is-refactoring-worth-it/">&infin;</a>
+      </p>
+    
+  </header>
+
+
+
+  <div class="entry-content"><p>Here, we discuss if refactoring is worth the time, money, and effort; and where it&#8217;s not.</p>
+
+<!--more-->
+
+
+<h2>What is refactoring?</h2>
+
+<p>When you want to change how something happens, but not what. In programming, that means changing the structure of the code without altering it&#8217;s behavior.</p>
+
+<h2>Why would I want that? I&#8217;d rather have features.</h2>
+
+<p>The benefits of refactoring are numerous, but it is often unclear to the people who have to pay for it what good it serves. In my travels, I&#8217;ve identified three reasons you would want to refactor a codebase.</p>
+
+<h3>Maintainability</h3>
+
+<p>Code that is easy to work with and easy to understand will result in less bugs, fewer security holes, and greater uptime. It means the people who work with it will be more comfortable approaching the codebase, and anyone new will require less training and support. A maintained codebase is an organized one, with everything in it&#8217;s proper place, neatly labeled and categorized.</p>
+
+<p>Try finding a book in the library, and it will take you only a few minutes. But if it was just shelves and shelves of books, you could be there for days trying to find the book you&#8217;re looking for. It&#8217;s easy to throw books on a shelf, and it&#8217;s easy to write code. But it takes time and effort to organize it into an structure that anyone can work with.</p>
+
+<h3>Adaptability</h3>
+
+<p>When a business starts, they don&#8217;t usually plan on being around for a few months or years. Most of the time, they expect to be around forever. So they&#8217;ll invest a great deal of time and money into building up codebases to run their company on. And they expect that these codebases will also last forever.</p>
+
+<p>A well structured project is adaptable to change, both in the short term and long term. It means a new feature or bug fix is as straightforward to implement as feasible, versus the alternative of &#8220;it wasn&#8217;t designed for that&#8221;. It means when you go from 500 customers to 500 million customers, your project will be able to change to support the additional work.</p>
+
+<p>It doesn&#8217;t happen overnight, or by magic. It takes a lot of effort to move a codebase from brand new to that of amazon&#8217;s, and not every project needs to be scaled that large anyway. But if it&#8217;s going to last, it needs to be able to adapt.</p>
+
+<h3>Speed</h3>
+
+<p>A codebase can be optimized to operate faster through a variety of techniques, and these kinds of optimizations can only come from refactoring, as typically the initial implementation is simple and unoptimized, but works, or at least did when the developer wrote it.</p>
+
+<p>But in addition to that, there are other speed gains to be had. Bugs will be quicker to diagnose and resolve, features will roll out sooner, the architecture will support faster scaling, and new developers will be up to speed in less time.</p>
+
+<h2>When is refactoring not the right call?</h2>
+
+<p>Not all code is equal. Typically the kind of code that gets a free pass on refactoring are support scripts, the kind that glue logic and systems together. They are often small enough, and simple enough, to have little or no gain to be had by changing the implementation. But even these can be the subject of refactor if it&#8217;s deemed appropriate.</p>
+
+<p>If you rely on it, if others need to work with it, or you need to keep adjusting it, it&#8217;s probably worth refactoring.</p>
+
+<h2>What happens if I don&#8217;t refactor?</h2>
+
+<p>You could do nothing, and get away with it for a while. But for a codebase to get running, it typically relies on other systems and libraries to work. Updates are made, features are deprecated, Bugs are fixed, security holes patched, and so on. So while yes, if you are able to lock everything down, there&#8217;s no need to change anything. But all it takes is one change, one security patch, or one hardware upgrade, and you just collapsed a house of cards.</p>
+
+<p>For most projects, time wears on them as the world moves on and the codebase does not. Given enough time, and enough neglect, a codebase can quickly become unmaintainable and require significant refactor or an entire rewrite to get working again, or to make an otherwise simple change.</p>
+
+<h2>How much time and effort should be spent on refactoring?</h2>
+
+<p>This is dependent on the stage of the project and the priorities at play, so &#8220;it depends&#8221;. Typically once a project has solidified most of it&#8217;s business rules and met it&#8217;s core deadlines, and is faced with a &#8220;ok, what&#8217;s next?&#8221; question, is a good time to start focusing more on refactoring. The rule of thumb is somewhere between 60/40 and 80/20, between refactoring and new features.</p>
+
+<p>But in the end it&#8217;s a juggle of short-term priorities and long-term ones, and those are obviously subject to change any given day. But if you focus on the short term and never on the long term, there won&#8217;t be a long term.</p>
+
+<p>Maybe thats a decision you have to make, or a risk you have to take. At least now you can do so in an informed manner.</p>
+
+<h2>TL;DR</h2>
+
+<p>To answer the question I posed in the title: Typically, yes.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Russell Jennings</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-11T14:09:00-04:00" pubdate data-updated="true">Aug 11<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/categories/feed/'>feed</a>, <a class='category' href='/categories/geek/'>geek</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://meesterdude.github.com/entries/is-refactoring-worth-it/" data-via="meesterfox" data-counturl="http://meesterdude.github.com/entries/is-refactoring-worth-it/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/entries/introducing-emoji-spec/" title="Previous Post: Introducing emoji_spec">&laquo; Introducing emoji_spec</a>
+      
+      
+        <a class="basic-alignment right" href="/entries/outsourcing-2-0/" title="Next Post: Outsourcing 2.0">Outsourcing 2.0 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/entries/introducing-willyou-didyou/">Introducing WillYou DidYou</a>
+      </li>
+    
+      <li class="post">
+        <a href="/entries/3-words-that-changed-me/">3 words that changed me</a>
+      </li>
+    
+      <li class="post">
+        <a href="/entries/selective-soldiering/">Selective Soldiering</a>
+      </li>
+    
+  </ul>
+</section>
+<section>
+  <h1>Let's talk</h1>
+  <p>Want to work together? Reach me on <a href="http://linkedin.com/in/russjennings7/">linkedin</a></p>
+</section>
+
+<section>
+  <h1>GitHub</h1>
+
+  
+  <a href="https://github.com/meesterdude">@meesterdude</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+        
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
+<h1>Twitter</h1>
+<a href='http://twitter.com/meesterfox'>@meesterfox</a>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("meesterfox", 3, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/meesterfox" class="twitter-follow-button" data-show-count="false">Follow @meesterfox</a>
+  
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2018 - Russell Jennings
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
