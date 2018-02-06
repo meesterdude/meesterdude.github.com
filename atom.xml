@@ -3,7 +3,7 @@
   <title><![CDATA[RuRu]]></title>
   <link href="http://meesterdude.github.com/atom.xml" rel="self"/>
   <link href="http://meesterdude.github.com/"/>
-  <updated>2018-02-06T06:34:08-05:00</updated>
+  <updated>2018-02-06T06:37:03-05:00</updated>
   <id>http://meesterdude.github.com/</id>
   <author>
     <name><![CDATA[Russell Jennings]]></name>
@@ -23,7 +23,7 @@
 <updated>2018-02-06T04:23:00-05:00</updated>
 <id>http://meesterdude.github.com/entries/rails-meets-the-definition-of-a-silver-bullet</id>
 
-      <content type="html"><![CDATA[<blockquote><p>silver bullet<br/>Something that provides an immediate and extremely effective solution to a given problem or difficulty, especially one that is normally very complex or hard to resolve.</p><footer><strong>thefreedictionary.com</strong> <cite><a href='https://idioms.thefreedictionary.com/silver+bullet'>idioms.thefreedictionary.com/&hellip;</a></cite></footer></blockquote>
+      <content type="html"><![CDATA[<blockquote><p>Silver Bullet<br/>Something that provides an immediate and extremely effective solution to a given problem or difficulty, especially one that is normally very complex or hard to resolve.</p><footer><strong>thefreedictionary.com</strong> <cite><a href='https://idioms.thefreedictionary.com/silver+bullet'>idioms.thefreedictionary.com/&hellip;</a></cite></footer></blockquote>
 
 
 
@@ -35,9 +35,9 @@
 
 <p>Delivering applications to users has always been tough, especially if you try to keep them up to date with changes and improvements. Advances in the web allows companies to deliver the latest version of their software directly to users. It&#8217;s allowed for the creation of countless E-stores, games, and desktop publishing software. But even still, it is not without it&#8217;s complexities. There are ever evolving issues of complexity, maintainability, &amp; security to account for; in addition to feature development and staying nimble.</p>
 
-<p>Before Ruby on Rails, there was coldfusion, custom PHP incarnations, VB.net, java and all other manner of crazy. Sure, these could all render out a web page - one of the great levelers of the web - but working on them was often nightmarish. There were no tests, no staging environments, all development was done on the server and backups were a file copy. Naturally, these codebases decayed and became neglected but still used; We&#8217;ve all seen the horrendously outdated sites we sometimes need to use when interacting with the government.</p>
+<p>Before Ruby on Rails, there was coldfusion, custom PHP incarnations, VB.net, java and all other manner of crazy. I remember One of the first codebases I saw; a custom PHP app a fellow student in highschool had created for our AV club. I still remember the hardcoded SQL calls, complete with hardcoded credentials, embedded throughout the pages. Oh, how far we have come!</p>
 
-<p>One of the first codebases I saw was a custom PHP app a fellow student in highschool had created for our AV club. I still remember the hardcoded SQL calls, complete with hardcoded credentials, embedded throughout the pages. Oh, how far we have come!</p>
+<p>Sure, these solutions all render out a web page - one of the great levelers of the web - but working on them was often nightmarish. There were no tests, no staging environments, all development was done on the server and backups were a file copy. Naturally, these codebases decayed and became neglected but still used; We&#8217;ve all seen the horrendously outdated sites we sometimes need to use when interacting with the government.</p>
 
 <p>As an industry we&#8217;ve identified a lot of best practices to help a codebase to be maintainable. Patterns that appear over and over again, or best practices procedurally.</p>
 
