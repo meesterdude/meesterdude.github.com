@@ -57,7 +57,6 @@
 <ul class="main-navigation">
   <li><a href="/">Latest</a></li>
   <li><a href="/archives">Browse</a></li>
-  <li><a href="#">About Me</a></li>
 </ul>
 
 </nav>
@@ -150,23 +149,8 @@
 
 <aside class="sidebar">
   
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/entries/rails-meets-the-definition-of-a-silver-bullet/">Ruby on Rails meets the definition of a silver bullet</a>
-      </li>
-    
-      <li class="post">
-        <a href="/entries/introducing-willyou-didyou/">Introducing WillYou DidYou</a>
-      </li>
-    
-      <li class="post">
-        <a href="/entries/3-words-that-changed-me/">3 words that changed me</a>
-      </li>
-    
-  </ul>
+    <section class='headshot'>
+  <img class="center" src="/images/me.jpg" title="Russell Jennings" >
 </section>
 <section>
   <h1>Let's talk</h1>
@@ -200,15 +184,6 @@
 </section>
 
 <section>
-  <h1>Latest Tweets</h1>
-  <ul id="tweets">
-    <li class="loading">Status updating...</li>
-  </ul>
-  <script type="text/javascript">
-    $.domReady(function(){
-      getTwitterFeed("meesterfox", 3, false);
-    });
-  </script>
   <script src="/javascripts/twitter.js" type="text/javascript"> </script>
   
     <a href="http://twitter.com/meesterfox" class="twitter-follow-button" data-show-count="false">Follow @meesterfox</a>
