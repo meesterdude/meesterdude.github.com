@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>rails meets the definition of a silver bullet - RuRu</title>
+  <title>Ruby on Rails meets the definition of a silver bullet - RuRu</title>
   <meta name="author" content="Russell Jennings">
 
   
@@ -79,7 +79,7 @@
   <header>
     <h1 class="entry-title">
 
-Rails Meets the Definition of a Silver Bullet
+Ruby on Rails Meets the Definition of a Silver Bullet
 
 </h1>
 
@@ -118,9 +118,9 @@ Rails Meets the Definition of a Silver Bullet
 
 <p>Delivering applications to users has always been tough, especially if you try to keep them up to date with changes and improvements. Advances in the web allows companies to deliver the latest version of their software directly to users. It&#8217;s allowed for the creation of countless E-stores, games, and desktop publishing software. But even still, it is not without it&#8217;s complexities. There are ever evolving issues of complexity, maintainability, &amp; security to account for; in addition to feature development and staying nimble.</p>
 
-<p>Before Rails, there was coldfusion, custom PHP incarnations, VB.net, java and all other manner of crazy. Sure, these could all render out a web page - one of the great levelers of the web - but working on them was often nightmarish. There were no tests, no staging environments, all development was done on the server and backups were a file copy. Naturally, these codebases decayed and became neglected but still used; We&#8217;ve all seen the horrendously outdated sites we sometimes need to use when interacting with the government.</p>
+<p>Before Ruby on Rails, there was coldfusion, custom PHP incarnations, VB.net, java and all other manner of crazy. Sure, these could all render out a web page - one of the great levelers of the web - but working on them was often nightmarish. There were no tests, no staging environments, all development was done on the server and backups were a file copy. Naturally, these codebases decayed and became neglected but still used; We&#8217;ve all seen the horrendously outdated sites we sometimes need to use when interacting with the government.</p>
 
-<p>One of the first codebases I saw was a custom PHP app a fellow student in highschool had created for our AV club. I still remember the hardcoded SQL calls, complete with hardcoded credentials, embedded throughout the pages. Oh how far we have come!</p>
+<p>One of the first codebases I saw was a custom PHP app a fellow student in highschool had created for our AV club. I still remember the hardcoded SQL calls, complete with hardcoded credentials, embedded throughout the pages. Oh, how far we have come!</p>
 
 <p>As an industry we&#8217;ve identified a lot of best practices to help a codebase to be maintainable. Patterns that appear over and over again, or best practices procedurally.</p>
 
@@ -130,19 +130,21 @@ Rails Meets the Definition of a Silver Bullet
 
 <h2>Rails is good for all of that</h2>
 
-<p>Rails makes developing web applications faster and maintainable. It places emphasis on developer happiness, and using tools &amp; solutions that enable effective feature development. Once you have the environment setup, going from nothing to a web application you can actually start using functionally can be done with a couple of command line incarnations if your needs are CRUD based. Additional libraries (gems) let you further expand your app behavior, and equally you can roll your own solutions when called for.</p>
+<p>Rails makes developing web applications faster and maintainable. It places emphasis on developer happiness, and using tools &amp; solutions that enable effective feature development. Once you have the environment setup, going from nothing to a web application you can actually start using functionally can be done with a couple of command line incarnations if your needs are CRUD based (most are!). Additional libraries (gems) let you further expand your app behavior, and equally you can roll your own solutions when called for.</p>
 
-<p>It&#8217;s also not afraid to break things for the sake of improvement. Backwards compatibility matters for some frameworks, but in the evolving web it&#8217;s best to stay with what&#8217;s current, secure or performant as browsers and technology evolve. This attitude is also what makes rails secure: doing the &#8220;secure&#8221; thing is the default behavior, updates regularly include bugfixes or advisors to be aware of. Rails also request forgery protection, SQL sanitation, File upload and more right out of the box. An important caveat here is that updates often require (or at least encourage) changing your codebase is at each update - but that&#8217;s the trade off you make to keep up with best practices.</p>
+<p>It&#8217;s also not afraid to break things for the sake of improvement. Backwards compatibility matters for some frameworks, but in the evolving web it&#8217;s best to stay with what&#8217;s current, secure or performant as browsers and technology evolve. This attitude is also what makes Rails secure: doing the &#8220;secure&#8221; thing is the default behavior, updates regularly include bugfixes or advisors to be aware of. Rails also request forgery protection, SQL sanitation, File upload and more right out of the box. An important caveat here is that updates often require (or at least encourage) changing your codebase is at each update - but that&#8217;s the trade off you make to keep up with best practices.</p>
 
-<p>But perhaps importantly to the point of this post, is that rails lets a small team ship web and native experiences to all major desktop and mobile platforms, reusing most of the code that&#8217;s already been written. By wrapping webviews in native navigation and using caching (also provided by rails) you can create a seamless user experience - free of weird interface delays or screen flashes; while still doing most of your feature development in the rails stack and instantly delivering updates to users for all platforms. Rails lets you optimize your app to create fast response times - as fast as 20ms (the fastest i&#8217;ve seen in production)</p>
+<p>But perhaps importantly to the point of this post, is that Rails lets a small team ship web and native experiences to all major desktop and mobile platforms, reusing most of the code that&#8217;s already been written. By wrapping webviews in native navigation and using caching (also provided by Rails) you can create a seamless user experience - free of weird interface delays or screen flashes; while still doing most of your feature development in the Rails stack and instantly delivering updates to users for all platforms. Rails lets you optimize your app to create fast response times - as fast as 20ms (the fastest i&#8217;ve seen in production)</p>
 
 <p>Rails is also quite flexible, featuring a set of very well thought opinions, but always have the option to do things differently. And if you need to start building out an API, or doing realtime websockets, or delivering more javascript-rich experiences, or scale up to support a lot of users; Rails can happily oblige.</p>
 
 <h2>Can Rails scale? Shopify handles over 80,000 requests per second riding on Rails</h2>
 
-<p>And those well thought out opinions, those sane defaults that rails ships with? Makes for some highly maintainable codebases. Everything has a place, everyone knows and agrees (generally) where those places are and are not, and breaking the rules is easy unless it&#8217;s ill-advised (like strong parameter protections). Even code that you wrote years ago can still make sense - no small feat!</p>
+<p>And those well thought out opinions, those sane defaults that Rails ships with? Makes for some highly maintainable codebases. Everything has a place, everyone knows and agrees (generally) where those places are and are not, and breaking the rules is easy unless it&#8217;s ill-advised (like strong parameter protections). Even code that you wrote years ago can still make sense - no small feat!</p>
 
-<p>For Rails to facilitate teams of all sizes such speedy delivery of tested &amp; responsive applications across all major web/mobile/desktop platforms, makes it the silver bullet framework of development if there ever was one. The productivity, effectiveness and maintainability it enables remains unmatched in other development solutions in software.</p>
+<p>For Ruby on Rails to facilitate teams of all sizes such speedy delivery of tested &amp; responsive applications across all major web/mobile/desktop platforms, makes it the silver bullet framework of development if there ever was one. The productivity, effectiveness and maintainability it enables remains unmatched in other development solutions in software.</p>
+
+<h3>Looking for help building out your application in Ruby on Rails? <a href="http://linkedin.com/in/russjennings7/">Lets Work Together</a></h3>
 </div>
 
 
@@ -204,7 +206,7 @@ Rails Meets the Definition of a Silver Bullet
   <ul id="recent_posts">
     
       <li class="post">
-        <a href="/entries/rails-meets-the-definition-of-a-silver-bullet/">rails meets the definition of a silver bullet</a>
+        <a href="/entries/rails-meets-the-definition-of-a-silver-bullet/">Ruby on Rails meets the definition of a silver bullet</a>
       </li>
     
       <li class="post">
