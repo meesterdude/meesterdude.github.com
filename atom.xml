@@ -3,7 +3,7 @@
   <title><![CDATA[RuRu]]></title>
   <link href="http://meesterdude.github.com/atom.xml" rel="self"/>
   <link href="http://meesterdude.github.com/"/>
-  <updated>2018-02-07T07:23:21-05:00</updated>
+  <updated>2018-02-07T14:43:14-05:00</updated>
   <id>http://meesterdude.github.com/</id>
   <author>
     <name><![CDATA[Russell Jennings]]></name>
@@ -11,6 +11,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[Google keeps its talent where it can see them]]></title>
+<link href="http://meesterdude.github.com/entries/google-keeps-its-talent-where-it-can-see-them/"/>
+<updated>2018-02-07T14:27:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/google-keeps-its-talent-where-it-can-see-them</id>
+
+      <content type="html"><![CDATA[<blockquote><p>Google has said that it has tested the productivity of remote teams and on-site teams and found no difference in performance.</p><footer><strong>zdnet.com</strong> <cite><a href='http://www.zdnet.com/article/no-telecommuting-allowed-why-is-google-investing-billions-of-dollars-in-office-buildings/'>www.zdnet.com/article/&hellip;</a></cite></footer></blockquote>
+
+
+<p>This deserves to be highlighted, as many companies hesitate to embrace remote work out of fear it will impact performance. Even if its a 1:1 for google, it makes a huge impact on the quality of life its workers experience.</p>
+
+<blockquote><p>Google doesn&#8217;t want its engineers in local coffee shops hooking up with others from other companies and plotting a Google-killer. The more it can keep its people company men and company women &#8211; the better.</p><footer><strong>zdnet.com</strong> <cite><a href='http://www.zdnet.com/article/no-telecommuting-allowed-why-is-google-investing-billions-of-dollars-in-office-buildings/'>www.zdnet.com/article/&hellip;</a></cite></footer></blockquote>
+
+
+<p>The better for stockholders of Google.</p>
+
+<!--more-->
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/google-keeps-its-talent-where-it-can-see-them/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
   
     <entry>
       
@@ -1041,30 +1069,6 @@ partial, and then rendering that out in both <code>application.html.erb</code> a
 
 <p>But this will make you stagnant. Your mind will become a bubble and nothing can change it&#8217;s perspective or behavior. You are no longer able to adapt to the environment, and expect the world work a different way from how it does otherwise. If you ever wondered how some old people become &#8220;old&#8221;, this is how.</p>
 <p><a rel="bookmark" href="http://meesterdude.github.com/entries/always-listen/">&infin; Permalink</a></p>
-
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[What programming is like in real life]]></title>
-<link href="http://meesterdude.github.com/entries/what-programming-is-like-in-real-life/"/>
-<updated>2014-03-02T06:54:00-05:00</updated>
-<id>http://meesterdude.github.com/entries/what-programming-is-like-in-real-life</id>
-
-      <content type="html"><![CDATA[<p>Hilarious clip from malcom in the middle that explains what programming is really like.</p>
-
-<p>Some days are better than others&#8230;</p>
-
-<!--more-->
-
-
-<p><img src="http://i.minus.com/i7zx1W08sXciX.gif"></p>
-<p><a rel="bookmark" href="http://meesterdude.github.com/entries/what-programming-is-like-in-real-life/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>
