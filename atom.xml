@@ -3,7 +3,7 @@
   <title><![CDATA[RuRu]]></title>
   <link href="http://meesterdude.github.com/atom.xml" rel="self"/>
   <link href="http://meesterdude.github.com/"/>
-  <updated>2018-02-06T07:55:20-05:00</updated>
+  <updated>2018-02-07T07:21:52-05:00</updated>
   <id>http://meesterdude.github.com/</id>
   <author>
     <name><![CDATA[Russell Jennings]]></name>
@@ -11,6 +11,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[The best indicator for hiring developers is also the least used]]></title>
+<link href="http://meesterdude.github.com/entries/the-best-indicator-for-hiring-developers-is-also-the-least-used/"/>
+<updated>2018-02-07T06:58:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/the-best-indicator-for-hiring-developers-is-also-the-least-used</id>
+
+      <content type="html"><![CDATA[<p>Hiring developers is a tough problem, and there are lots of efforts to try and measure the skill set of a candidate, but most are either entirely faulty or only paint a partial picture.</p>
+
+<p>But there is one indicator you can use that tells you close to everything you need to know about a candidate, an indicator that most shops overlook when evaluating applicants&#8230;</p>
+
+<!--more-->
+
+
+<h1>The Best Indicator is Open Source</h1>
+
+<h2>It means working in the open</h2>
+
+<p>All the code written is available to see - what the developer did or did not do. The mistakes they made, they fix they applied, it&#8217;s all out there to be seen by all.</p>
+
+<h2>It means collaborating with others</h2>
+
+<p>Either reviewing and accepting PR&#8217;s or submitting them to other projects - you can gain insight to how a developer gives or responds to feedback, what they are like to disagree with or brainstorm with, and how they keep the ball rolling for work that may stall.</p>
+
+<h2>It demonstrates engineering</h2>
+
+<p>It means they are intimately involved in a problem space, and are working close with the tooling or technology that they see where it can be better. Or if it&#8217;s an entirely new project, it shows their ability to identify a problem and properly engineer and package a solution.</p>
+
+<h2>It reveals planning &amp; organization</h2>
+
+<p>What features did they implement and which ones did they skip? Are github issues being managed, are PRs being reviewed? Is there any kind of documentation? is the code easy enough to reason about? these are all questions you can get insight into when looking over the Open Source work of a developer.</p>
+
+<h2>It means they&#8217;re part of the community</h2>
+
+<p>They are giving back in some way, having benefited from the works of other open source projects, they now seek to contribute back their own effort. But it also means playing a part in a larger dialog of technology, features and tooling. It means they&#8217;re able and willing to share their efforts with others and take the time to make their work available for the community. A small gesture, but one that involves a significant amount of work.</p>
+
+<p>If you&#8217;re looking to hire developers, take a closer look at what their open source contributions reveal about who they are and how they work.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/the-best-indicator-for-hiring-developers-is-also-the-least-used/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
   
     <entry>
       
@@ -1019,32 +1065,6 @@ partial, and then rendering that out in both <code>application.html.erb</code> a
 
 <p><img src="http://i.minus.com/i7zx1W08sXciX.gif"></p>
 <p><a rel="bookmark" href="http://meesterdude.github.com/entries/what-programming-is-like-in-real-life/">&infin; Permalink</a></p>
-
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[for the love of god what the fuck did that guy do?]]></title>
-<link href="http://meesterdude.github.com/entries/for-the-love-of-god-what-the-fuck-did-that-guy-do/"/>
-<updated>2014-03-02T06:10:00-05:00</updated>
-<id>http://meesterdude.github.com/entries/for-the-love-of-god-what-the-fuck-did-that-guy-do</id>
-
-      <content type="html"><![CDATA[<p>Hilarious standup by <a href="http://www.billburr.com/">Bill Burr</a> on Steve Jobs.</p>
-
-<p><strong>Note</strong> contains language (It&#8217;s Bill Burr)</p>
-
-<!--more-->
-
-
-<p>Skip to 4:15 for the Steve Jobs rant, but the entire video is good.</p>
-
-<p>Liquid error: undefined method `[]&#8217; for nil:NilClass</p>
-<p><a rel="bookmark" href="http://meesterdude.github.com/entries/for-the-love-of-god-what-the-fuck-did-that-guy-do/">&infin; Permalink</a></p>
 
 ]]></content>
     </entry>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: feed | RuRu]]></title>
   <link href="http://meesterdude.github.com/categories/feed/atom.xml" rel="self"/>
   <link href="http://meesterdude.github.com/"/>
-  <updated>2018-02-06T07:55:20-05:00</updated>
+  <updated>2018-02-07T07:21:52-05:00</updated>
   <id>http://meesterdude.github.com/</id>
   <author>
     <name><![CDATA[Russell Jennings]]></name>
@@ -12,6 +12,55 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[The best indicator for hiring developers is also the least used]]></title>
+<link href="http://meesterdude.github.com/entries/the-best-indicator-for-hiring-developers-is-also-the-least-used/"/>
+<updated>2018-02-07T06:58:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/the-best-indicator-for-hiring-developers-is-also-the-least-used</id>
+
+      <content type="html"><![CDATA[<p>Hiring developers is a tough problem, and there are lots of efforts to try and measure the skill set of a candidate, but most are either entirely faulty or only paint a partial picture.</p>
+
+<p>But there is one indicator you can use that tells you close to everything you need to know about a candidate, an indicator that most shops overlook when evaluating applicants...</p>
+
+<!--more-->
+
+
+<h1>The Best Indicator is Open Source</h1>
+
+<h2>It means working in the open</h2>
+
+<p>All the code written is available to see - what the developer did or did not do. The mistakes they made, they fix they applied, it's all out there to be seen by all.</p>
+
+<h2>It means collaborating with others</h2>
+
+<p>Either reviewing and accepting PR's or submitting them to other projects - you can gain insight to how a developer gives or responds to feedback, what they are like to disagree with or brainstorm with, and how they keep the ball rolling for work that may stall.</p>
+
+<h2>It demonstrates engineering</h2>
+
+<p>It means they are intimately involved in a problem space, and are working close with the tooling or technology that they see where it can be better. Or if it's an entirely new project, it shows their ability to identify a problem and properly engineer and package a solution.</p>
+
+<h2>It reveals planning &amp; organization</h2>
+
+<p>What features did they implement and which ones did they skip? Are github issues being managed, are PRs being reviewed? Is there any kind of documentation? is the code easy enough to reason about? these are all questions you can get insight into when looking over the Open Source work of a developer.</p>
+
+<h2>It means they're part of the community</h2>
+
+<p>They are giving back in some way, having benefited from the works of other open source projects, they now seek to contribute back their own effort. But it also means playing a part in a larger dialog of technology, features and tooling. It means they're able and willing to share their efforts with others and take the time to make their work available for the community. A small gesture, but one that involves a significant amount of work.</p>
+
+<p>If you're looking to hire developers, take a closer look at what their open source contributions reveal about who they are and how they work.</p>
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/the-best-indicator-for-hiring-developers-is-also-the-least-used/">&infin; Permalink</a></p>
+
+
+
+]]></content>
+    </entry>
   
     <entry>
       
@@ -215,30 +264,6 @@ File.open(path, 'w+') { |file| file.write(lines.join) }
 <p><a rel="bookmark" href="http://meesterdude.github.com/entries/upgrading-rails-to-use-strong-params-automatically/">&infin; Permalink</a></p>
 
 
-
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[be kind &rarr;]]></title>
-<link href="/entries/be-kind/"/>
-<updated>2015-05-12T17:51:00-04:00</updated>
-<id>http://meesterdude.github.com/entries/be-kind</id>
-
-      <content type="html"><![CDATA[<p>Great advice, and something we could all do more.</p>
-
-<!--more-->
-
-
-<p><a rel="bookmark" href="http://meesterdude.github.com/entries/be-kind/">&infin; Permalink</a></p>
-
-
-<p><a rel="post-link" href="http://boz.com/articles/be-kind.html">-> Link <-</a></p>
 
 ]]></content>
     </entry>
