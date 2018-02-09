@@ -3,7 +3,7 @@
   <title><![CDATA[RuRu]]></title>
   <link href="http://meesterdude.github.com/atom.xml" rel="self"/>
   <link href="http://meesterdude.github.com/"/>
-  <updated>2018-02-07T14:43:59-05:00</updated>
+  <updated>2018-02-08T23:43:27-05:00</updated>
   <id>http://meesterdude.github.com/</id>
   <author>
     <name><![CDATA[Russell Jennings]]></name>
@@ -11,6 +11,31 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[The Meltdown meltdown]]></title>
+<link href="http://meesterdude.github.com/entries/the-meltdown-meltdown/"/>
+<updated>2018-02-08T23:35:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/the-meltdown-meltdown</id>
+
+      <content type="html"><![CDATA[<!--more-->
+
+
+<blockquote><p>The KPTI patches to mitigate Meltdown can incur massive overhead, anything from 1% to over 800%. Where you are on that spectrum depends on your syscall and page fault rates, due to the extra CPU cycle overheads, and your memory working set size, due to TLB flushing on syscalls and context switches.</p><footer><strong>brendangregg.com</strong> <cite><a href='http://www.brendangregg.com/blog/2018-02-09/kpti-kaiser-meltdown-performance.html'>www.brendangregg.com/blog/&hellip;</a></cite></footer></blockquote>
+
+
+<p>Ouch.</p>
+
+<p>My Virtual Machines aged 5 years overnight; the performance hit has been more than the highest estimates of 30%. But I never thought the fallout could introduce penalties as high as 800%. Crazy.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/the-meltdown-meltdown/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
   
     <entry>
       
@@ -1048,30 +1073,6 @@ partial, and then rendering that out in both <code>application.html.erb</code> a
 
 <p><a rel="bookmark" href="http://meesterdude.github.com/entries/nyt-the-boys-in-the-bunkhouse/">&infin; Permalink</a></p>
 <p><a rel="post-link" href="http://www.nytimes.com/interactive/2014/03/09/us/the-boys-in-the-bunkhouse.html?_r=4">-> Link <-</a></p>
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[Always listen]]></title>
-<link href="http://meesterdude.github.com/entries/always-listen/"/>
-<updated>2014-03-08T09:46:00-05:00</updated>
-<id>http://meesterdude.github.com/entries/always-listen</id>
-
-      <content type="html"><![CDATA[<!--more-->
-
-
-<p>I read a psychology paper this morning full of spelling and grammatical errors. You could easily disregard everything this author wrote, as many noted they had done in the comments. But if you look past that, there is still knowledge being conveyed. Some of it ended up being new to me, while other parts reinforced that little part of my model of reality that I have formed.</p>
-
-<p>When we stop listening, we cut off an opportunity to learn and be better; perhaps the most important source: other people. You might be turned away by poor communication skills, spelling mistakes, or more likely you think &#8220;know better&#8221; and disregard everything they say outright, as a defensive measure. Or maybe you just plain don&#8217;t like the person and what they&#8217;re about.</p>
-
-<p>But this will make you stagnant. Your mind will become a bubble and nothing can change it&#8217;s perspective or behavior. You are no longer able to adapt to the environment, and expect the world work a different way from how it does otherwise. If you ever wondered how some old people become &#8220;old&#8221;, this is how.</p>
-<p><a rel="bookmark" href="http://meesterdude.github.com/entries/always-listen/">&infin; Permalink</a></p>
-
 ]]></content>
     </entry>
   

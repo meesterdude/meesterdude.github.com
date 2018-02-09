@@ -4,7 +4,7 @@
   <title><![CDATA[Category: feed | RuRu]]></title>
   <link href="http://meesterdude.github.com/categories/feed/atom.xml" rel="self"/>
   <link href="http://meesterdude.github.com/"/>
-  <updated>2018-02-07T14:43:59-05:00</updated>
+  <updated>2018-02-08T23:43:27-05:00</updated>
   <id>http://meesterdude.github.com/</id>
   <author>
     <name><![CDATA[Russell Jennings]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[The Meltdown meltdown]]></title>
+<link href="http://meesterdude.github.com/entries/the-meltdown-meltdown/"/>
+<updated>2018-02-08T23:35:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/the-meltdown-meltdown</id>
+
+      <content type="html"><![CDATA[<!--more-->
+
+
+<p><blockquote><p>The KPTI patches to mitigate Meltdown can incur massive overhead, anything from 1% to over 800%. Where you are on that spectrum depends on your syscall and page fault rates, due to the extra CPU cycle overheads, and your memory working set size, due to TLB flushing on syscalls and context switches.</p><footer><strong>brendangregg.com</strong> <cite><a href='http://www.brendangregg.com/blog/2018-02-09/kpti-kaiser-meltdown-performance.html'>www.brendangregg.com/blog/&hellip;</a></cite></footer></blockquote></p>
+
+<p>Ouch.</p>
+
+<p>My Virtual Machines aged 5 years overnight; the performance hit has been more than the highest estimates of 30%. But I never thought the fallout could introduce penalties as high as 800%. Crazy.</p>
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/the-meltdown-meltdown/">&infin; Permalink</a></p>
+
+
+
+]]></content>
+    </entry>
   
     <entry>
       
@@ -166,62 +193,6 @@
 
 
 <p><a rel="post-link" href="http://willyoudidyou.com">-> Link <-</a></p>
-
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[3 words that changed me]]></title>
-<link href="http://meesterdude.github.com/entries/3-words-that-changed-me/"/>
-<updated>2017-03-21T00:22:00-04:00</updated>
-<id>http://meesterdude.github.com/entries/3-words-that-changed-me</id>
-
-      <content type="html"><![CDATA[<p>Words I've known, but did not understand or truly appreciate.</p>
-
-<!--more-->
-
-
-<p>It's not every day that a single, common word can change who you are. At least I imagine it isn't - I admit there might be people out there who see a word like "insulator" and become sheep herders - but I don't think this is such a case.</p>
-
-<h2>Listen</h2>
-
-<p>What does it mean, to listen? the absence of my mouth not moving? that's a simple enough definition, and the one I had for a while. But when you dive deeper, it's more than that.</p>
-
-<p>To listen is to be quiet - verbally, and in mind. You can't listen when you're being strategic in your head about how to prove the other person wrong.</p>
-
-<p>To listen is to be intently curious and unbiased in what you see - no matter how much you agree or disagree. The desire to understand outweighs the desire to judge. When you have a question, it's to know more, not to allude or infer.</p>
-
-<p>And the best listeners are not tea cups you fill up with information - but mirrors that reflect what they observe - offering room for dispute on the facts, allowing them to better understand the other party.</p>
-
-<h2>Cherish</h2>
-
-<p>Growing up, I never understood a particular word that gets thrown around quite a lot in daily life. Certainly a function of my upbringing and experiences - I always felt the word "love" was hollow, an empty threat of compassion. Many of the least favorite people in my life had loved me - and expressed so in very creative ways.</p>
-
-<p>But i think love makes a lot more sense, when paired with cherish. If love is the theory, cherish is the action. Of course you love your wife, your kids, your close friends; you would do anything for them, and maybe you already do. But love without cherishment is a campfire with no warmth.</p>
-
-<p>Ironically, A great way to cherish is also to listen.</p>
-
-<h2>Commitment</h2>
-
-<p>I have a lot of goals, interests, ideas, todos, projects. I think a lot of us do. I've naturally accumulated them over the years in varying forms. Many I made progress on, and many more I did not.</p>
-
-<p>But commitments. What do I have of those? I have a lease, which is a form of commitment, and a few other contracts and agreements.</p>
-
-<p>But personally? What are mine? What have they ever been? It's not a word thats been in my vernacular, as a descriptor for a given interest, project, or idea. I've had many <a href="http://paidtoexist.com/go-all-out/">interests</a>, but no commitments.</p>
-
-<p>What does it mean to be committed? It means accepting a fundamental change to who you are - changing your DNA as a person, flamboyantly. You have a mission and everything about you is geared towards it. The answer to every distraction becomes "I have a commitment".</p>
-
-<p>People who are interested join the army reserves.
-People who are committed join the army.</p>
-
-<p><a rel="bookmark" href="http://meesterdude.github.com/entries/3-words-that-changed-me/">&infin; Permalink</a></p>
-
-
 
 ]]></content>
     </entry>
