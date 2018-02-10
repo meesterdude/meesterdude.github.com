@@ -3,7 +3,7 @@
   <title><![CDATA[RuRu]]></title>
   <link href="http://meesterdude.github.com/atom.xml" rel="self"/>
   <link href="http://meesterdude.github.com/"/>
-  <updated>2018-02-08T23:43:27-05:00</updated>
+  <updated>2018-02-10T06:11:02-05:00</updated>
   <id>http://meesterdude.github.com/</id>
   <author>
     <name><![CDATA[Russell Jennings]]></name>
@@ -11,6 +11,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[The importance of rest and reflection in memory formation]]></title>
+<link href="http://meesterdude.github.com/entries/the-importance-of-rest-and-reflection-in-memory-formation/"/>
+<updated>2018-02-10T05:43:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/the-importance-of-rest-and-reflection-in-memory-formation</id>
+
+      <content type="html"><![CDATA[<!--more-->
+
+
+<blockquote><p>The next results were even more impressive. The participants were asked to listen to some stories and answer questions an hour later. Without the chance to rest, they could recall just 7% of the facts in the story; with the rest, this jumped to 79% – an astronomical 11-fold increase in the information they retained. The researchers also found a similar, though less pronounced, benefit for healthy participants in each case, boosting recall between 10 and 30%.</p><footer><strong>bbc</strong> <cite><a href='http://www.bbc.com/future/story/20180208-an-effortless-way-to-strengthen-your-memory'>www.bbc.com/future/story/&hellip;</a></cite></footer></blockquote>
+
+
+<p>Fascinating read. Introducing quiet time after learning dramatically improves retention. But while a simple thing to do, it&#8217;s potentially difficult for people to do nothing for minutes on end. The article recommends 10-15 minutes, but i suspect shorter intervals would be effective as well, in the 3-7 minute range. If you&#8217;re trying to digest a lot of new information, doing more frequent and shorter rests may be more realistic. As what works best is bound to vary from person to person, it&#8217;s best to experiment with a stopwatch and see how long you really need.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/the-importance-of-rest-and-reflection-in-memory-formation/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
   
     <entry>
       
@@ -1050,29 +1073,6 @@ partial, and then rendering that out in both <code>application.html.erb</code> a
 
 <p><a rel="bookmark" href="http://meesterdude.github.com/entries/gem-install-nokogiri-on-mavericks/">&infin; Permalink</a></p>
 
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[NYT: The Boys In The Bunkhouse &rarr;]]></title>
-<link href="/entries/nyt-the-boys-in-the-bunkhouse/"/>
-<updated>2014-03-10T01:22:00-04:00</updated>
-<id>http://meesterdude.github.com/entries/nyt-the-boys-in-the-bunkhouse</id>
-
-      <content type="html"><![CDATA[<blockquote><p>Henry’s Turkey Service, which was paid directly by the plant for the men’s labor, was capitalizing on a section of the Fair Labor Standards Act of 1938 that allows certified employers to pay a subminimum wage to workers with a disability , based on their productivity when compared with that of nondisabled workers.</p><p>The company also deducted hundreds of dollars from the men’s earnings and Social Security benefits for room and board — and “in-kind” services, like bowling, dining out and annual visits to an amusement park. The rest was deposited in individual bank accounts in Goldthwaite that the company dipped into to pay for incidentals and medical costs, since the men had no health insurance or Medicaid in Iowa.</p><footer><strong>Dan Barry</strong> <cite><a href='http://www.nytimes.com/interactive/2014/03/09/us/the-boys-in-the-bunkhouse.html?_r=4'>www.nytimes.com/interactive/03/&hellip;</a></cite></footer></blockquote>
-
-
-<p>Will never forget that this not only happened in America and not a third world country; but in our society, in our time.</p>
-
-<!--more-->
-
-<p><a rel="bookmark" href="http://meesterdude.github.com/entries/nyt-the-boys-in-the-bunkhouse/">&infin; Permalink</a></p>
-<p><a rel="post-link" href="http://www.nytimes.com/interactive/2014/03/09/us/the-boys-in-the-bunkhouse.html?_r=4">-> Link <-</a></p>
 ]]></content>
     </entry>
   
