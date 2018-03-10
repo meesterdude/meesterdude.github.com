@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[Russ-J]]></title>
+  <title><![CDATA[Russ•Works]]></title>
   <link href="http://meesterdude.github.com/atom.xml" rel="self"/>
   <link href="http://meesterdude.github.com/"/>
-  <updated>2018-03-09T22:53:00-05:00</updated>
+  <updated>2018-03-10T01:05:14-05:00</updated>
   <id>http://meesterdude.github.com/</id>
   <author>
     <name><![CDATA[Russell Jennings]]></name>
