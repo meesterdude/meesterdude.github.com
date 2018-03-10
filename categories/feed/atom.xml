@@ -4,7 +4,7 @@
   <title><![CDATA[Category: feed | RuRu]]></title>
   <link href="http://meesterdude.github.com/categories/feed/atom.xml" rel="self"/>
   <link href="http://meesterdude.github.com/"/>
-  <updated>2018-02-10T06:11:02-05:00</updated>
+  <updated>2018-03-09T21:17:32-05:00</updated>
   <id>http://meesterdude.github.com/</id>
   <author>
     <name><![CDATA[Russell Jennings]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[My Top ArduinoVersusEvil Videos]]></title>
+<link href="http://meesterdude.github.com/entries/my-top-arduinoversusevil-videos/"/>
+<updated>2018-03-09T20:57:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/my-top-arduinoversusevil-videos</id>
+
+      <content type="html"><![CDATA[<p>Very knowledgeable and always entertaining, ArduinoVersusEvil is a canadian based youtuber with extensive understanding of electrical and mechanical engineering. His channel is primarily taking things apart, or working on his own projects. I've watched a lot of them, so I thought I'd highlight some of my favorites!</p>
+
+<!--more-->
+
+
+<p><div class="embed-video-container"><iframe src="//www.youtube.com/embed/zIQ_AM3bnwo" allowfullscreen></iframe></div>
+Inventive modernization of an air compressor</p>
+
+<p><div class="embed-video-container"><iframe src="//www.youtube.com/embed/M3WB-EwdJnM" allowfullscreen></iframe></div>
+Entertaining battle and interesting dissection of component failure</p>
+
+<p><div class="embed-video-container"><iframe src="//www.youtube.com/embed/CG7aBul033I" allowfullscreen></iframe></div>
+Testing sunglasses with UV light meter</p>
+
+<p><div class="embed-video-container"><iframe src="//www.youtube.com/embed/0kEZl_eK8Ws" allowfullscreen></iframe></div>
+How a residential pump, otherwise well made, is engineered to fail within a timeframe (18:45)</p>
+
+<p><div class="embed-video-container"><iframe src="//www.youtube.com/embed/NPTzNJMd19A" allowfullscreen></iframe></div>
+Tearing down an expensive dyson vacume cleaner and the numerous ways it can fail over time</p>
+
+<p><div class="embed-video-container"><iframe src="//www.youtube.com/embed/O4-j4kwtu9Y" allowfullscreen></iframe></div>
+"it hurts even if there's juice on it" too cute.</p>
+
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/my-top-arduinoversusevil-videos/">&infin; Permalink</a></p>
+
+
+
+]]></content>
+    </entry>
   
     <entry>
       
@@ -137,61 +178,6 @@
 <p>If you're looking to hire developers, take a closer look at what their open source contributions reveal about who they are and how they work.</p>
 
 <p><a rel="bookmark" href="http://meesterdude.github.com/entries/the-most-undervalued-indicator-for-hiring-great-developers/">&infin; Permalink</a></p>
-
-
-
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[Ruby on Rails meets the definition of a silver bullet]]></title>
-<link href="http://meesterdude.github.com/entries/rails-meets-the-definition-of-a-silver-bullet/"/>
-<updated>2018-02-06T04:23:00-05:00</updated>
-<id>http://meesterdude.github.com/entries/rails-meets-the-definition-of-a-silver-bullet</id>
-
-      <content type="html"><![CDATA[<p><blockquote><p>Silver Bullet<br/>Something that provides an immediate and extremely effective solution to a given problem or difficulty, especially one that is normally very complex or hard to resolve.</p><footer><strong>thefreedictionary.com</strong> <cite><a href='https://idioms.thefreedictionary.com/silver+bullet'>idioms.thefreedictionary.com/&hellip;</a></cite></footer></blockquote></p>
-
-<!--more-->
-
-
-<h4>This post is indirectly a response to <a href="http://blog.bloomca.me/2018/02/04/spa-is-not-silver-bullet.html">SPA is not a silver bullet</a></h4>
-
-<p>Delivering applications to users has always been tough, especially if you try to keep them up to date with changes and improvements. Advances in the web allows companies to deliver the latest version of their software directly to users. It's allowed for the creation of countless E-stores, games, and desktop publishing software. But even still, it is not without it's complexities. There are ever evolving issues of complexity, maintainability, &amp; security to account for; in addition to feature development and staying nimble.</p>
-
-<p>Before Ruby on Rails, there was coldfusion, custom PHP incarnations, VB.net, java and all other manner of crazy. I remember One of the first codebases I saw; a custom PHP app a fellow student in highschool had created for our AV club. I still remember the hardcoded SQL calls, complete with hardcoded credentials, embedded throughout the pages. Oh, how far we have come!</p>
-
-<p>Sure, these solutions all render out a web page - one of the great levelers of the web - but working on them was often nightmarish. There were no tests, no staging environments, all development was done on the server and backups were a file copy. Naturally, these codebases decayed and became neglected but still used; We've all seen the horrendously outdated sites we sometimes need to use when interacting with the government.</p>
-
-<p>As an industry we've identified a lot of best practices to help a codebase to be maintainable. Patterns that appear over and over again, or best practices procedurally.</p>
-
-<p>Users have also come to expect native applications for their platforms as well, which can mean feature development takes 3 times as long to complete if you have custom codebases for each platform.</p>
-
-<p>And lastly, productivity and effectiveness matter. Squashing bugs and creating new features needs to keep happening when you're business is software or runs on it.</p>
-
-<h2>Rails is good for all of that</h2>
-
-<p>Rails makes developing web applications faster and maintainable. It places emphasis on developer happiness, and using tools &amp; solutions that enable effective feature development. Once you have the environment setup, going from nothing to a web application you can actually start using functionally can be done with a couple of command line incarnations if your needs are CRUD based (most are!). Additional libraries (gems) let you further expand your app behavior, and equally you can roll your own solutions when called for.</p>
-
-<p>It's also not afraid to break things for the sake of improvement. Backwards compatibility matters for some frameworks, but in the evolving web it's best to stay with what's current, secure or performant as browsers and technology evolve. This attitude is also what makes Rails secure: doing the "secure" thing is the default behavior, updates regularly include bugfixes or advisors to be aware of. Rails also request forgery protection, SQL sanitation, File upload and more right out of the box. An important caveat here is that updates often require (or at least encourage) changing your codebase is at each update - but that's the trade off you make to keep up with best practices.</p>
-
-<p>But perhaps importantly to the point of this post, is that Rails lets a small team ship web and native experiences to all major desktop and mobile platforms, reusing most of the code that's already been written. By wrapping webviews in native navigation and using caching (also provided by Rails) you can create a seamless user experience - free of weird interface delays or screen flashes; while still doing most of your feature development in the Rails stack and instantly delivering updates to users for all platforms. Rails lets you optimize your app to create fast response times - as fast as 20ms (the fastest i've seen in production)</p>
-
-<p>Rails is also quite flexible, featuring a set of very well thought opinions, but always have the option to do things differently. And if you need to start building out an API, or doing realtime websockets, or delivering more javascript-rich experiences, or scale up to support a lot of users; Rails can happily oblige.</p>
-
-<h2>Can Rails scale? Shopify handles over 80,000 requests per second riding on Rails</h2>
-
-<p>And those well thought out opinions, those sane defaults that Rails ships with? Makes for some highly maintainable codebases. Everything has a place, everyone knows and agrees (generally) where those places are and are not, and breaking the rules is easy unless it's ill-advised (like strong parameter protections). Even code that you wrote years ago can still make sense - no small feat!</p>
-
-<p>For Ruby on Rails to facilitate teams of all sizes such speedy delivery of tested &amp; responsive applications across all major web/mobile/desktop platforms, makes it the silver bullet framework of development if there ever was one. The productivity, effectiveness and maintainability it enables remains unmatched in other development solutions in software.</p>
-
-<h3>Looking for help building out your application in Ruby on Rails? <a href="http://linkedin.com/in/russjennings7/">Lets Work Together</a></h3>
-
-<p><a rel="bookmark" href="http://meesterdude.github.com/entries/rails-meets-the-definition-of-a-silver-bullet/">&infin; Permalink</a></p>
 
 
 

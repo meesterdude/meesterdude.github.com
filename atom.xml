@@ -3,7 +3,7 @@
   <title><![CDATA[RuRu]]></title>
   <link href="http://meesterdude.github.com/atom.xml" rel="self"/>
   <link href="http://meesterdude.github.com/"/>
-  <updated>2018-02-10T06:11:02-05:00</updated>
+  <updated>2018-03-09T21:17:32-05:00</updated>
   <id>http://meesterdude.github.com/</id>
   <author>
     <name><![CDATA[Russell Jennings]]></name>
@@ -11,6 +11,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+    <entry>
+      
+
+
+
+
+<title type="html"><![CDATA[My Top ArduinoVersusEvil Videos]]></title>
+<link href="http://meesterdude.github.com/entries/my-top-arduinoversusevil-videos/"/>
+<updated>2018-03-09T20:57:00-05:00</updated>
+<id>http://meesterdude.github.com/entries/my-top-arduinoversusevil-videos</id>
+
+      <content type="html"><![CDATA[<p>Very knowledgeable and always entertaining, ArduinoVersusEvil is a canadian based youtuber with extensive understanding of electrical and mechanical engineering. His channel is primarily taking things apart, or working on his own projects. I&#8217;ve watched a lot of them, so I thought I&#8217;d highlight some of my favorites!</p>
+
+<!--more-->
+
+
+
+
+<div class="embed-video-container"><iframe src="http://meesterdude.github.com//www.youtube.com/embed/zIQ_AM3bnwo" allowfullscreen></iframe></div>
+
+
+<p>Inventive modernization of an air compressor</p>
+
+<div class="embed-video-container"><iframe src="http://meesterdude.github.com//www.youtube.com/embed/M3WB-EwdJnM" allowfullscreen></iframe></div>
+
+
+<p>Entertaining battle and interesting dissection of component failure</p>
+
+<div class="embed-video-container"><iframe src="http://meesterdude.github.com//www.youtube.com/embed/CG7aBul033I" allowfullscreen></iframe></div>
+
+
+<p>Testing sunglasses with UV light meter</p>
+
+<div class="embed-video-container"><iframe src="http://meesterdude.github.com//www.youtube.com/embed/0kEZl_eK8Ws" allowfullscreen></iframe></div>
+
+
+<p>How a residential pump, otherwise well made, is engineered to fail within a timeframe (18:45)</p>
+
+<div class="embed-video-container"><iframe src="http://meesterdude.github.com//www.youtube.com/embed/NPTzNJMd19A" allowfullscreen></iframe></div>
+
+
+<p>Tearing down an expensive dyson vacume cleaner and the numerous ways it can fail over time</p>
+
+<div class="embed-video-container"><iframe src="http://meesterdude.github.com//www.youtube.com/embed/O4-j4kwtu9Y" allowfullscreen></iframe></div>
+
+
+<p>&#8220;it hurts even if there&#8217;s juice on it&#8221; too cute.</p>
+<p><a rel="bookmark" href="http://meesterdude.github.com/entries/my-top-arduinoversusevil-videos/">&infin; Permalink</a></p>
+
+]]></content>
+    </entry>
   
     <entry>
       
@@ -1025,54 +1077,6 @@ partial, and then rendering that out in both <code>application.html.erb</code> a
 
 <p><a rel="bookmark" href="http://meesterdude.github.com/entries/if-youre-not-doing-something-different/">&infin; Permalink</a></p>
 <p><a rel="post-link" href="http://www.today.com/id/17962620/ns/today-today_news/t/nba-star-sells-sneakers">-> Link <-</a></p>
-]]></content>
-    </entry>
-  
-    <entry>
-      
-
-
-
-
-<title type="html"><![CDATA[gem install nokogiri on mavericks]]></title>
-<link href="http://meesterdude.github.com/entries/gem-install-nokogiri-on-mavericks/"/>
-<updated>2014-03-21T16:56:00-04:00</updated>
-<id>http://meesterdude.github.com/entries/gem-install-nokogiri-on-mavericks</id>
-
-      <content type="html"><![CDATA[<p>Documenting my experience installing nokogiri 1.6.1 with ruby 2.1.1 on OS X mavericks</p>
-
-<!--more-->
-
-
-<p>Trying to spin up a new rails 4 app, <code>bundle install</code> failed on the nokogiri install, and asked that I try to install it manually first. When I&#8217;d run <code>gem install nokogiri -v '1.6.1'</code> it would hang on install indefinitely.</p>
-
-<p>I tried several different things like installing a different version of grep as noted in <a href="http://stackoverflow.com/questions/20890808/install-nokogiri-1-6-1-under-ruby-2-0-0p353-rvm-based-installation-fails-osx">this stack overflow</a> but that did not resolve.</p>
-
-<p>It did however, compile fine when I switched to ruby 1.9.3.</p>
-
-<p>running <code>gem install nokogiri -v '1.6.1' --verbose</code> I saw it was failing here</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>Successfully installed nokogiri-1.6.1
-</span><span class='line'>Parsing documentation for nokogiri-1.6.1
-</span><span class='line'>Parsing sources...
-</span><span class='line'>unable to convert "\xE4" from ASCII-8BIT to UTF-8 for ext/nokogiri/tmp/x86_64-apple-darwin13.1.0/ports/libxml2/2.8.0/libxml2-2.8.0/doc/examples/testWriter.c, skipping
-</span><span class='line'>unable to convert "\xF8" from ASCII-8BIT to UTF-8 for ext/nokogiri/tmp/x86_64-apple-darwin13.1.0/ports/libxml2/2.8.0/libxml2-2.8.0/entities.c, skipping</span></code></pre></td></tr></table></div></figure>
-
-
-<p>So, it turns out it was installing fine, but was hanging on building the documentation, which I never use anyway. So, rerunning the command with <code>gem install nokogiri -v '1.6.1' --verbose --no-ri --no-rdoc</code> worked like a charm. Not what I would call a &#8220;fix&#8221;, but at least I can sidestep the problem.</p>
-
-<p>Since I never use documentation anyway, i added the following to my <code>~/.gemrc</code> file which should also speed up my gem compile time:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gem: --no-rdoc --no-ri</span></code></pre></td></tr></table></div></figure>
-
-<p><a rel="bookmark" href="http://meesterdude.github.com/entries/gem-install-nokogiri-on-mavericks/">&infin; Permalink</a></p>
-
 ]]></content>
     </entry>
   
