@@ -216,10 +216,14 @@
     </url>
     <url>
         <loc>http://meesterdude.github.com/archives/</loc>
-        <lastmod>2018-03-09T22:09:42-05:00</lastmod>
+        <lastmod>2018-03-11T04:36:31-04:00</lastmod>
     </url>
     <url>
         <loc>http://meesterdude.github.com/</loc>
         <lastmod>2018-03-09T22:09:42-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://meesterdude.github.com/email-me/</loc>
+        <lastmod>2018-03-11T22:55:31-04:00</lastmod>
     </url>
 </urlset>
