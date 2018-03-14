@@ -27,12 +27,13 @@
       background-image: url("/images/cpubackup-bg.png");
       background-repeat: no-repeat;
       background-size: 100vw 100vh;
+      z-index:  -1;
 
     }
     header{
-
       margin-bottom: -40px;
       z-index:  2000;
+      position:  absolute;
     }
     header small{
       background: rgba(255,255,255,0.2);
@@ -43,6 +44,15 @@
       font-weight:  800;
       font-family: 'Raleway', sans-serif;
       padding: 0px 20px;
+      z-index:  2000;
+    }
+    header a{
+      color:  white;
+      text-decoration: none;
+      z-index:  2000;
+    }
+    header a:visited, header a:active, header a:focus{
+      color:  white;
     }
 
     html{background: linear-gradient(to bottom, #246, #234)}
@@ -123,11 +133,14 @@
       .action,.email{
         width: 80%;
       }
+      .action{
+        height: 375px;
+      }
     }
   </style>
   <body>
   <header>
-    <small>Russ•Works</small>
+    <a href='/'><small>Russ•Works</small></a>
   </header>
   <main>
     <div class='left'>
@@ -140,6 +153,7 @@
         <h1><img src='/images/backupcheckuplogo.png' class='logo'>BackupCheckup</h1>
         <p>E-mails sent bi-weekly</p>
         <p>Great for small businesses, home users, and anyone with important data to keep safe</p>
+        <p>Includes <i style='text-decoration:underline'>valuble</i> backups tips to help you prevent data loss</p>
         <a class="button" href="https://gum.co/backupcheckup?wanted=true" target="_blank" data-gumroad-single-product="true">Get Checkups</a>
         </div>
       </section>
@@ -147,5 +161,9 @@
   </main>
   <footer><small>©2018 Russ•Works</small></footer>
   <script src="https://gumroad.com/js/gumroad.js"></script>
+  <a title="Web Analytics" href="http://clicky.com/101106450"><img alt="Web Analytics" src="//static.getclicky.com/media/links/badge.gif" border="0" style="opacity:0.2" /></a>
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(101106450); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/101106450ns.gif" /></p></noscript>
   </body>
 </html>
