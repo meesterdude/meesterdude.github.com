@@ -9,12 +9,6 @@
         <lastmod>2018-02-05T00:54:03-05:00</lastmod>
     </url>
     <url>
-        <loc>
-            http://meesterdude.github.com/entries/did-you-hear-about-the-two-guys-who-stole-a-calender/
-        </loc>
-        <lastmod>2018-02-05T00:54:03-05:00</lastmod>
-    </url>
-    <url>
         <loc>http://meesterdude.github.com/entries/git-preflight/</loc>
         <lastmod>2018-02-05T00:54:03-05:00</lastmod>
     </url>
@@ -225,5 +219,9 @@
     <url>
         <loc>http://meesterdude.github.com/email-me/</loc>
         <lastmod>2018-03-11T22:55:31-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://meesterdude.github.com/products/</loc>
+        <lastmod>2018-03-14T05:19:33-04:00</lastmod>
     </url>
 </urlset>

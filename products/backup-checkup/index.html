@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Timmana|Raleway|Yellowtail" rel="stylesheet">
+  </head>
+  <style>
+    body{
+      height:  100%;
+      margin:  0px;
+
+    }
+
+     #slogan,#subslogan{margin:  0px;font-family: 'Timmana', sans-serif;width:100%;padding-left: 60px;padding-right:30px;}
+     #slogan{
+      line-height:  1.2em;
+      font-size: 3em; text-align: left;
+      font-family: 'Timmana', sans-serif;
+      color:  #234;
+      text-shadow: 2px 1px #5de;
+      margin-top:  15vh;
+    }
+     #subslogan{margin-bottom:  10vmin;color: white; font-size: 1.5em;}
+    main{
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap:  wrap;
+      background-image: url("/images/cpubackup-bg.png");
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+
+    }
+    header{
+
+      margin-bottom: -40px;
+      z-index:  2000;
+    }
+    header small{
+      background: rgba(255,255,255,0.2);
+      font-size:  20px;
+      display: inline-block;
+      margin: 10px 14px;
+      color:  rgba(255,255,255,0.6);
+      font-weight:  800;
+      font-family: 'Raleway', sans-serif;
+      padding: 0px 20px;
+    }
+
+    html{background: linear-gradient(to bottom, #246, #234)}
+    .left,.right{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      flex-direction:  column;
+      flex-basis: 380px;
+      flex-grow:  1;
+    }
+    .email{border-radius:4px;margin-left: 15px;width: 100%;top: 30vh;max-width:700px;box-shadow: 9px 12px rgba(255,255,255,0.34);}
+    .action{
+      margin-top:  30vmin;
+      width: 50%;
+      height: 50vh;
+      background-color: rgba(0,0,0,0.5);
+      border-radius: 10px;
+      box-shadow: 9px 12px rgba(255,255,255,0.34);
+      min-width: 300px;
+      color:  white;
+    }
+    .button{
+      background:  linear-gradient(to bottom, #f49309, #db7308);
+      height:  90px;
+      border-radius: 5px;
+      width: 100%;
+
+
+    }
+    .logo{height: 50px;}
+    .button{
+      color:  #234;
+      font-size:  2.25em;
+      font-family: 'Timmana', sans-serif;
+      height:  1.5em;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+
+
+    }
+
+    .action p{
+      margin: 25px 5%;
+      font-family: 'Raleway', sans-serif;
+      font-size:  16px;
+      font-weight: 700;
+
+    }
+    .action h1{
+      font-family: 'Yellowtail', cursive;
+      font-size:  3em;
+      text-align:  center;
+      margin-top:  10px;
+    }
+    footer{
+      min-height: 100px;
+      text-align: center;
+      color: white;
+      margin-top:  20px;
+      color:  white;
+      display: flex;
+      flex-direction:  column;
+      align-content: flex-end;
+      justify-content: flex-end;
+      font-family: 'Raleway', sans-serif;
+      font-weight:  800;
+    }
+    footer small{
+      color:  rgba(255,255,255,0.8);
+      font-weight:  800;
+
+    }
+    @media all and (max-width: 900px) {
+    /* screens lower than 900 */
+      .action,.email{
+        width: 80%;
+      }
+    }
+  </style>
+  <body>
+  <header>
+    <small>Russ•Works</small>
+  </header>
+  <main>
+    <div class='left'>
+    <h1 id='slogan'>If your computer dies tomorrow, will your backups fail too?</h1>
+    <h2 id='subslogan'>Are the backups even on in the first place?</h2>
+      <img src='/images/fakeemail.png' class='email'>
+    </div>
+    <div class='right'>
+      <section class='action'>
+        <h1><img src='/images/backupcheckuplogo.png' class='logo'>BackupCheckup</h1>
+        <p>E-mail reminders to verify your backups are working<br>plus other backup tips</p>
+        <p>E-mails sent bi-weekly</p>
+        <p>Great for small businesses, home users, and anyone with important data to keep safe</p>
+        <a class="button" href="https://gum.co/backupcheckup?wanted=true" target="_blank" data-gumroad-single-product="true">Get Checkups</a>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer><small>©2018 Russ•Works</small></footer>
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+  </body>
+</html>
