@@ -142,8 +142,11 @@ $(function(){
   $("thead").on({
     'touchstart mousedown': function (e) {
       alert(e.touches[0].pageX)
-      var elem = document.elementFromPoint(100, 100)
-        $('thead').on('touchmove mousemove', move);
+
+        $('thead').on('touchmove mousemove', function(e){
+          var elem = document.elementFromPoint(e.touches[0].pageX, e.touches[0].pageY)
+          $(elem).css('background-color', 'red')
+        });
         move(e);//you could do `$(this).trigger('touchmove', e)` but a conventional function call keeps `move` simple.
     },
     'touchend mouseup': function (e) {
