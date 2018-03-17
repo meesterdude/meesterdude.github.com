@@ -142,13 +142,17 @@ $(function(){
   $("thead").on({
     'touchstart mousedown': function (e) {
         $('thead').on('touchmove mousemove', function(e){
-          var elem = document.elementFromPoint(e.touches[0].pageX, e.touches[0].pageY)
-          $(elem).css('background-color', 'red')
+          var elem = $("thead").elementFromPoint(e.touches[0].pageX, e.touches[0].pageY)
+          if($(elem).parents('thead').length){
+            $(elem).css('background-color', 'red')
+          }
+          }
         });
         move(e);//you could do `$(this).trigger('touchmove', e)` but a conventional function call keeps `move` simple.
     },
     'touchend mouseup': function (e) {
         $(this).off('touchmove mousemove');
+        $('thead th').css('background-color', 'white')
     }
 });
   $('th').on('touchstart mousedown', function() {
