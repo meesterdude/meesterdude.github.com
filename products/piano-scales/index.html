@@ -142,7 +142,7 @@ $(function(){
   $("thead").on({
     'touchstart mousedown': function (e) {
         $('thead').on('touchmove mousemove', function(e){
-          var elem = $("thead").elementFromPoint(e.touches[0].pageX, e.touches[0].pageY)
+          var elem = document.elementFromPoint(e.touches[0].pageX, e.touches[0].pageY)
           if($(elem).parents('thead').length){
             $(elem).css('background-color', 'red')
           }
