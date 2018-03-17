@@ -136,11 +136,11 @@ $(function(){
     $(this).toggleClass('active')
     var index = this.cellIndex + 1
   })
-  $('th').mousedown(function() {
+  $('th').on('touchstart mousedown', function() {
     $(this).toggleClass('selected-column')
     updateColumns()
   })
-  .mouseup(function() {
+  .on('touchend mouseup', function() {
     $(this).toggleClass('selected-column')
     updateColumns()
   });
