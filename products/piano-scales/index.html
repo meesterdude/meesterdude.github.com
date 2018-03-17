@@ -18,7 +18,10 @@
   tbody td{border: 1px solid black;}
   tbody td{width: 28px; height: 20px;font-size: 12px;}
 
-  thead th.note{font-weight: 500;font-size: 14px;}
+  thead th.note{font-weight: 500;
+      font-size: 16px;
+    background-color: #eee;
+    height: 40px;}
   .selected-row{
     opacity: 1;
     transform: scale(1.01);
@@ -136,6 +139,15 @@ $(function(){
     $(this).toggleClass('active')
     var index = this.cellIndex + 1
   })
+  $("thead").on({
+    'touchstart mousedown': function (e) {
+        $('thead').on('touchmove mousemove', move);
+        move(e);//you could do `$(this).trigger('touchmove', e)` but a conventional function call keeps `move` simple.
+    },
+    'touchend mouseup': function (e) {
+        $(this).off('touchmove mousemove');
+    }
+});
   $('th').on('touchstart mousedown', function() {
     $(this).toggleClass('selected-column')
     updateColumns()
