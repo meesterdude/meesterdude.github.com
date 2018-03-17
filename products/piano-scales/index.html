@@ -1,0 +1,167 @@
+<html><head>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <style>
+  body{
+    display: flex;
+    flex-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  html{
+    background-color: #444;
+  }
+  .active{
+    background-color: #9ce;
+    border-width: 1px 3px 1px 3px;
+  }
+  table{background-color: white;padding: 10px;}
+  tbody td{border: 1px solid black;}
+  tbody td{width: 28px; height: 20px;font-size: 12px;}
+
+  thead th.note{font-weight: 500;font-size: 14px;}
+  .selected-row{
+    opacity: 1;
+    transform: scale(1.01);
+  }
+  .fade{
+    opacity: 0.3;
+    transform: scale(0.98);
+  }
+
+  th.selected-column{
+    color: #9ce;
+    border: 1px solid #9ce;
+    border-width: 1px 3px 1px 3px;
+  }
+  </style>
+</head>
+<body contenteditable="false">
+  <table>
+   <thead>
+    <tr>
+       <th>Scale</th>
+       <th class="note">C</th>
+       <th class="note">C#/Db</th>
+       <th class="note">D</th>
+       <th class="note">D#/Eb</th>
+       <th class="note">E</th>
+       <th class="note">F</th>
+       <th class="note">F#/Gb</th>
+       <th class="note">G</th>
+       <th class="note">G#Ab</th>
+       <th class="note">A</th>
+       <th class="note">A#/Bb</th>
+       <th class="note">B</th>
+       <th class="note">C</th>
+       <th class="note">C#/Db</th>
+       <th class="note">D</th>
+       <th class="note">D#/Eb</th>
+       <th class="note">E</th>
+       <th class="note">F</th>
+       <th class="note">F#/Gb</th>
+       <th class="note">G</th>
+       <th class="note">G#Ab</th>
+       <th class="note">A</th>
+       <th class="note">A#/Bb</th>
+       <th class="note">B</th>
+       <th class="note">C</th>
+    </tr>
+   </thead>
+   <tfoot>
+   <tr>
+       <td class=""><button onclick="javascript:document.body.contentEditable='true'; document.designMode='on'; void 0">Enable Editing</button>
+       <button onclick="javascript:document.body.contentEditable='false'; document.designMode='off'; void 0">Disable Editing</button></td>
+    </tr>
+   </tfoot>
+   <tbody>
+    <tr>
+       <td class="">G Minor</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="active"></td><td></td><td class="active"></td><td class="active"></td><td></td><td class="active"></td><td class=""></td><td class="active"></td><td class="active"></td><td></td><td class="active"></td><td></td><td class="active"></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td class="">C Minor</td><td class="active"></td><td></td><td class="active"></td><td class="active"></td><td></td><td class="active"></td><td class=""></td><td class="active"></td><td class="active"></td><td></td><td class="active"></td><td></td><td class="active"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td class="active">F Minor</td><td></td><td></td><td></td><td></td><td></td><td class="active"></td><td></td><td class="active"></td><td class="active"></td><td></td><td class="active"></td><td class=""></td><td class="active"></td><td class="active"></td><td class=""></td><td class="active"></td><td class=""></td><td class="active"></td><td class=""></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td class="">Bb Minor</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="active"></td><td></td><td class="active"></td><td class="active"></td><td></td><td class="active"></td><td></td><td class="active"></td><td class="active"></td><td></td><td class="active"></td><td></td><td class="active"></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td class="active">Eb Minor</td><td></td><td></td><td></td><td class="active"></td><td></td><td class="active"></td><td class="active"></td><td></td><td class="active"></td><td></td><td class="active"></td><td class="active"></td><td></td><td class="active"></td><td></td><td class="active"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+       <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+
+
+   </tbody>
+  </table>
+
+<script type="text/javascript">
+$(function(){
+  $('td').click(function(){
+    $(this).toggleClass('active')
+    var index = this.cellIndex + 1
+  })
+  $('th').mousedown(function() {
+    $(this).toggleClass('selected-column')
+    updateColumns()
+  })
+  .mouseup(function() {
+    $(this).toggleClass('selected-column')
+    updateColumns()
+  });
+
+
+  var updateColumns = function(){
+    $('th.selected-column').each(function( lindex ) {
+      var index = this.cellIndex + 1
+      if(lindex === 0){
+        $('tbody tr').addClass('fade')
+        $("td:nth-child(" + index + ").active" ).closest('tr').removeClass('fade')
+      }else{
+        var rows = $("tr:not(.fade) td:nth-child(" + index + ").active" ).closest('tr')
+        $('tbody tr').addClass('fade')
+        $(rows).removeClass('fade')
+      }
+    });
+    if($('th.selected-column').length == 0){
+      $('.fade').removeClass('fade')
+    }
+  }
+});
+</script>
+</body></html>
