@@ -141,6 +141,8 @@ $(function(){
   })
   $("thead").on({
     'touchstart mousedown': function (e) {
+      alert(touchEvent.touches[0])
+      var elem = document.elementFromPoint(100, 100)
         $('thead').on('touchmove mousemove', move);
         move(e);//you could do `$(this).trigger('touchmove', e)` but a conventional function call keeps `move` simple.
     },
